@@ -1,35 +1,35 @@
 <template>
     <section class="hero" id="hero">
-            <div class="hero-container sm:px-10 lg:px-16 xl:px-36 py-10 xl:py-16">
-                <div class="second-drop">
-                    <div class="texts">
-                        <h5 class="uppercase font-sf text-[10px] xl:text-sm tracking-widest">
+            <div class="hero-container sm:px-10 py-10 lg:py-0">
+                <div class="second-drop lg:flex justify-around xl:justify-start items-center lg:space-x-20">
+                    <div class="texts xl:w-1/2">
+                        <h5 class="uppercase font-sf text-[10px] xl:text-sm 2xl:text-base tracking-widest">
                             second drop
                         </h5>
 
-                        <h1 class="capitalize font-caudex text-6xl sm:text-lg6xl xl:text-lg7xl leading-tight">
-                            Listening Pass
+                        <h1 class="capitalize font-caudex text-6xl sm:text-[4rem] lg:text-7xl xl:text-[6rem] 2xl:text-9xl leading-tight lg:leading-none">
+                            Listening <br class="hidden lg:block">Pass
                         </h1>
                     </div>
                     
                     <div class="image">
-                        <img src="/images/Second-Drop-Image.png" alt="">
+                        <img src="/images/Second-Drop-Image.png" alt="The Listening Pass Image">
                     </div>
                 </div>
 
-                <div class="first-drop text-right mt-16 xl:mt-20">
-                    <div class="texts">
-                        <h5 class="uppercase font-sf text-[10px] xl:text-sm tracking-widest">
+                <div class="first-drop text-right mt-16 xl:mt-0 lg:flex flex-row-reverse justify-between items-center">
+                    <div class="texts xl:w-1/2">
+                        <h5 class="uppercase font-sf text-[10px] xl:text-sm 2xl:text-base tracking-widest">
                             first drop
                         </h5>
 
-                        <h1 class="capitalize font-caudex text-6xl sm:text-[4rem] xl:text-[5rem] leading-tight">
-                            Meetings & Makeups NFT
+                        <h1 class="capitalize font-caudex text-6xl sm:text-[4rem] lg:text-7xl xl:text-[6rem] 2xl:text-9xl leading-tight lg:leading-none">
+                            Meetings & Makeups
                         </h1>
                     </div>
                     
-                    <div class="image">
-                        <img src="/images/First-Drop-Image.png" alt="">
+                    <div class="image xl:w-1/2">
+                        <img src="/images/First-Drop-Image.png" alt="The Meetings and Mackups Image">
                     </div>
                 </div>
             </div>

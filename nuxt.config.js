@@ -48,7 +48,8 @@ export default {
     /* module options */
     families: {
       Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      Caudex: [400, 700]
+      Caudex: [400, 700],
+      Cormorant: [300, 400, 500, 600, 700]
     }
   },
 

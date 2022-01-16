@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter'],
-        caudex: ['Caudex']
+        caudex: ['Caudex'],
+        cormorant: ['Cormorant Garamond'],
       }
     },
   },
