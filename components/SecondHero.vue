@@ -5,7 +5,7 @@
     >
       <div class="hero-header md:pr-14 lg:pr-5 self-center">
         <h1
-          class="font-cormorant text-5xl md:text-6xl xl:text-7xl 2xl:text-[80px] font-light"
+          class="font-cormorant text-5xl md:text-6xl xl:text-7xl 2xl:text-[80px] font-light pr-10 sm:pr-0"
         >
           CODEBOY Sai Meetings & Makeups Looks
         </h1>
