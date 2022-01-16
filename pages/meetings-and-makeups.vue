@@ -7,6 +7,8 @@
     </div>
 
     <CbTraits />
+
+    <CbAccessories />
   </div>
 </template>
 
