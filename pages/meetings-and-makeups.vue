@@ -9,6 +9,7 @@
     <CbTraits />
 
     <CbAccessories />
+    <Package />
   </div>
 </template>
 
