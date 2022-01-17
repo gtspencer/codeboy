@@ -1,6 +1,6 @@
 <template>
       <div class="container mx-auto px-5 sm:px-10 lg:px-14 xl:px-5">
-        <section class="cb-accessories mt-20 sm:mt-24 md:mt-28">
+        <section class="cb-accessories mt-20 sm:mt-24 md:mt-28 xl:px-10 2xl:px-20">
             <div class="cb-accessories-container md:flex justify-between md:space-x-10">
                 <div class="texts text-center md:text-left">
                     <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px] leading-9 md:leading-10">
@@ -12,7 +12,7 @@
                     </p>
                 </div>
 
-                <div class="images flex space-x-3 mt-5 md:mt-0">
+                <div class="images flex space-x-3 mt-5 md:mt-0 xl:px-10">
                     <div class="container-1 w-1/3 space-y-3">
                         <img src="/images/accessories/Mirror.png" alt="">
                         <img src="/images/accessories/Laptop.png" alt="">

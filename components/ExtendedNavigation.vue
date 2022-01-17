@@ -27,37 +27,37 @@
                 <div
                 class="mid-nav-container justify-self-start md:justify-self-center"
                 >
-                <nuxt-link
-                    to="/"
-                    class="left-nav-container flex flex-col justify-center items-center space-y-3"
-                >
-                    <div class="text-beside-logo">
-                    <h2
-                        class="uppercase font-inter text-black text-center text-[10px] xl:text-xs 2xl:text-sm font-medium leading-relaxed lg:leading-relaxed xl:leading-loose"
+                    <nuxt-link
+                        to="/"
+                        class="left-nav-container flex flex-col justify-center items-center space-y-3"
                     >
-                        ethereum based <br class="md:hidden" />
-                        music artist
-                    </h2>
-                    </div>
+                        <div class="text-beside-logo">
+                            <h2
+                                class="uppercase font-inter text-black text-center text-[10px] xl:text-xs 2xl:text-sm font-medium leading-relaxed lg:leading-relaxed xl:leading-loose"
+                            >
+                                ethereum based <br class="md:hidden" />
+                                music artist
+                            </h2>
+                        </div>
 
-                    <div class="logo">
-                    <img
-                        class="logo-image w-8 sm:w-10 lg:w-12 xl:w-16"
-                        src="/images/Code Boy Logo.png"
-                        alt="Code Boy Sai's Logo"
-                    />
-                    </div>
-                </nuxt-link>
+                        <div class="logo">
+                        <img
+                            class="logo-image w-8 sm:w-10 lg:w-12 xl:w-16"
+                            src="/images/Code Boy Logo.png"
+                            alt="Code Boy Sai's Logo"
+                        />
+                        </div>
+                    </nuxt-link>
                 </div>
 
                 <div class="right-nav-container justify-self-end">
-                <nuxt-link to="/second" class="">
-                    <button
-                    class="uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-black"
-                    >
-                    connect wallet
-                    </button>
-                </nuxt-link>
+                    <nuxt-link to="/second" class="">
+                        <button
+                        class="uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-black"
+                        >
+                        connect wallet
+                        </button>
+                    </nuxt-link>
                 </div>
             </div>
         </nav>

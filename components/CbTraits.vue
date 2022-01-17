@@ -8,7 +8,7 @@
             </div>
 
             <div class="outfits-container overflow-x-scroll flex space-x-10 mt-10 md:mt-14">
-                <div class="outfit-text min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] 2xl:min-w-[10%] md:min-w-2 ml-5 sm:ml-10 lg:ml-20">
+                <div class="outfit-text min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] 2xl:min-w-[10%] md:min-w-2 ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
                     <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
                         Outfits
                     </h2>

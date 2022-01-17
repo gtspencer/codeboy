@@ -20,7 +20,7 @@
       </div>
 
       <div
-        class="mint-collectibles mt-16 sm:mt-20 lg:mt-0 col-span-2 lg:col-auto self-center"
+        class="mint-collectibles mt-16 sm:mt-20 lg:mt-0 col-span-2 lg:col-auto self-center xl:ml-10"
       >
         <div class="mint-collectibles-container">
           <ul
