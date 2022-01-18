@@ -11,7 +11,7 @@ module.exports = {
       fontFamily: {
         inter: ['Inter'],
         caudex: ['Caudex'],
-        cormorant: ['Cormorant Garamond'],
+        cormorant: ['Cormorant'],
       }
     },
   },
