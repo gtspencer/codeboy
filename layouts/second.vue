@@ -5,8 +5,9 @@
     
     <Nuxt />
 
-    <Footer />
-    <!-- </div> -->
+    <div class="container mx-auto px-5 sm:px-10 lg:px-14 xl:px-5">
+        <Footer />
+    </div>
 
     <AfterFooter />
 </div>
@@ -19,5 +20,7 @@ export default {
 </script>
 
 <style>
-
+* {
+    outline: none;
+}
 </style>

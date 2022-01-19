@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style>
-  body {
+  /* body {
     background-color: black;
-  }
+  } */
 </style>

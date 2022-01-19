@@ -1,31 +1,35 @@
 <template>
     <footer class="">
         <div class="code-music-socials sm:hidden md:grid grid-cols-3 md:justify-between mt-16 space-y-8 md:space-y-0">
-                <div class="code flex justify-self-start justify-center items-center">
-                    <div class="label">
-                        <img class="label-image w-16 xl:w-28" src="/images/Code Label.png"
-                            alt="Code Boy Sai's Logo">
-                    </div>
+                <div class="code justify-self-start self-center">
+                    <nuxt-link to="/record-label" class="flex justify-center items-center">
+                        <div class="label">
+                            <img class="label-image w-16 xl:w-28" src="/images/Code Label.png"
+                                alt="Code Boy Sai's Logo">
+                        </div>
 
-                    <div class="text-beside-label">
-                        <h2 class="uppercase font-inter text-black text-[10px] xl:text-xs 2xl:text-sm font-medium xl:leading-loose">
-                            codelife record dao <br> label
-                        </h2>
-                    </div>
+                        <div class="text-beside-label">
+                            <h2 class="uppercase font-inter text-black text-[10px] xl:text-xs 2xl:text-sm font-medium xl:leading-loose">
+                                codelife record dao <br> label
+                            </h2>
+                        </div>
+                    </nuxt-link>
                 </div>
 
                 <div class="music flex justify-center items-center">
-                    <button
-                        class="uppercase text-black font-sf font-medium text-[10px] xl:text-xs 2xl:text-sm py-1.5 px-4 xl:pl-7 w-56 xl:w-[16.5rem] 2xl:w-[18.5rem] xl:h-14 2xl:h-16 border rounded-full border-black flex justify-between items-center tracking-widest">
-                        exclusive music player
-                        <svg class="w-9 xl:w-10 2xl:w-12 -mr-2" viewBox="0 0 44 45" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="22" cy="22.965" r="22" fill="black" />
-                            <path
-                                d="M17 21.6317V24.2984C17 27.2755 17 28.7641 17.971 29.3467C18.942 29.9293 20.2555 29.2288 22.8824 27.8278L25.3824 26.4944C28.2941 24.9415 29.75 24.165 29.75 22.965C29.75 21.765 28.2941 20.9886 25.3824 19.4356L22.8824 18.1023C20.2555 16.7013 18.942 16.0008 17.971 16.5834C17 17.166 17 18.6545 17 21.6317Z"
-                                fill="white" />
-                        </svg>
-                    </button>
+                    <nuxt-link to="/music-player">
+                        <button
+                            class="uppercase text-black font-sf font-medium text-[10px] xl:text-xs 2xl:text-sm py-1.5 px-4 xl:pl-7 w-56 xl:w-[16.5rem] 2xl:w-[18.5rem] xl:h-14 2xl:h-16 border rounded-full border-black flex justify-between items-center tracking-widest">
+                            exclusive music player
+                            <svg class="w-9 xl:w-10 2xl:w-12 -mr-2" viewBox="0 0 44 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22.965" r="22" fill="black" />
+                                <path
+                                    d="M17 21.6317V24.2984C17 27.2755 17 28.7641 17.971 29.3467C18.942 29.9293 20.2555 29.2288 22.8824 27.8278L25.3824 26.4944C28.2941 24.9415 29.75 24.165 29.75 22.965C29.75 21.765 28.2941 20.9886 25.3824 19.4356L22.8824 18.1023C20.2555 16.7013 18.942 16.0008 17.971 16.5834C17 17.166 17 18.6545 17 21.6317Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </nuxt-link>
                 </div>
 
                 <div class="socials justify-self-end space-y-3 grid place-items-center">
@@ -120,17 +124,19 @@
         <!-- FOR SCREEN 640 ONLY!!!! -->
         <div class="code-music-socials hidden sm:block md:hidden mt-16 space-y-10">
             <div class="code-music-container sm:space-y-0 sm:flex sm:justify-between sm:items-center">
-                    <div class="code flex justify-start items-center">
-                        <div class="label">
-                            <img class="label-image w-16" src="/images/Code Label.png"
-                                alt="Code Boy Sai's Logo">
-                        </div>
+                    <div class="code">
+                        <nuxt-link to="/record-label" class="flex justify-start items-center">
+                            <div class="label">
+                                <img class="label-image w-16" src="/images/Code Label.png"
+                                    alt="Code Boy Sai's Logo">
+                            </div>
 
-                        <div class="text-beside-label">
-                            <h2 class="uppercase font-inter text-black text-[10px] font-medium">
-                                codelife record dao <br> label
-                            </h2>
-                        </div>
+                            <div class="text-beside-label">
+                                <h2 class="uppercase font-inter text-black text-[10px] font-medium">
+                                    codelife record dao <br> label
+                                </h2>
+                            </div>
+                        </nuxt-link>
                     </div>
 
                     <div class="music flex justify-end">

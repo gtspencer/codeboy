@@ -8,10 +8,9 @@
           <nuxt-link to="/" class="left-nav-container flex flex-col justify-center items-center space-y-3">
             <div class="text-beside-logo">
               <h2
-                class="uppercase font-inter text-black text-[10px] xl:text-xs 2xl:text-sm font-medium leading-relaxed lg:leading-relaxed xl:leading-loose"
+                class="uppercase font-inter text-center text-black text-[10px] xl:text-xs 2xl:text-sm font-medium leading-relaxed lg:leading-relaxed xl:leading-loose"
               >
-                ethereum based <br class="md:hidden">
-                music artist
+                ethereum based <br class=" md:hidden"> music artist
               </h2>
             </div>
 
@@ -25,8 +24,8 @@
           </nuxt-link>
         </div>
 
-        <div class="right-nav-container">
-          <nuxt-link to="/meetings-and-makeups" class="">
+        <div class="right-nav-container md:mt-5 xl:mt-10">
+          <nuxt-link to="/#" class="">
             <button
               class="uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-sm p-3 sm:py-2 lg:py-3 sm:px-3 lg:px-3 border border-black"
             >
@@ -44,4 +43,7 @@ export default {};
 </script>
 
 <style>
+* {
+    outline: none;
+}
 </style>

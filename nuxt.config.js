@@ -23,6 +23,11 @@ export default {
     ]
   },
 
+  loading: {
+    color: 'black',
+    height: '5px',
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/tailwind/tailwind.css',

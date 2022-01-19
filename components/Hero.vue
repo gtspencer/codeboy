@@ -22,6 +22,7 @@
                 <div class="first-drop text-right mt-16 xl:mt-0 lg:flex flex-row-reverse justify-between items-center">
                     <div class="texts xl:w-1/2">
                         <nuxt-link to="/meetings-and-makeups">
+                        <div class="lg:mr-10 xl:mr-20 2xl:mr-10">
                             <h5 class="uppercase font-sf text-[10px] xl:text-sm 2xl:text-base tracking-widest">
                                 first drop
                             </h5>
@@ -29,6 +30,7 @@
                             <h1 class="capitalize font-caudex text-6xl sm:text-[4rem] lg:text-7xl xl:text-[6rem] 2xl:text-9xl leading-tight lg:leading-none">
                                 Meetings & Makeups
                             </h1>
+                        </div>
                         </nuxt-link>
                     </div>
                     
