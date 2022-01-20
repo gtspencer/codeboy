@@ -288,13 +288,17 @@ export default {
                 span.classList.remove('show')
             }
       },
+    },
+
+    mounted() {
+      third: 'black'
     }
 }
 </script>
 
 <style>
 body {
-    background-color: black;
+    background-color: third;
 }
 
 .show {

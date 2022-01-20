@@ -25,7 +25,7 @@
               </div>
 
               <div class="right-nav-container justify-self-end">
-                <nuxt-link to="/second" class="">
+                <nuxt-link to="/#" class="">
                     <button class="uppercase bg-[#C3C2C1] text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5">
                         discord hq
                     </button>

@@ -1,6 +1,6 @@
 <template>
       <div class="container mx-auto px-5 sm:px-10 lg:px-14 xl:px-5">
-        <section class="cb-accessories mt-20 sm:mt-24 md:mt-28 xl:px-10 2xl:px-20">
+        <section class="cb-accessories my-32 md:my-38 lg:my-48 xl:my-52 xl:px-10 2xl:px-20">
             <div class="cb-accessories-container md:flex justify-between md:space-x-10">
                 <div class="texts text-center md:text-left">
                     <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px] leading-9 md:leading-10">

@@ -31,7 +31,7 @@
                         <div class="display w-full h-40 lg:h-48 xl:h-52 bg-[#C4C4C4] rounded-xl xl:rounded-2xl"></div>
 
                         <div class="input relative mt-2">
-                            <input class="w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="50">
+                            <input class="w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="0">
                         </div>
 
                         <div class="controls mt-5 flex justify-between items-center">
@@ -57,7 +57,7 @@
                                 </svg>
                             </button>
 
-                            <button class="play" ref="play">
+                            <button class="play" ref="play" @click="play">
                                 <svg class="w-16" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_196_940)">
                                     <circle cx="61" cy="51" r="46" fill="#6837FA"/>
@@ -93,12 +93,12 @@
 
                             <button class="share">
                                 <svg class="w-7" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30 15L18.3333 3.33337V10C6.66667 11.6667 1.66667 20 0 28.3334C4.16667 22.5 10 19.8334 18.3333 19.8334V26.6667L30 15Z" fill="#1E1F20"/>
-<mask id="mask0_196_945" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="3" width="30" height="26">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30 15L18.3333 3.33337V10C6.66667 11.6667 1.66667 20 0 28.3334C4.16667 22.5 10 19.8334 18.3333 19.8334V26.6667L30 15Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_196_945)">
-</g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 15L18.3333 3.33337V10C6.66667 11.6667 1.66667 20 0 28.3334C4.16667 22.5 10 19.8334 18.3333 19.8334V26.6667L30 15Z" fill="#1E1F20"/>
+                                    <mask id="mask0_196_945" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="3" width="30" height="26">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 15L18.3333 3.33337V10C6.66667 11.6667 1.66667 20 0 28.3334C4.16667 22.5 10 19.8334 18.3333 19.8334V26.6667L30 15Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_196_945)">
+                                    </g>
                                 </svg>
                             </button>
                         </div>
@@ -181,18 +181,73 @@
 </template>
 
 <script>
-import '../js/slider.js'
 
 export default {
     layout: 'music',
-    methods: {
-        
-    },
-    data() {
-        return {
 
+    data () {
+    return {
+    current: {},
+    index: 0,
+    isPlaying: false,
+    songs: [
+        {
+        title: 'Grateful',
+        artist: 'Neffex',
+        src: '/music/Banjee (SINGLE).mp3'
+        },
+        {
+        title: 'Invincible',
+        artist: 'Deaf Kev',
+        src: '/music/Capable (SINGLE).mp3'
         }
+    ],
     }
+},
+  methods: {
+    play (song) {
+      if (typeof song.src != "undefined") {
+        this.current = song;
+        this.player.src = this.current.src;
+      }
+      this.player.play();
+      this.player.addEventListener('ended', function () {
+        this.index++;
+        if (this.index > this.songs.length - 1) {
+          this.index = 0;
+        }
+        this.current = this.songs[this.index];
+        this.play(this.current);
+      }.bind(this));
+      this.isPlaying = true;
+
+      console.log('started')
+      audio.play();
+    },
+    pause () {
+      this.player.pause();
+      this.isPlaying = false;
+    },
+    next () {
+      this.index++;
+      if (this.index > this.songs.length - 1) {
+        this.index = 0;
+      }
+      this.current = this.songs[this.index];
+      this.play(this.current);
+    },
+    prev () {
+      this.index--;
+      if (this.index < 0) {
+        this.index = this.songs.length - 1;
+      }
+      this.current = this.songs[this.index];
+      this.play(this.current);
+    }
+  },
+  mounted() {
+    this.player = new Audio()
+  }
 }
 
 </script>

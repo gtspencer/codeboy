@@ -1,5 +1,5 @@
 <template>
-        <section class="package relative flex justify-center items-center bg-no-repeat bg-cover mt-20 sm:mt-24 md:mt-28"
+    <section class="package relative flex justify-center items-center bg-no-repeat bg-cover"
             style="background-image: url('/images/Pattern.png');">
             <div class="package-container flex flex-col justify-center items-center z-10">
                 <div class="images lg:grid grid-cols-3 place-items-center">

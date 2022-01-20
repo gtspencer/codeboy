@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="bg-black min-h-screen">
       <RecordNavigationOne />
 
       <section class="drop flex flex-col justify-center items-center mt-5">
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style>
-  /* body {
-    background-color: black;
-  } */
+  body {
+    /* background-color: black; */
+  }
 </style>

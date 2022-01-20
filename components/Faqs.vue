@@ -1,5 +1,5 @@
 <template>
-    <section class="faq mt-28 sm:mt-32 md:mt-36 lg:px-20">
+    <section class="faq my-28 sm:my-32 md:my-36 lg:px-20">
             <div class="faq-container md:flex justify-between items-center">
                 <div class="top-left md:w-1/3">
                     <h2 class="capitalize text-center md:text-left font-cormorant text-2xl sm:text-3xl md:text-2xl lg:text-4xl">

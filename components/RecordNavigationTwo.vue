@@ -4,7 +4,7 @@
           <div class="nav-container py-5 lg:py-0 xl:py-7 lg:pt-7 lg:pb-2 grid grid-cols-3 justify-between">
               <div class="left-nav-container justify-self-start mt-10">
                   <ul class="md:flex justify-center items-center md:space-x-5">
-                      <a href="#drops">
+                      <a href="/record-label#drops">
                           <p class="text-inter uppercase font-inter text-white text-[10px] xl:text-xs 2xl:text-sm">
                               drops
                           </p>
@@ -29,7 +29,7 @@
               </div>
 
               <div class="right-nav-container justify-self-end mt-10">
-                <nuxt-link to="/second" class="">
+                <nuxt-link to="/#" class="">
                     <button class="uppercase bg-[#C3C2C1] text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5">
                         discord hq
                     </button>
