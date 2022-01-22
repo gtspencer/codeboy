@@ -3,7 +3,7 @@
             style="background-image: url('/images/Pattern.png');">
             <div class="package-container flex flex-col justify-center items-center z-10">
                 <div class="images lg:grid grid-cols-3 place-items-center">
-                    <img src="/packages/Package-1.png" alt="">
+                    <video src="https://res.cloudinary.com/eazzie/video/upload/q_30/v1642704440/Codeboy/HOMEPAGE_-_SHIPPING_PACK-BLACK_y1rfrs.webm" alt="" autoplay loop />
                     <img src="/packages/Package-2.png" alt="">
                     <img src="/packages/Package-3.png" alt="">
                 </div>

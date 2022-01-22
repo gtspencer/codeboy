@@ -28,7 +28,7 @@
                         </div>
                     </div>
 
-                    <div class="second-benefit flex items-cente lg:items-startr space-x-5 lg:place-self-start">
+                    <div class="second-benefit flex items-cente lg:items-start space-x-5 lg:place-self-start">
                         <div class="left">
                             <img class="w-60 -ml-3" src="/images/Code Label.png" alt="">
                         </div>

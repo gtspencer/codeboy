@@ -18,7 +18,11 @@
                 </div>
 
                 <div class="mixtape-right-container mt-5 md:mt-0">
-                    <img src="/images/Tracklist 1.png" alt="">
+                    <nuxt-img 
+                    src="/images/Tracklist 1.png" 
+                    alt=""
+                    format="webp"
+                    />
                 </div>
             </div>
     </section>

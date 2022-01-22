@@ -41,11 +41,12 @@
             </div>
 
             <div class="logo">
-              <img
-                class="logo-image w-8 sm:w-10 lg:w-12 xl:w-16"
-                src="/images/Code Boy Logo.png"
-                alt="Code Boy Sai's Logo"
-              />
+              <nuxt-img
+                  src="/images/Code Boy Logo.png"
+                  alt="Code Boy Sai's Logo"
+                  sizes="sm:32px md:40px lg:48px xl:64px"
+                  format="webp"
+                />
             </div>
           </nuxt-link>
         </div>
@@ -53,7 +54,7 @@
         <div class="right-nav-container justify-self-end">
           <nuxt-link to="" class="">
             <button
-              class="uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-black"
+              class="connect-wallet uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-black"
             >
               connect wallet
             </button>

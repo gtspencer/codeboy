@@ -10,8 +10,13 @@
                     Music Label Positions:
                 </h1>
 
-                <div class="image flex justify-center xl:justify-start">
-                  <img src="/images/Label-image.png" alt="">
+                <div class="image flex justify-center xl:justify-start border">
+                  <video
+                   src="https://res.cloudinary.com/eazzie/video/upload/q_30/v1642725790/Codeboy/CODELIFERECORDS_DAO_-_POSITIONS_ihma1f.mp4"
+                   alt=""
+                   autoplay
+                   loop
+                   />
                 </div>
               </div>
 

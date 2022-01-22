@@ -15,10 +15,11 @@
             </div>
 
             <div class="logo">
-                <img
-                  class="logo-image w-8 sm:w-10 lg:w-12 xl:w-16"
+                <nuxt-img
                   src="/images/Code Boy Logo.png"
                   alt="Code Boy Sai's Logo"
+                  sizes="32px sm:40px lg:48px xl:64px"
+                  format="webp"
                 />
             </div>
           </nuxt-link>
@@ -27,7 +28,7 @@
         <div class="right-nav-container md:mt-5 xl:mt-10">
           <nuxt-link to="/#" class="">
             <button
-              class="uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-sm p-3 sm:py-2 lg:py-3 sm:px-3 lg:px-3 border border-black"
+              class="connect-wallet uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-black"
             >
               connect wallet
             </button>
@@ -45,5 +46,21 @@ export default {};
 <style>
 * {
     outline: none;
+}
+
+.connect-wallet {
+  background: -webkit-linear-gradient(0deg, transparent 50%, black 50%);
+  background-size: 310px 80px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+
+.connect-wallet:hover {
+  background-position: 155px 0px;
+  color: white;
+  border: 1px solid white;
 }
 </style>

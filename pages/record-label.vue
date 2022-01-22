@@ -4,7 +4,11 @@
 
       <section class="drop flex flex-col justify-center items-center mt-5">
         <div class="image">
-          <img src="/images/Big-record-label.png" alt="">
+          <nuxt-img 
+          src="/images/Big-record-label.png" 
+          alt="Record Label Image" 
+          format="webp"
+          />
         </div>
 
         <p class="latest uppercase text-white  font-inter text-[10px] xl:text-xs 2xl:text-s mt-10" id="drops">
@@ -29,7 +33,5 @@ export default {
 </script>
 
 <style>
-  body {
-    /* background-color: black; */
-  }
+
 </style>

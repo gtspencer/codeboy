@@ -19,7 +19,8 @@
                          src="https://res.cloudinary.com/eazzie/video/upload/q_29/v1642648085/Codeboy/LISTENINGPASS-LANYARD_upwzog.mp4"
                          alt="The Listening Pass Image"
                          autoplay 
-                         loop />
+                         loop
+                         poster="/images/Second-Drop-Image.png" />
                     </div>
                 </div>
 

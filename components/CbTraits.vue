@@ -19,9 +19,15 @@
                 </div>
 
                 <div class="grid-divs flex flex-nowrap space-x-10 items-baseline">
-                    <div v-for="outfit in outfits" :key="outfit.id" class="grid-container min-w-[50%]">
-                        <div class="image">
-                            <img class="" :src="outfit.img" :alt="outfit.alt">
+                    <div v-for="outfit in outfits" :key="outfit.id" class="grid-container min-w-[50%] max-w-[50%]">
+                        <div class="video">
+                            <video
+                            class="2xl:max-w-[80%]" 
+                            :src="outfit.vid" 
+                            :alt="outfit.alt"
+                            autoplay
+                            loop
+                            />
                         </div>
 
                         <div class="texts font-inter mt-3">
@@ -46,35 +52,35 @@ export default {
         return {
             outfits: [
                 {
-                    img: '/images/outfits/Salesianum-Outfit.png',
+                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
                     alt: 'An image of the Salesianum Outfit',
                     name: 'Salesianum',
                     description: 'Short text describing a feature of your product/service.'
                 },
                 
                 {
-                    img: '/images/outfits/Butch-Lewis-Outfit.png',
+                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
                     alt: 'An image of the Butch Lewis Outfit',
                     name: 'Butch Lewis',
                     description: 'Short text describing a feature of your product/service.'
                 },
 
                 {
-                    img: '/images/outfits/Carlton-Outfit.png',
+                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
                     alt: 'An image of the Carlton Outfit',
                     name: 'Carlton',
                     description: 'Short text describing a feature of your product/service.'
                 },
 
                 {
-                    img: '/images/outfits/Carlton-Outfit.png',
+                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
                     alt: 'An image of the Carlton Outfit',
                     name: 'Carlton',
                     description: 'Short text describing a feature of your product/service.'
                 },
 
                 {
-                    img: '/images/outfits/Carlton-Outfit.png',
+                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
                     alt: 'An image of the Carlton Outfit',
                     name: 'Carlton',
                     description: 'Short text describing a feature of your product/service.'

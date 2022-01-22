@@ -12,10 +12,12 @@
       </div>
 
       <div class="hero-image flex justify-center mt-10 lg:mt-0">
-        <img
-          class="w-4/5"
-          src="/images/Second-Hero-image.png"
-          alt="Meetings and Makups Hero Image"
+        <video
+          class=""
+          src="https://res.cloudinary.com/eazzie/video/upload/q_80/v1642703512/Codeboy/CODEBOY_SAI_Meetings_Makeups_Looks_f0uo8l.mp4"
+          alt="Meetings and Makups Hero Video"
+          loop
+          autoplay
         />
       </div>
 
