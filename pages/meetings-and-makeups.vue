@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="container mx-auto px-5 sm:px-10 lg:px-14 xl:px-5">
-        <SecondHero />
+    <div class="container px-5 mx-auto sm:px-10 lg:px-14 xl:px-5">
+      <SecondHero />
 
-        <Mixtape />
+      <Mixtape />
     </div>
 
     <CbTraits />
@@ -11,7 +11,7 @@
     <CbAccessories />
     <Package />
 
-    <div class="container mx-auto px-5 sm:px-10 lg:px-14 xl:px-20">
+    <div class="container px-5 mx-auto sm:px-10 lg:px-14 xl:px-20">
       <Benefits />
 
       <PlanAgenda />
@@ -24,11 +24,18 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline();
+
 export default {
-    layout: 'second'
-}
+  layout: "second",
+
+  mounted() {
+    ScrollTrigger.refresh();
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

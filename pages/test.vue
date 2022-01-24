@@ -8,12 +8,27 @@
           >
           </video>
       </div>
+
+      <h1>
+        {{ counter }}
+      </h1>
+
+      <button @click="increement">
+        increase
+      </button>
   </div>
 </template>
 
 <script>
-export default {
+import { mapState, mapMutations, mapActions } from 'vuex'
 
+export default {
+  computed: {
+    ...mapState(["counter"])
+  },
+  methods: {
+    ...mapMutations(["increement"])
+  }
 }
 </script>
 

@@ -216,7 +216,6 @@
 </template>
 
 <script>
-import '../player.js'
 
 export default {
     layout: 'music',

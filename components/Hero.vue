@@ -1,58 +1,64 @@
 <template>
     <section class="hero" id="hero">
-            <div class="hero-container sm:px-10 py-10 lg:py-0">
-                <div class="second-drop lg:flex justify-around xl:justify-start items-center md:px-16 lg:px-24 xl:px-32 lg:space-x-20">
-                    <div class="texts xl:w-1/2">
-                        <nuxt-link to="/listening-pass">
+        <div class="hero-container sm:px-10 py-10 lg:py-0">
+            <div class="second-drop lg:flex justify-around xl:justify-start items-center md:px-16 lg:px-24 xl:px-32 lg:space-x-20 overflow-y-hidden border">
+                <div class="texts xl:w-1/2">
+                    <nuxt-link to="/listening-pass">
+                        <div class="animation-container overflow-hidden">
+                            <div class="animation-top-container overflow-hidden">
+                                <h5 data-aos="fade-up" data-aos-duration="1000" class="uppercase font-sf text-[10px] xl:text-sm 2xl:text-base tracking-widest">
+                                    second drop
+                                </h5>
+                            </div>
+
+                            <h1 data-aos="fade-up" data-aos-duration="1000" class="capitalize font-caudex text-6xl sm:text-[4rem] lg:text-7xl xl:text-[6rem] 2xl:text-9xl leading-tight lg:leading-none">
+                                Listening <br class="hidden lg:block">Pass
+                            </h1>
+                        </div>
+                    </nuxt-link>
+                </div>
+                
+                <div class="image">
+                    <video
+                        src="https://res.cloudinary.com/eazzie/video/upload/q_29/v1642648085/Codeboy/LISTENINGPASS-LANYARD_upwzog.mp4"
+                        alt="The Listening Pass Image"
+                        autoplay 
+                        loop
+                        poster="/images/Second-Drop-Image.png" />
+                </div>
+            </div>
+
+            <div class="first-drop text-right mt-16 xl:mt-0 lg:flex flex-row-reverse justify-between items-center">
+                <div class="texts xl:w-1/2">
+                    <nuxt-link to="/meetings-and-makeups">
+                        <div class="lg:mr-10 xl:mr-20 2xl:mr-10">
                             <h5 class="uppercase font-sf text-[10px] xl:text-sm 2xl:text-base tracking-widest">
-                                second drop
+                                first drop
                             </h5>
 
                             <h1 class="capitalize font-caudex text-6xl sm:text-[4rem] lg:text-7xl xl:text-[6rem] 2xl:text-9xl leading-tight lg:leading-none">
-                                Listening <br class="hidden lg:block">Pass
+                                Meetings & Makeups
                             </h1>
-                        </nuxt-link>
-                    </div>
-                    
-                    <div class="image">
-                        <video
-                         src="https://res.cloudinary.com/eazzie/video/upload/q_29/v1642648085/Codeboy/LISTENINGPASS-LANYARD_upwzog.mp4"
-                         alt="The Listening Pass Image"
-                         autoplay 
-                         loop
-                         poster="/images/Second-Drop-Image.png" />
-                    </div>
+                        </div>
+                    </nuxt-link>
                 </div>
-
-                <div class="first-drop text-right mt-16 xl:mt-0 lg:flex flex-row-reverse justify-between items-center">
-                    <div class="texts xl:w-1/2">
-                        <nuxt-link to="/meetings-and-makeups">
-                            <div class="lg:mr-10 xl:mr-20 2xl:mr-10">
-                                <h5 class="uppercase font-sf text-[10px] xl:text-sm 2xl:text-base tracking-widest">
-                                    first drop
-                                </h5>
-
-                                <h1 class="capitalize font-caudex text-6xl sm:text-[4rem] lg:text-7xl xl:text-[6rem] 2xl:text-9xl leading-tight lg:leading-none">
-                                    Meetings & Makeups
-                                </h1>
-                            </div>
-                        </nuxt-link>
-                    </div>
-                    
-                    <div class="image xl:w-1/2">
-                        <img src="/images/First-Drop-Image.png" alt="The Meetings and Mackups Image">
-                    </div>
+                
+                <div class="image xl:w-1/2">
+                    <img src="/images/First-Drop-Image.png" alt="The Meetings and Mackups Image">
                 </div>
             </div>
+        </div>
     </section>
 </template>
 
 <script>
-export default {
+import aosMixin from '~/mixins/aos'
 
+
+export default {
+    mixins: [aosMixin],
 }
 </script>
 
 <style>
-
 </style>

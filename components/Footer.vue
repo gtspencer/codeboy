@@ -1,8 +1,8 @@
 <template>
-    <footer class="">
-        <div class="code-music-socials sm:hidden md:grid grid-cols-3 md:justify-between mt-16 space-y-8 md:space-y-0">
-                <div class="code justify-self-start self-center">
-                    <nuxt-link to="/record-label" class="flex justify-center items-center">
+    <footer class="" ref="footer">
+        <div class="grid-cols-3 mt-16 space-y-8 code-music-socials sm:hidden md:grid md:justify-between md:space-y-0">
+                <div class="self-center code justify-self-start">
+                    <nuxt-link to="/record-label" class="flex items-center justify-center">
                         <div class="label">
                             <nuxt-img
                                 src="/images/Code Label.png"
@@ -20,12 +20,12 @@
                     </nuxt-link>
                 </div>
 
-                <div class="music flex justify-center items-center">
+                <div class="flex items-center justify-center music">
                     <nuxt-link to="/music-player">
                         <button
                             class="music-button uppercase text-black font-sf font-medium text-[10px] xl:text-xs 2xl:text-sm py-1.5 px-4 xl:pl-7 w-56 xl:w-[16.5rem] 2xl:w-[18.5rem] xl:h-14 2xl:h-16 border rounded-full border-black flex justify-between items-center tracking-widest">
                             exclusive music player
-                            <svg class="w-9 xl:w-10 2xl:w-12 -mr-2" viewBox="0 0 44 45" fill="none"
+                            <svg class="-mr-2 w-9 xl:w-10 2xl:w-12" viewBox="0 0 44 45" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22" cy="22.965" r="22" fill="black" />
                                 <path
@@ -36,10 +36,10 @@
                     </nuxt-link>
                 </div>
 
-                <div class="socials justify-self-end space-y-3 grid place-items-center">
-                    <div class="socials-container flex md:grid grid-cols-3 justify-center space-x-3 md:space-x-0 md:gap-x-3 gap-y-2">
-                        <div class="twitter-social flex items-center">
-                            <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                <div class="grid space-y-3 socials justify-self-end place-items-center">
+                    <div class="flex justify-center grid-cols-3 space-x-3 socials-container md:grid md:space-x-0 md:gap-x-3 gap-y-2">
+                        <div class="flex items-center twitter-social">
+                            <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="fill-current"
                                     d="M42 26.765C41.2483 27.0911 40.4534 27.3067 39.64 27.405C40.4982 26.8923 41.1413 26.0858 41.45 25.135C40.6436 25.6151 39.7608 25.9533 38.84 26.135C38.2245 25.4676 37.405 25.0233 36.5098 24.8719C35.6147 24.7204 34.6945 24.8704 33.8938 25.2982C33.093 25.726 32.4569 26.4076 32.0852 27.2359C31.7135 28.0642 31.6273 28.9924 31.84 29.875C30.2094 29.7925 28.6144 29.368 27.1587 28.6289C25.7029 27.8898 24.4188 26.8527 23.39 25.585C23.0291 26.2152 22.8395 26.9288 22.84 27.655C22.8387 28.3294 23.0042 28.9936 23.3218 29.5886C23.6393 30.1835 24.099 30.6907 24.66 31.065C24.008 31.0473 23.3699 30.8723 22.8 30.855V30.605C22.8049 31.5499 23.136 32.4641 23.7373 33.193C24.3386 33.9219 25.1733 34.4207 26.1 34.605C25.7433 34.7136 25.3729 34.7708 25 34.775C24.7419 34.772 24.4844 34.7486 24.23 34.705C24.4939 35.5178 25.0046 36.2282 25.6911 36.7372C26.3775 37.2462 27.2056 37.5286 28.06 37.545C26.6172 38.6803 24.8359 39.2999 23 39.305C22.6657 39.3061 22.3317 39.2861 22 39.245C23.8744 40.4553 26.0588 41.0977 28.29 41.095C29.8297 41.111 31.3571 40.82 32.7831 40.2391C34.2091 39.6582 35.505 38.7989 36.5952 37.7115C37.6854 36.6241 38.548 35.3304 39.1326 33.9059C39.7172 32.4814 40.012 30.9548 40 29.415C40 29.245 40 29.065 40 28.885C40.7847 28.2998 41.4615 27.5824 42 26.765Z" />
@@ -47,8 +47,8 @@
                             </svg>
                         </div>
 
-                        <div class="insta-social flex items-center">
-                            <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                        <div class="flex items-center insta-social">
+                            <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="stroke-current"
                                     d="M29 42.965H35C40 42.965 42 40.965 42 35.965V29.965C42 24.965 40 22.965 35 22.965H29C24 22.965 22 24.965 22 29.965V35.965C22 40.965 24 42.965 29 42.965Z"
@@ -62,8 +62,8 @@
                             </svg>
                         </div>
 
-                        <div class="youtube-social flex items-center">
-                            <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                        <div class="flex items-center youtube-social">
+                            <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M37 40.965H27C24 40.965 22 38.965 22 35.965V29.965C22 26.965 24 24.965 27 24.965H37C40 24.965 42 26.965 42 29.965V35.965C42 38.965 40 40.965 37 40.965Z"
@@ -77,8 +77,8 @@
                             </svg>
                         </div>
 
-                        <div class="twitter-social flex items-center">
-                            <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                        <div class="flex items-center twitter-social">
+                            <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="fill-current"
                                     d="M42 26.765C41.2483 27.0911 40.4534 27.3067 39.64 27.405C40.4982 26.8923 41.1413 26.0858 41.45 25.135C40.6436 25.6151 39.7608 25.9533 38.84 26.135C38.2245 25.4676 37.405 25.0233 36.5098 24.8719C35.6147 24.7204 34.6945 24.8704 33.8938 25.2982C33.093 25.726 32.4569 26.4076 32.0852 27.2359C31.7135 28.0642 31.6273 28.9924 31.84 29.875C30.2094 29.7925 28.6144 29.368 27.1587 28.6289C25.7029 27.8898 24.4188 26.8527 23.39 25.585C23.0291 26.2152 22.8395 26.9288 22.84 27.655C22.8387 28.3294 23.0042 28.9936 23.3218 29.5886C23.6393 30.1835 24.099 30.6907 24.66 31.065C24.008 31.0473 23.3699 30.8723 22.8 30.855V30.605C22.8049 31.5499 23.136 32.4641 23.7373 33.193C24.3386 33.9219 25.1733 34.4207 26.1 34.605C25.7433 34.7136 25.3729 34.7708 25 34.775C24.7419 34.772 24.4844 34.7486 24.23 34.705C24.4939 35.5178 25.0046 36.2282 25.6911 36.7372C26.3775 37.2462 27.2056 37.5286 28.06 37.545C26.6172 38.6803 24.8359 39.2999 23 39.305C22.6657 39.3061 22.3317 39.2861 22 39.245C23.8744 40.4553 26.0588 41.0977 28.29 41.095C29.8297 41.111 31.3571 40.82 32.7831 40.2391C34.2091 39.6582 35.505 38.7989 36.5952 37.7115C37.6854 36.6241 38.548 35.3304 39.1326 33.9059C39.7172 32.4814 40.012 30.9548 40 29.415C40 29.245 40 29.065 40 28.885C40.7847 28.2998 41.4615 27.5824 42 26.765Z" />
@@ -86,8 +86,8 @@
                             </svg>
                         </div>
 
-                        <div class="insta-social flex items-center">
-                            <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                        <div class="flex items-center insta-social">
+                            <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="stroke-current"
                                     d="M29 42.965H35C40 42.965 42 40.965 42 35.965V29.965C42 24.965 40 22.965 35 22.965H29C24 22.965 22 24.965 22 29.965V35.965C22 40.965 24 42.965 29 42.965Z"
@@ -101,8 +101,8 @@
                             </svg>
                         </div>
 
-                        <div class="youtube-social flex items-center">
-                            <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                        <div class="flex items-center youtube-social">
+                            <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M37 40.965H27C24 40.965 22 38.965 22 35.965V29.965C22 26.965 24 24.965 27 24.965H37C40 24.965 42 26.965 42 29.965V35.965C42 38.965 40 40.965 37 40.965Z"
@@ -126,12 +126,12 @@
         </div>
 
         <!-- FOR SCREEN 640 ONLY!!!! -->
-        <div class="code-music-socials hidden sm:block md:hidden mt-16 space-y-10">
+        <div class="hidden mt-16 space-y-10 code-music-socials sm:block md:hidden">
             <div class="code-music-container sm:space-y-0 sm:flex sm:justify-between sm:items-center">
                     <div class="code">
-                        <nuxt-link to="/record-label" class="flex justify-start items-center">
+                        <nuxt-link to="/record-label" class="flex items-center justify-start">
                             <div class="label">
-                                <img class="label-image w-16" src="/images/Code Label.png"
+                                <img class="w-16 label-image" src="/images/Code Label.png"
                                     alt="Code Boy Sai's Logo">
                             </div>
 
@@ -143,11 +143,11 @@
                         </nuxt-link>
                     </div>
 
-                    <div class="music flex justify-end">
+                    <div class="flex justify-end music">
                         <button
                             class="uppercase text-black font-sf font-medium text-[10px] py-1.5 px-4 w-56 border rounded-full border-black flex justify-between items-center tracking-widest">
                             exclusive music player
-                            <svg class="w-9 -mr-2" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="-mr-2 w-9" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22" cy="22.965" r="22" fill="black" />
                                 <path
                                     d="M17 21.6317V24.2984C17 27.2755 17 28.7641 17.971 29.3467C18.942 29.9293 20.2555 29.2288 22.8824 27.8278L25.3824 26.4944C28.2941 24.9415 29.75 24.165 29.75 22.965C29.75 21.765 28.2941 20.9886 25.3824 19.4356L22.8824 18.1023C20.2555 16.7013 18.942 16.0008 17.971 16.5834C17 17.166 17 18.6545 17 21.6317Z"
@@ -157,10 +157,10 @@
                     </div>
             </div>
 
-            <div class="socials space-y-3">
-                <div class="socials-container hidden sm:flex justify-center space-x-3">
-                    <div class="twitter-social flex items-center">
-                        <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+            <div class="space-y-3 socials">
+                <div class="justify-center hidden space-x-3 socials-container sm:flex">
+                    <div class="flex items-center twitter-social">
+                        <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path class="fill-current"
                                 d="M42 26.765C41.2483 27.0911 40.4534 27.3067 39.64 27.405C40.4982 26.8923 41.1413 26.0858 41.45 25.135C40.6436 25.6151 39.7608 25.9533 38.84 26.135C38.2245 25.4676 37.405 25.0233 36.5098 24.8719C35.6147 24.7204 34.6945 24.8704 33.8938 25.2982C33.093 25.726 32.4569 26.4076 32.0852 27.2359C31.7135 28.0642 31.6273 28.9924 31.84 29.875C30.2094 29.7925 28.6144 29.368 27.1587 28.6289C25.7029 27.8898 24.4188 26.8527 23.39 25.585C23.0291 26.2152 22.8395 26.9288 22.84 27.655C22.8387 28.3294 23.0042 28.9936 23.3218 29.5886C23.6393 30.1835 24.099 30.6907 24.66 31.065C24.008 31.0473 23.3699 30.8723 22.8 30.855V30.605C22.8049 31.5499 23.136 32.4641 23.7373 33.193C24.3386 33.9219 25.1733 34.4207 26.1 34.605C25.7433 34.7136 25.3729 34.7708 25 34.775C24.7419 34.772 24.4844 34.7486 24.23 34.705C24.4939 35.5178 25.0046 36.2282 25.6911 36.7372C26.3775 37.2462 27.2056 37.5286 28.06 37.545C26.6172 38.6803 24.8359 39.2999 23 39.305C22.6657 39.3061 22.3317 39.2861 22 39.245C23.8744 40.4553 26.0588 41.0977 28.29 41.095C29.8297 41.111 31.3571 40.82 32.7831 40.2391C34.2091 39.6582 35.505 38.7989 36.5952 37.7115C37.6854 36.6241 38.548 35.3304 39.1326 33.9059C39.7172 32.4814 40.012 30.9548 40 29.415C40 29.245 40 29.065 40 28.885C40.7847 28.2998 41.4615 27.5824 42 26.765Z" />
@@ -168,8 +168,8 @@
                         </svg>
                     </div>
 
-                    <div class="insta-social flex items-center">
-                        <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                    <div class="flex items-center insta-social">
+                        <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path class="stroke-current"
                                 d="M29 42.965H35C40 42.965 42 40.965 42 35.965V29.965C42 24.965 40 22.965 35 22.965H29C24 22.965 22 24.965 22 29.965V35.965C22 40.965 24 42.965 29 42.965Z"
@@ -183,8 +183,8 @@
                         </svg>
                     </div>
 
-                    <div class="youtube-social flex items-center">
-                        <svg class="w-8 xl:w-12 stroke-current" viewBox="0 0 64 65" fill="none"
+                    <div class="flex items-center youtube-social">
+                        <svg class="w-8 stroke-current xl:w-12" viewBox="0 0 64 65" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M37 40.965H27C24 40.965 22 38.965 22 35.965V29.965C22 26.965 24 24.965 27 24.965H37C40 24.965 42 26.965 42 29.965V35.965C42 38.965 40 40.965 37 40.965Z"
@@ -198,15 +198,15 @@
                         </svg>
                     </div>
 
-                    <div class="dunno-social flex items-center">
+                    <div class="flex items-center dunno-social">
                         <img class="w-9" src="/images/Dunno-Icon.png" alt="Spotify Icon">
                     </div>
 
-                    <div class="spotify-social flex items-center">
+                    <div class="flex items-center spotify-social">
                         <img class="w-[34px] xl:w-[50px]" src="/images/Spotify-Icon.png" alt="Spotify Icon">
                     </div>
 
-                    <div class="itunes-social flex items-center">
+                    <div class="flex items-center itunes-social">
                         <img class="w-9" src="/images/iTunes-Icon.png" alt="Spotify Icon">
                     </div>
                 </div>
@@ -222,8 +222,19 @@
 </template>
 
 <script>
-export default {
+import { gsap } from "gsap"
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin( ScrollTrigger )
+const tl = gsap.timeline()
 
+
+export default {
+    props: {
+    },
+    
+    mounted() {
+        
+    }
 }
 </script>
 

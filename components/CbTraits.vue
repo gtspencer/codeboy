@@ -7,7 +7,7 @@
                 </h2>
             </div>
 
-            <div class="outfits-container overflow-x-scroll flex space-x-10 mt-10 md:mt-14">
+            <div class="outfits-container overflow-hidden flex space-x-10 mt-10 md:mt-14">
                 <div class="outfit-text min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] 2xl:min-w-[10%] md:min-w-2 ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
                     <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
                         Outfits
@@ -47,6 +47,12 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline();
+
+
 export default {
     data() {
         return {
@@ -87,6 +93,77 @@ export default {
                 }
             ]
         }
+    },
+    mounted() {
+        ScrollTrigger.matchMedia({
+    // "(min-width: 1560px)": function () {
+
+    "(min-width: 320px) and (max-width: 1023px)": function () {
+        gsap.to('.outfits-container', {
+            scrollTrigger: {
+                trigger: '.outfits-container',
+                start: 'center center',
+                end: '+=3000 center',
+                pin: true,
+                markers: false,
+                scrub: 1,
+            },
+            // duration: 10,
+            x: -2000
+        });
+    },
+
+    "(min-width: 1024px) and (max-width: 1279px)": function () {
+        gsap.to('.outfits-container', {
+            scrollTrigger: {
+                trigger: '.outfits-container',
+                // endTrigger: ''
+                start: 'center center',
+                end: '+=3000 center',
+                pin: true,
+                markers: false,
+                scrub: 1,
+                // horizontal: true
+            },
+            // duration: 10,
+            x: -2100
+        });
+    },
+
+    "(min-width: 1280px) and (max-width: 1535px)": function () {
+        gsap.to('.outfits-container', {
+            scrollTrigger: {
+                trigger: '.outfits-container',
+                // endTrigger: ''
+                start: 'center center',
+                end: '+=4000 center',
+                pin: true,
+                markers: false,
+                scrub: 1,
+                // horizontal: true
+            },
+            // duration: 10,
+            x: -2700
+        });
+    },
+
+    "(min-width: 1536px) and (max-width: 3000px)": function () {
+        gsap.to('.outfits-container', {
+            scrollTrigger: {
+                trigger: '.outfits-container',
+                // endTrigger: ''
+                start: 'center center',
+                end: '+=4500 center',
+                pin: true,
+                markers: false,
+                scrub: 1,
+                // horizontal: true
+            },
+            // duration: 10,
+            x: -4000
+        });
+    },
+})
     }
 }
 </script>
