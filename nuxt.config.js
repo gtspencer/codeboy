@@ -46,6 +46,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // Nuxt-Image
+    '@nuxt/image',
     // Google fonts
     '@nuxtjs/google-fonts',
     // https://go.nuxtjs.dev/tailwindcss
@@ -64,8 +66,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // Nuxt-Image
-    '@nuxt/image',
+    
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,14 +1,14 @@
 <template>
     <section class="cb-traits mt-20 sm:mt-24 md:mt-28">
-        <div class="">
+        <div class="cb-traits-container overflow-hidden">
             <div class="header-text text-center">
                 <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
                     CB Sai Look Traits
                 </h2>
             </div>
 
-            <div class="outfits-container overflow-hidden flex space-x-10 mt-10 md:mt-14">
-                <div class="outfit-text min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] 2xl:min-w-[10%] md:min-w-2 ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
+            <div class="outfits-container flex space-x-10 mt-10 md:mt-14">
+                <div class="outfit-text min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] 2xl:min-w-[15%] md:min-w-2 ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
                     <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
                         Outfits
                     </h2>
@@ -98,7 +98,7 @@ export default {
         ScrollTrigger.matchMedia({
     // "(min-width: 1560px)": function () {
 
-    "(min-width: 320px) and (max-width: 1023px)": function () {
+    "(min-width: 320px) and (max-width: 639px)": function () {
         gsap.to('.outfits-container', {
             scrollTrigger: {
                 trigger: '.outfits-container',
@@ -109,11 +109,26 @@ export default {
                 scrub: 1,
             },
             // duration: 10,
-            x: -2000
+            x: -1450
         });
     },
 
-    "(min-width: 1024px) and (max-width: 1279px)": function () {
+    "(min-width: 640px) and (max-width: 1023px)": function () {
+        gsap.to('.outfits-container', {
+            scrollTrigger: {
+                trigger: '.outfits-container',
+                start: 'center center',
+                end: '+=3000 center',
+                pin: true,
+                markers: false,
+                scrub: 1,
+            },
+            // duration: 10,
+            x: -1380
+        });
+    },
+
+    "(min-width: 1024px) and (max-width: 1250px)": function () {
         gsap.to('.outfits-container', {
             scrollTrigger: {
                 trigger: '.outfits-container',
@@ -126,11 +141,11 @@ export default {
                 // horizontal: true
             },
             // duration: 10,
-            x: -2100
+            x: -1300
         });
     },
 
-    "(min-width: 1280px) and (max-width: 1535px)": function () {
+    "(min-width: 1251px) and (max-width: 1535px)": function () {
         gsap.to('.outfits-container', {
             scrollTrigger: {
                 trigger: '.outfits-container',
@@ -143,11 +158,11 @@ export default {
                 // horizontal: true
             },
             // duration: 10,
-            x: -2700
+            x: -1700
         });
     },
 
-    "(min-width: 1536px) and (max-width: 3000px)": function () {
+    "(min-width: 1536px) and (max-width: 2000px)": function () {
         gsap.to('.outfits-container', {
             scrollTrigger: {
                 trigger: '.outfits-container',
@@ -160,7 +175,24 @@ export default {
                 // horizontal: true
             },
             // duration: 10,
-            x: -4000
+            x: -2400
+        });
+    },
+
+    "(min-width: 2001px) and (max-width: 2560px)": function () {
+        gsap.to('.outfits-container', {
+            scrollTrigger: {
+                trigger: '.outfits-container',
+                // endTrigger: ''
+                start: 'center center',
+                end: '+=4500 center',
+                pin: true,
+                markers: false,
+                scrub: 1,
+                // horizontal: true
+            },
+            // duration: 10,
+            x: -3000
         });
     },
 })

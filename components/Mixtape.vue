@@ -21,7 +21,11 @@
         </div>
 
         <div class="w-2/4 md:w-full">
-          <img src="/images/Mixtape small.png" alt="" />
+          <nuxt-img 
+          src="/images/Mixtape small.png" 
+          alt="" 
+          format="webp"
+          />
         </div>
       </div>
 

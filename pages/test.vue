@@ -16,6 +16,11 @@
       <button @click="increement">
         increase
       </button>
+
+      <div class="flex">
+      <video class="video border" src="https://res.cloudinary.com/eazzie/video/upload/q_100,c_crop,w_450,h_500/v1643129201/Codeboy/Listening-Pass_pn1oy4.webm" autoplay></video>
+      <video class="video border" src="/videos/listening-pass.mp4" autoplay></video>
+      </div>
   </div>
 </template>
 
@@ -28,6 +33,12 @@ export default {
   },
   methods: {
     ...mapMutations(["increement"])
+  },
+
+  mounted() {
+    const video = document.querySelector('.video')
+
+    video.play()
   }
 }
 </script>

@@ -19,7 +19,7 @@
       <Letter />
 
       <Faqs />
-    </div>
+    </div>  
   </div>
 </template>
 
@@ -33,7 +33,12 @@ export default {
   layout: "second",
 
   mounted() {
-    ScrollTrigger.refresh();
+    document.onreadystatechange = () => {
+      if(document.readyState == "complete") {
+        ScrollTrigger.refresh();
+        console.log('All assets are loaded');
+      }
+    }
   },
 };
 </script>
