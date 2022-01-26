@@ -25,6 +25,7 @@
             alt="The Listening Pass Asset"
             autoplay
             loop
+            muted
           />
         </div>
 

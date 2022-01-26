@@ -330,7 +330,7 @@ export default {
   mounted() {
     /* Animations for Plans Section */
     ScrollTrigger.matchMedia({
-    /* Animation off for small screens */
+      /* Animation off for small screens */
       "(max-width: 639px)": function () {
         gsap.to(".planTopLeft", {
           scrollTrigger: {
@@ -343,7 +343,7 @@ export default {
         });
       },
 
-    /* Animation on for big screens */
+      /* Animation on for big screens */
       "(min-width: 640px)": function () {
         gsap.to(".planTopLeft", {
           scrollTrigger: {
@@ -352,15 +352,15 @@ export default {
             start: "top 30%",
             end: "top 30%",
             pin: true,
-            markers: true
+            markers: false,
           },
         });
       },
     });
-      
+
     /* Animations for Agenda Section */
     ScrollTrigger.matchMedia({
-    /* Animation off for small screens */
+      /* Animation off for small screens */
       "(max-width: 639px)": function () {
         gsap.to(".agendaTopLeft", {
           scrollTrigger: {
@@ -373,8 +373,7 @@ export default {
         });
       },
 
-      
-    /* Animation on for big screens */
+      /* Animation on for big screens */
       "(min-width: 640px)": function () {
         gsap.to(".agendaTopLeft", {
           scrollTrigger: {
@@ -383,7 +382,7 @@ export default {
             start: "top 30%",
             end: "top 30%",
             pin: true,
-            markers: true
+            markers: false,
           },
         });
       },

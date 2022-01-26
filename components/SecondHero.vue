@@ -1,62 +1,53 @@
 <template>
   <section class="hero">
-    <div
-      class="grid-cols-2 py-10 hero-container sm:grid lg:grid-cols-3 xl:px-10 2xl:px-20 lg:py-16 xl:py-20"
-    >
-      <div class="self-center hero-header md:pr-14 lg:pr-5 overflow-hidden">
-        <h1 data-aos="fade-up" data-aos-duration="1000" class="font-cormorant text-5xl md:text-6xl xl:text-7xl 2xl:text-[80px] font-light pr-10 sm:pr-0"
-        >
-          CODEBOY Sai Meetings & Makeups Looks
-        </h1>
+    <div class="py-10 hero-container xl:px-10 2xl:px-20 lg:py-16 xl:py-20">
+      <div class="top-container flex justify-center">
+        <img
+          src="https://res.cloudinary.com/eazzie/image/upload/q_100/v1643151263/Codeboy/Group_13_2_1_oqzp4i.webp"
+        />
       </div>
 
-      <div class="video-parent flex justify-center items-center overflow-hidden">
-        <div data-aos="zoom-out" data-aos-duration="1000" class="flex w-[335px] xl:w-[385px] h-[335px] xl:h-[385px] justify-center mt-10 hero-image lg:mt-0"
-        >
-          <video
-            class=""
-            src="https://res.cloudinary.com/eazzie/video/upload/q_10/v1642703512/Codeboy/CODEBOY_SAI_Meetings_Makeups_Looks_f0uo8l.mp4"
-            alt="Meetings and Makups Hero Video"
-            loop
+      <div class="bottom mt-16 mint-collectibles sm:grid md:place-items-center grid-cols-2 sm:gap-x-5 md:gap-x-0 sm:mt-20 lg:mt-20 xl:ml-10 space-y-10 sm:space-y-0">
+        <div class="asset">
+          <video 
+            class="xl:w-[90%]"
+            src="https://res.cloudinary.com/eazzie/video/upload/q_80/v1643157092/Codeboy/VID-20220125-WA0086_q1ujzx.webm"
             autoplay
-            ref="video"
+            loop
+            muted
           />
         </div>
-      </div>
-
-      <div
-        class="self-center col-span-2 mt-16 mint-collectibles sm:mt-20 lg:mt-0 lg:col-auto xl:ml-10"
-      >
-        <div class="mint-collectibles-container overflow-hidden">
+        
+        <div class="mint-collectibles-container overflow-hidden xl:-ml-28">
           <ul
-            class="font-inter text-sm xl:text-base leading-loose text-[#6B6761] text-center lg:text-left space-y-1 pb-5"
+            class="font-inter text-sm sm:text-xs md:text-sm lg:text-base leading-loose text-[#6B6761] text-center sm:text-left space-y-1 pb-5 lg:pb-7"
           >
-            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="" class="leading-loose">
+            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="" class="leading-loose xl:leading-[2.5]">
               Total Collectibles: <span class="text-black">7302</span>
             </li>
-            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="100" class="leading-loose">
+            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="100" class="leading-loose xl:leading-[2.5]">
               Chain: <span class="text-black">Ethereum (ERC-721)</span>
             </li>
-            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="200" class="leading-loose">
+            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="200" class="leading-loose xl:leading-[2.5]">
               Presale Date: <span class="text-black">25 Nov, 11am UTC</span>
             </li>
-            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="300" class="leading-loose">
+            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="300" class="leading-loose xl:leading-[2.5]">
               Presale Mint Price: <span class="text-black">0.0302 ETH</span>
             </li>
-            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="400" class="pt-5 leading-loose">
+            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="400" class="pt-5 leading-loose xl:leading-[2.5]">
               Public Sale Date: <span class="text-black">Nov 26, 11am UTC</span>
             </li>
-            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="500" class="leading-loose">
-              Mint Price: <span class="text-black">0.05 ETH</span>
+            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="500" class="leading-loose xl:leading-[2.5]">
+              Mint Price: <span class="text-black">0.08 ETH</span>
             </li>
-            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="600" class="leading-loose">
+            <li data-aos="fade-right" data-aos-duration="300" data-aos-delay="600" class="leading-loose xl:leading-[2.5]">
               Max mint per wallet: <span class="text-black">3</span>
             </li>
           </ul>
 
-          <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="700" data-aos-offset="0" class="flex justify-center mt-5 button lg:block">
+          <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="700" data-aos-offset="0" class="flex justify-center sm:justify-start mt-5 button lg:block">
             <button
-              class="uppercase relative font-sf text-white text-xs px-28 xl:px-32 py-1.5 xl:py-2 bg-black before:absolute before:left-0 before:-top-5 before:h-px before:w-full before:bg-[#E5E5E5]"
+              class="uppercase relative font-sf text-white text-xs px-28 lg:px-32 py-1.5 lg:py-2 bg-black before:absolute before:left-0 before:-top-5 before:h-px before:w-full before:bg-[#E5E5E5]"
             >
               mint
             </button>

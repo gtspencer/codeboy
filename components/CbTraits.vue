@@ -1,5 +1,5 @@
 <template>
-    <section class="cb-traits mt-20 sm:mt-24 md:mt-28">
+    <section class="cb-traits mt-28">
         <div class="cb-traits-container overflow-hidden">
             <div class="header-text text-center">
                 <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
@@ -7,30 +7,31 @@
                 </h2>
             </div>
 
-            <div class="outfits-container flex space-x-10 mt-10 md:mt-14">
-                <div class="outfit-text min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] 2xl:min-w-[15%] md:min-w-2 ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
+            <div class="outfits-container flex space-x-10 sm:space-x-16 md:space-x-20 xl:space-x-40 mt-10 md:mt-14">
+                <div class="outfit-text md:min-w-[150px] lg:min-w-[170px] xl:max-w-[200px] ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
                     <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
                         Outfits
                     </h2>
 
-                    <p class="uppercase font-inter text-[10px] xl:text-xs 2xl:text-sm mt-3 sm:pr-20 lg:pr-32">
+                    <p class="uppercase font-inter text-[10px] xl:text-xs 2xl:text-sm mt-3">
                         5 Outfits influenced by different songs off the Meetings & Makeups Mixtape
                     </p>
                 </div>
 
                 <div class="grid-divs flex flex-nowrap space-x-10 items-baseline">
-                    <div v-for="outfit in outfits" :key="outfit.id" class="grid-container min-w-[50%] max-w-[50%]">
+                    <div v-for="outfit in outfits" :key="outfit.id" class="grid-container min-w-[50%] xl:w-[150px] 2xl:w-[220px]">
                         <div class="video">
                             <video
-                            class="2xl:max-w-[80%]" 
-                            :src="outfit.vid" 
+                            class="" 
+                            :src="outfit.vid"
                             :alt="outfit.alt"
                             autoplay
                             loop
+                            muted
                             />
                         </div>
 
-                        <div class="texts font-inter mt-3">
+                        <div class="texts font-inter mt-3 pr-5 xl:pr-10 2xl:pr-20">
                             <h6 class="header-text font-bold text-sm md:text-base xl:text-lg">
                                 Outfit: {{ outfit.name }}
                             </h6>
@@ -58,38 +59,38 @@ export default {
         return {
             outfits: [
                 {
-                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
-                    alt: 'An image of the Salesianum Outfit',
+                    vid: 'https://res.cloudinary.com/eazzie/video/upload/v1642772918/Codeboy/HOMEPAGE_-_CHARACTER_Title_-_Sallies_aolwfd.webm',
+                    alt: 'An Asset of the Salesianum Outfit',
                     name: 'Salesianum',
-                    description: 'Short text describing a feature of your product/service.'
+                    description: 'The outfit Salesianum features a letterman jacket, Hoodie, black trousers and sneakers. Inspired by the song ‘Kelly’s Logan House (Trolley)’'
                 },
                 
                 {
-                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
-                    alt: 'An image of the Butch Lewis Outfit',
-                    name: 'Butch Lewis',
-                    description: 'Short text describing a feature of your product/service.'
+                    vid: 'https://res.cloudinary.com/eazzie/video/upload/v1642772919/Codeboy/HOMEPAGE_-_CHARACTER_Title_-Butch_Lewis_axw8s9.webm',
+                    alt: 'An Asset of the Uncle Butch Outfit',
+                    name: 'Uncle Butch',
+                    description: 'This outfit pays respect to Butch Lewis, a popular boxing promoter and busniness man. It features a white suit with no button up. Inspired by the song ‘Kid Chocolate’'
                 },
 
                 {
                     vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
-                    alt: 'An image of the Carlton Outfit',
+                    alt: 'An Asset of the Carlton Outfit',
                     name: 'Carlton',
-                    description: 'Short text describing a feature of your product/service.'
+                    description: 'The outfit Carlton features plaid shorts, button up shirt with a sweater vest and boat shoes. Inspired by the song ‘Feelings Can’t Fade Away’'
                 },
 
                 {
-                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
-                    alt: 'An image of the Carlton Outfit',
-                    name: 'Carlton',
-                    description: 'Short text describing a feature of your product/service.'
+                    vid: 'https://res.cloudinary.com/eazzie/video/upload/v1642772684/Codeboy/CHARACTER_Title_-Kid_Chocolate_plpae9.webm',
+                    alt: 'An Asset of the William “Kid Chocolate” Guthrie Outfit',
+                    name: 'William “Kid Chocolate” Guthrie',
+                    description: 'This outfit pays respect to William Guthrie, former IBF Light Heavyweight Champion. It features a half robe, trunks and boxing shoes. Inspired by the song ‘Kid Chocolate’'
                 },
 
                 {
-                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
-                    alt: 'An image of the Carlton Outfit',
-                    name: 'Carlton',
-                    description: 'Short text describing a feature of your product/service.'
+                    vid: 'https://res.cloudinary.com/eazzie/video/upload/v1642772678/Codeboy/CHARACTER_Title_-Zoom_Call_av6cnb.webm',
+                    alt: 'An Asset of the Zoom Call Outfit',
+                    name: 'Zoom Call',
+                    description: 'The outfit Zoom Call features a blazer, dress shirt, boxers, socks with slides. Inspired by the song ‘Meetings & Makeups’ '
                 }
             ]
         }
@@ -109,7 +110,7 @@ export default {
                 scrub: 1,
             },
             // duration: 10,
-            x: -1450
+            x: -1400
         });
     },
 
@@ -124,7 +125,7 @@ export default {
                 scrub: 1,
             },
             // duration: 10,
-            x: -1380
+            x: -1200
         });
     },
 
@@ -141,7 +142,7 @@ export default {
                 // horizontal: true
             },
             // duration: 10,
-            x: -1300
+            x: -1450
         });
     },
 
@@ -158,11 +159,11 @@ export default {
                 // horizontal: true
             },
             // duration: 10,
-            x: -1700
+            x: -1750
         });
     },
 
-    "(min-width: 1536px) and (max-width: 2000px)": function () {
+    "(min-width: 1536px)": function () {
         gsap.to('.outfits-container', {
             scrollTrigger: {
                 trigger: '.outfits-container',
@@ -175,26 +176,26 @@ export default {
                 // horizontal: true
             },
             // duration: 10,
-            x: -2400
+            x: -1800
         });
     },
 
-    "(min-width: 2001px) and (max-width: 2560px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                // endTrigger: ''
-                start: 'center center',
-                end: '+=4500 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-                // horizontal: true
-            },
-            // duration: 10,
-            x: -3000
-        });
-    },
+    // "(min-width: 2001px) and (max-width: 2560px)": function () {
+    //     gsap.to('.outfits-container', {
+    //         scrollTrigger: {
+    //             trigger: '.outfits-container',
+    //             // endTrigger: ''
+    //             start: 'center center',
+    //             end: '+=4500 center',
+    //             pin: true,
+    //             markers: false,
+    //             scrub: 1,
+    //             // horizontal: true
+    //         },
+    //         // duration: 10,
+    //         x: -3300
+    //     });
+    // },
 })
     }
 }
