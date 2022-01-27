@@ -16,11 +16,11 @@
         </p>
 
         <div class="meetings-drop relative flex justify-center items-center my-40">
-          <h2 class="font-cormorant text-white text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px] text-center z-50">
-            Meetings and makeups NFT
+          <h2 class="m-m font-cormorant text-white text-4xl sm:text-[40px] lg:text-5xl xl:text-[56px] text-center z-50">
+             
           </h2>
 
-          <img class="absolute" src="/images/Meetings-and-Makeups.png" alt="">
+          <img class="absolute-image absolute opacity-0" src="/images/Meetings-and-Makeups.png" alt="">
         </div>
       </section>
   </div>
@@ -51,6 +51,26 @@ export default {
           console.log('All assets are loaded');
         }
       }
+
+      gsap.to('.m-m', {
+        scrollTrigger: {
+          trigger: '.m-m',
+          start: 'center 80%',
+          markers: true
+        },
+        duration: 2,
+        text: 'Meetings and makeups NFT'
+      })
+
+      gsap.to('.absolute-image', {
+        scrollTrigger: {
+          trigger: '.m-m',
+          start: 'center 80%',
+        },
+        duration: 2,
+        opacity: 1,
+        delay: 2
+      })
     }
 }
 </script>

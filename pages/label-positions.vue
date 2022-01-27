@@ -192,7 +192,7 @@
               Positions will go on auction after CB Sai Looks are 100% Minted.
             </p>
 
-            <p class="details font-inter font-light text-white text-[10px] lg:text-xs xl:text-sm 2xl:text-base pr-10 xl:pr-24 2xl:pr-28 leading-[32px]">
+            <p class="details font-inter font-light text-white text-[10px] lg:text-xs xl:text-sm 2xl:text-base pr-10 xl:pr-24 2xl:pr-28 leading-loose">
               The Executive role will make executive decisions and oversee the publishing, manufacturing, marketing, promotion,
                production, distribution, and touring decisions for CODEBoy Sai and CODE LIFE Rec(Dis)cord Label. 
             </p>
@@ -303,7 +303,7 @@ export default {
 
 <style>
 body {
-    background-color: third;
+  
 }
 
 .show {

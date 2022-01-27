@@ -43,7 +43,7 @@
                                 </svg>
                             </button>
 
-                            <button class="previous" ref="previous">
+                            <button class="previous" ref="previous" @click="prevSong">
                                 <svg  class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M40 22.5971V25.4028C40 30.1012 40 32.4503 38.4781 33.312C36.9562 34.1737 34.9418 32.9651 30.913 30.5478L28.5749 29.1449C24.7456 26.8473 22.831 25.6985 22.831 24C22.831 22.3014 24.7456 21.1526 28.5749 18.855L30.913 17.4522C34.9418 15.0349 36.9562 13.8263 38.4781 14.6879C40 15.5496 40 17.8988 40 22.5971Z" fill="#212129"/>
                                     <path d="M24 22.5971V25.4028C24 30.1012 24 32.4503 22.4781 33.312C20.9562 34.1737 18.9418 32.9651 14.913 30.5478L12.5749 29.1449C8.74561 26.8473 6.83095 25.6985 6.83095 24C6.83095 22.3014 8.74561 21.1526 12.5749 18.855L14.913 17.4522C18.9418 15.0349 20.9562 13.8263 22.4781 14.6879C24 15.5496 24 17.8988 24 22.5971Z" fill="#212129"/>
@@ -57,7 +57,7 @@
                                 </svg>
                             </button>
 
-                            <button class="play" ref="play" @click="play(1)">
+                            <button class="play" ref="play" @click="play(songIndex)">
                                 <svg class="w-16" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_196_940)">
                                     <circle cx="61" cy="51" r="46" fill="#6837FA"/>
@@ -86,7 +86,7 @@
                                 </svg>
                             </button>
 
-                            <button class="next" ref="next">
+                            <button class="next" ref="next" @click="nextSong">
                                 <svg class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 22.5971V25.4028C8 30.1012 8 32.4503 9.5219 33.312C11.0438 34.1737 13.0582 32.9651 17.087 30.5478L19.4251 29.1449C23.2544 26.8473 25.169 25.6985 25.169 24C25.169 22.3014 23.2544 21.1526 19.4251 18.855L17.087 17.4522C13.0582 15.0349 11.0438 13.8263 9.5219 14.6879C8 15.5496 8 17.8988 8 22.5971Z" fill="#212129"/>
                                     <path d="M24 22.5971V25.4028C24 30.1012 24 32.4503 25.5219 33.312C27.0438 34.1737 29.0582 32.9651 33.087 30.5478L35.4251 29.1449C39.2544 26.8473 41.169 25.6985 41.169 24C41.169 22.3014 39.2544 21.1526 35.4251 18.855L33.087 17.4522C29.0582 15.0349 27.0438 13.8263 25.5219 14.6879C24 15.5496 24 17.8988 24 22.5971Z" fill="#212129"/>
@@ -111,7 +111,7 @@
                             Tracklist
                         </p>
 
-                        <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" @click="pick" ref="currentTile">
+                        <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile">
                             <div class="left-container flex justify-between items-center w-[57%] md:w-[49%]">
                                 <div class=".left-container flex items-center space-x-2">
                                     <div class="cover w-14 h-14 bg-[#E5E5E5] rounded-lg">
@@ -131,8 +131,6 @@
                                         </svg>
                                     </button>
                                 </div>
-
-                                
                             </div>
 
                             <div class="right-container flex justify-between items-center w-[40%] md:w-[49%]">
@@ -216,6 +214,8 @@
 </template>
 
 <script>
+import { mapState, mapMutations, mapActions } from 'vuex'
+
 
 export default {
     layout: 'music',
@@ -262,12 +262,20 @@ export default {
         }
     },
 
+    computed: {
+        ...mapState(["songIndex"])
+    },
+
     methods: {
+        ...mapMutations(["next", "prev", "changeSongIndex"]),
+
         play(id) {
-            const audio = document.querySelector('.audio')
+            let audio = document.querySelector('.audio')
             const currentTile = document.querySelectorAll('.currentTile')
 
-            
+            this.changeSongIndex(id)
+
+            console.log(this.songIndex);
             
             this.tracks.map((item) => {
                 if(item.id === id) {
@@ -284,12 +292,22 @@ export default {
                 }
             })
             audio.play()
+            console.log(id)
         },
 
-        next() {
-            
+        nextSong() {
+            this.next()
+
+            this.play(this.songIndex)
         },
-    }
+
+        prevSong() {
+            this.prev()
+
+            this.play(this.songIndex)
+        },
+        
+    },
 }
 </script>
 

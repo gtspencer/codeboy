@@ -26,7 +26,7 @@
 
               <div class="right-nav-container justify-self-end">
                 <nuxt-link to="/#" class="">
-                    <button class="uppercase bg-[#C3C2C1] text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5">
+                    <button class="uppercase bg-[#C3C2C1] text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 transform hover:invert-[1]">
                         discord hq
                     </button>
                 </nuxt-link>
@@ -45,5 +45,13 @@ export default {
 <style>
 body {
     scroll-behavior: smooth;
+}
+
+button {
+    transition: 800ms ease-in-out;
+}
+
+button:hover {
+    transition: 800ms ease-in-out;
 }
 </style>

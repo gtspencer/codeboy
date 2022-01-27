@@ -30,7 +30,7 @@ import { mapState, mapMutations, mapActions } from 'vuex'
 
 export default {
   computed: {
-    ...mapState(["counter"])
+    ...mapState(["counter"])    
   },
   methods: {
     ...mapMutations(["increement"])
