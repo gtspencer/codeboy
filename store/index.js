@@ -8,7 +8,7 @@ export const mutations = {
   next(state) {
     state.songIndex++
 
-    if(state.songIndex > 4) {
+    if(state.songIndex > 14) {
       state.songIndex = 0
     }
   },
@@ -18,10 +18,10 @@ export const mutations = {
   },
 
   prev(state) {
+    state.songIndex--
+
     if(state.songIndex < 0) {
-      state.songIndex = 0
-    } else {
-      state.songIndex--
+      state.songIndex = 14
     }
   },
 

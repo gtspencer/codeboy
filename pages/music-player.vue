@@ -31,7 +31,7 @@
                         <div class="display w-full h-40 lg:h-48 xl:h-52 bg-[#C4C4C4] rounded-xl xl:rounded-2xl"></div>
 
                         <div class="relative mt-2 input">
-                            <input class="w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="0">
+                            <input class="progress w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="0">
                         </div>
 
                         <div class="flex items-center justify-between mt-5 controls">
@@ -77,7 +77,7 @@
                                 </svg>
                             </button>
 
-                            <audio class="audio" src="https://res.cloudinary.com/eazzie/video/upload/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3" ref="audio"></audio>
+                            <audio class="audio" src="https://res.cloudinary.com/eazzie/video/upload/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3" ref="audio" @timeupdate="updateProgress"></audio>
 
                             <button class="forward">
                                 <svg class="w-7" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@
                                     </div>
 
                                     <p class="title font-inter font-medium text-[10px] lg:text-xs xl:text-sm 2xl:text-base">
-                                        Days <br class="md:hidden"> Amazing
+                                        {{ track.name }}
                                     </p>
                                 </div>
 
@@ -163,21 +163,21 @@
                 </div>
 
                 <div class="flex items-center justify-between space-x-4 mid-container">
-                    <button class="previous" ref="previous">
+                    <button class="previous" ref="previous" @click="prevSong">
                         <svg  class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M40 22.5971V25.4028C40 30.1012 40 32.4503 38.4781 33.312C36.9562 34.1737 34.9418 32.9651 30.913 30.5478L28.5749 29.1449C24.7456 26.8473 22.831 25.6985 22.831 24C22.831 22.3014 24.7456 21.1526 28.5749 18.855L30.913 17.4522C34.9418 15.0349 36.9562 13.8263 38.4781 14.6879C40 15.5496 40 17.8988 40 22.5971Z" fill="#212129"/>
                             <path d="M24 22.5971V25.4028C24 30.1012 24 32.4503 22.4781 33.312C20.9562 34.1737 18.9418 32.9651 14.913 30.5478L12.5749 29.1449C8.74561 26.8473 6.83095 25.6985 6.83095 24C6.83095 22.3014 8.74561 21.1526 12.5749 18.855L14.913 17.4522C18.9418 15.0349 20.9562 13.8263 22.4781 14.6879C24 15.5496 24 17.8988 24 22.5971Z" fill="#212129"/>
                         </svg>
                     </button>
 
-                    <button class="play" ref="play" @click="play">
+                    <button class="play" ref="play" @click="play(songIndex)">
                         <svg class="w-10" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="46" cy="46" r="46" fill="#6837FA"/>
                             <path d="M32.667 42.4445V49.5556C32.667 57.4946 32.667 61.4642 35.2563 63.0178C37.8457 64.5714 41.3482 62.7034 48.3533 58.9674L55.0199 55.4118C62.7846 51.2706 66.667 49.2 66.667 46C66.667 42.8 62.7846 40.7294 55.0199 36.5883L48.3533 33.0327C41.3482 29.2967 37.8457 27.4287 35.2563 28.9823C32.667 30.5359 32.667 34.5054 32.667 42.4445Z" fill="white"/>
                         </svg>
                     </button>
 
-                    <button class="next" ref="next">
+                    <button class="next" ref="next" @click="nextSong">
                         <svg class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 22.5971V25.4028C8 30.1012 8 32.4503 9.5219 33.312C11.0438 34.1737 13.0582 32.9651 17.087 30.5478L19.4251 29.1449C23.2544 26.8473 25.169 25.6985 25.169 24C25.169 22.3014 23.2544 21.1526 19.4251 18.855L17.087 17.4522C13.0582 15.0349 11.0438 13.8263 9.5219 14.6879C8 15.5496 8 17.8988 8 22.5971Z" fill="#212129"/>
                             <path d="M24 22.5971V25.4028C24 30.1012 24 32.4503 25.5219 33.312C27.0438 34.1737 29.0582 32.9651 33.087 30.5478L35.4251 29.1449C39.2544 26.8473 41.169 25.6985 41.169 24C41.169 22.3014 39.2544 21.1526 35.4251 18.855L33.087 17.4522C29.0582 15.0349 27.0438 13.8263 25.5219 14.6879C24 15.5496 24 17.8988 24 22.5971Z" fill="#212129"/>
@@ -186,7 +186,7 @@
                 </div>
 
                 <div class="relative items-center hidden w-full space-x-5 right-container md:flex lg:space-x-10">
-                    <input class="w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="50">
+                    <input class="progress w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="50">
 
                     <button class="speaker md:hidden lg:block" ref="speaker">
                         <svg class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,36 +224,123 @@ export default {
         return {
             tracks: [
                 {
+                    name: 'Bangee (Single)',
                     cover: '/images/iPod.png',
-                    duration: '10:20',
+                    duration: '3:44',
                     id: 0,
-                    src: '/music/Banjee (SINGLE).mp3'
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773073/Codeboy/Banjee_SINGLE_a8uvtn.mp3'
                 },
 
                 {
+                    name: 'Capable (Single)',
                     cover: '/images/iPod.png',
-                    duration: '10:20',
+                    duration: '2:36',
                     id: 1,
-                    src: '/music/Capable (SINGLE).wav'
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773117/Codeboy/Capable_SINGLE_s8sumh.wav'
                 },
 
                 {
+                    name: 'MPR (Single)',
                     cover: '/images/iPod.png',
-                    duration: '10:20',
+                    duration: '3:13',
                     id: 2,
-                    src: '/music/Nothing 2 Prove (SINGLE).mp3'
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773069/Codeboy/MPR_SINGLE_ge5ssh.mp3'
                 },
 
                 {
+                    name: 'Never Change Up',
                     cover: '/images/iPod.png',
-                    duration: '10:20',
-                    id: 3
+                    duration: '3:30',
+                    id: 3,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773083/Codeboy/Never_Change_Up_SINGLE_up5mrz.mp3'
                 },
 
                 {
+                    name: 'Nothing 2 Prove',
                     cover: '/images/tracklist.png',
-                    duration: '10:20',
-                    id: 4
+                    duration: '3:14',
+                    id: 4,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3'
+                },
+
+                {
+                    name: 'Tony Parker (Single)',
+                    cover: '/images/iPod.png',
+                    duration: '2:39',
+                    id: 5,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/v1642772986/Codeboy/Tony_Parker_SINGLE_feuend.mp3'
+                },
+                
+                {
+                    name: 'Rough Patches',
+                    cover: '/images/iPod.png',
+                    duration: '3:04',
+                    id: 6,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773087/Codeboy/Rough_Patches_SINGLE_vyvyl7.mp3'
+                },
+
+                {
+                    name: 'All Up (Mix 2)',
+                    cover: '/images/iPod.png',
+                    duration: '3:03',
+                    id: 7,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643321054/Codeboy/All_Up_Mix_2_mluspe.mp3'
+                },
+
+                {
+                    name: 'Diddy Skit',
+                    cover: '/images/iPod.png',
+                    duration: '3:20',
+                    id: 8,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643320986/Codeboy/Diddy_Skit_ygzo3g.mp3'
+                },
+
+                {
+                    name: 'Dimes',
+                    cover: '/images/tracklist.png',
+                    duration: '2:35',
+                    id: 9,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643321031/Codeboy/Dimes_uolkhw.mp3'
+                },
+
+                 {
+                    name: 'Feel This',
+                    cover: '/images/iPod.png',
+                    duration: '3:17',
+                    id: 10,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643321067/Codeboy/Feel_This_qhfdee.mp3'
+                },
+                
+                {
+                    name: 'Moment',
+                    cover: '/images/iPod.png',
+                    duration: '3:15',
+                    id: 11,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643321084/Codeboy/Moment_wqtr77.mp3'
+                },
+
+                {
+                    name: 'Soarin Mix 1',
+                    cover: '/images/iPod.png',
+                    duration: '2:31',
+                    id: 12,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/v1643321029/Codeboy/Soarin_Mix_1_rbpgkg.mp3'
+                },
+
+                {
+                    name: 'Throwing Shade (Quick Mix)',
+                    cover: '/images/iPod.png',
+                    duration: '3:12',
+                    id: 13,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643320985/Codeboy/Throwin_Shade_Quick_Mix_ih6wgs.mp3'
+                },
+
+                {
+                    name: 'Toast Up Mix 1',
+                    cover: '/images/tracklist.png',
+                    duration: '3:06',
+                    id: 14,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643321058/Codeboy/Toast_Up_Mix_1_dtbjc1.mp3'
                 },
             ],
             currentCover: '',
@@ -307,6 +394,12 @@ export default {
             this.play(this.songIndex)
         },
         
+        updateProgress(e) {
+            // const { currenTime, duration } = e.srcElement
+            // let progress = document.querySelectorAll('.progress')
+            console.log(e.srcElement.currentTime)
+            // progress.
+        }
     },
 }
 </script>
