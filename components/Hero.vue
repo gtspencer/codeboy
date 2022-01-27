@@ -56,10 +56,21 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import aosMixin from '~/mixins/aos'
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default {
     mixins: [aosMixin],
+
+    methods: {
+        refresh() {
+            ScrollTrigger.refresh();
+            console.log('scroll trigger refreshed');
+        }
+    },
 
     mounted() {
     document.onreadystatechange = () => {

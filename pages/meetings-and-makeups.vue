@@ -27,12 +27,24 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-const tl = gsap.timeline();
+// const tl = gsap.timeline();
+    // setInterval(refresh(), 3000);
+
 
 export default {
   layout: "second",
 
+  methods: {
+    refresh() {
+      // var tl = gsap.timeline({repeat: -1})
+      setInterval(ScrollTrigger.refresh(), 3000)
+      console.log('refreshed');
+    }
+  },
+
   mounted() {
+    gsap.delayedCall(3, this.refresh())
+    
     document.onreadystatechange = () => {
       if(document.readyState == "complete") {
         ScrollTrigger.refresh();
