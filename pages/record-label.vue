@@ -45,18 +45,19 @@ export default {
       }
     },
     mounted() {
-      document.onreadystatechange = () => {
-        if(document.readyState == "complete") {
-          setInterval(this.increase(), 1000)
-          console.log('All assets are loaded');
-        }
-      }
+      // document.onreadystatechange = () => {
+      //   if(document.readyState == "complete") {
+      //     setInterval(this.increase(), 1000)
+      //     console.log('All assets in the record label are loaded');
+      //   }
+      // }
+      this.increase()
 
       gsap.to('.m-m', {
         scrollTrigger: {
           trigger: '.m-m',
           start: 'center 80%',
-          markers: true
+          // markers: true
         },
         duration: 2,
         text: 'Meetings and makeups NFT'

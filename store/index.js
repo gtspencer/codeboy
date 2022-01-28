@@ -1,7 +1,8 @@
 export const state = () => ({
     id: 0,
     counter: 20,
-    songIndex: 0
+    songIndex: 0,
+    cover: ''
 })
 
 export const mutations = {

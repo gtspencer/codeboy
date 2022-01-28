@@ -2,7 +2,7 @@
     <footer class="" ref="footer">
         <div class="grid-cols-3 mt-16 space-y-8 code-music-socials sm:hidden md:grid md:justify-between md:space-y-0">
             <div class="self-center code justify-self-start">
-                <nuxt-link to="/record-label" class="flex items-center justify-center">
+                <a href="/record-label" class="flex items-center justify-center">
                     <div class="label">
                         <nuxt-img
                             src="/images/Record-Label-Logo.png"
@@ -18,7 +18,7 @@
                             codelife record dao <br> label
                         </h2>
                     </div>
-                </nuxt-link>
+                </a>
             </div>
 
             <div class="flex items-center justify-center music">

@@ -47,7 +47,7 @@
                     </nuxt-link>
                 </div>
                 
-                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" class="image xl:w-1/2">
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" class="first-drop-image xl:w-1/2">
                     <nuxt-img src="/images/First-Drop-Image.png" alt="The Meetings and Mackups Image" format="webp"/>
                 </div>
             </div>

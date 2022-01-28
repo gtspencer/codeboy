@@ -6,20 +6,22 @@
         <section class="mt-10 mb-20 player">
             <div class="items-start justify-between space-y-10 player-container md:flex md:space-y-0 md:space-x-10">
                 <div class="top-left">
-                    <h2 class="text-2xl text-center capitalize md:text-left font-cormorant sm:text-3xl md:text-2xl lg:text-4xl">
-                        listening <br class="hidden lg:block"> player
-                    </h2>
+                    <div class="top-left-container">
+                        <h2 class="text-2xl text-center capitalize md:text-left font-cormorant sm:text-3xl md:text-2xl lg:text-4xl">
+                            listening <br class="hidden lg:block"> player
+                        </h2>
 
-                    <p class="font-inter text-[10px] uppercase text-center md:text-left xl:text-xs 2xl:text-sm md:px-0 px-10 py-2">
-                        A short paragraph describing your team. <br class="hidden md:block"> You may want to describe what they are <br class="hidden md:block"> responsible for
-                    </p>
+                        <p class="font-inter text-[10px] uppercase text-center md:text-left xl:text-xs 2xl:text-sm md:px-0 px-10 py-2">
+                            A short paragraph describing your team. <br class="hidden md:block"> You may want to describe what they are <br class="hidden md:block"> responsible for
+                        </p>
 
-                    <ul class="tray w-full font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm flex md:flex-col justify-around items-center md:items-start mt-4 sm:mt-6 md:space-y-1">
-                        <li><button class="uppercase general-button active">- all</button></li>
-                        <li><button class="uppercase collection-button">- mixtapes</button></li>
-                        <li><button class="uppercase repair-button">- singles</button></li>
-                        <li><button class="uppercase delivery-button">- music videos</button></li>
-                    </ul>
+                        <ul class="tray w-full font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm flex md:flex-col justify-around items-center md:items-start mt-4 sm:mt-6 md:space-y-1">
+                            <li><button class="uppercase general-button active">- all</button></li>
+                            <li><button class="uppercase collection-button">- mixtapes</button></li>
+                            <li><button class="uppercase repair-button">- singles</button></li>
+                            <li><button class="uppercase delivery-button">- music videos</button></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="bottom-right w-full lg:w-[70%]">
@@ -31,7 +33,7 @@
                         <div class="display w-full h-40 lg:h-48 xl:h-52 bg-[#C4C4C4] rounded-xl xl:rounded-2xl"></div>
 
                         <div class="relative mt-2 input">
-                            <input class="progress w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="0">
+                            <input class="progress w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" min="0" max="100" value="0" @change="seek">
                         </div>
 
                         <div class="flex items-center justify-between mt-5 controls">
@@ -50,36 +52,21 @@
                                 </svg>
                             </button>
 
-                            <button class="rewind">
+                            <button class="rewind" @click="rewind">
                                 <svg class="w-7" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.25 18C4.25 20.5217 4.99777 22.9868 6.39876 25.0835C7.79975 27.1802 9.79102 28.8144 12.1208 29.7795C14.4505 30.7445 17.0141 30.997 19.4874 30.505C21.9607 30.0131 24.2325 28.7987 26.0156 27.0156C27.7987 25.2325 29.013 22.9607 29.505 20.4874C29.997 18.0141 29.7445 15.4505 28.7795 13.1208C27.8144 10.791 26.1802 8.79975 24.0835 7.39876C21.9868 5.99777 19.5217 5.25 17 5.25H12.75M12.75 5.25L17 1M12.75 5.25L17 9.5" stroke="#212129" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M15.1014 14.5H13.1014L11.1326 15.7031V17.5469L12.8826 16.5H12.9295V22.5H15.1014V14.5ZM19.7271 22.6094C21.6763 22.6094 22.9497 21.4258 22.9458 19.75C22.9497 18.2305 21.8872 17.1562 20.4615 17.1562C19.649 17.1562 18.9927 17.5156 18.7427 18H18.6958L18.8521 16.2344H22.4458V14.5H17.0708L16.7583 18.9062L18.6646 19.2812C18.8482 18.8906 19.2661 18.6562 19.7271 18.6562C20.3911 18.6562 20.856 19.1133 20.8521 19.8125C20.856 20.5117 20.3911 20.9687 19.7271 20.9687C19.1529 20.9687 18.6802 20.6172 18.6646 20.0625H16.5552C16.5669 21.5547 17.8833 22.6094 19.7271 22.6094Z" fill="#212129"/>
                                 </svg>
                             </button>
 
-                            <button class="play" ref="play" @click="play(songIndex)">
-                                <svg class="w-16" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g filter="url(#filter0_d_196_940)">
-                                    <circle cx="61" cy="51" r="46" fill="#6837FA"/>
-                                    <path d="M47.667 47.4445V54.5556C47.667 62.4946 47.667 66.4642 50.2563 68.0178C52.8457 69.5714 56.3482 67.7034 63.3533 63.9674L70.0199 60.4118C77.7846 56.2706 81.667 54.2 81.667 51C81.667 47.8 77.7846 45.7294 70.0199 41.5883L63.3533 38.0327C56.3482 34.2967 52.8457 32.4287 50.2563 33.9823C47.667 35.5359 47.667 39.5054 47.667 47.4445Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                    <filter id="filter0_d_196_940" x="0" y="0" width="122" height="122" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="10"/>
-                                    <feGaussianBlur stdDeviation="7.5"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_196_940"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_196_940" result="shape"/>
-                                    </filter>
-                                    </defs>
-                                </svg>
+                            <button class="play w-14 h-14 rounded-full bg-[#6837FA]" ref="play" @click="play(songIndex)">
+                                <font-awesome-icon class="play-icon text-white" :icon="['fas', 'play']"/>
+                                <font-awesome-icon class="pause-icon text-white hidden" :icon="['fas', 'pause']"/>
                             </button>
 
-                            <audio class="audio" src="https://res.cloudinary.com/eazzie/video/upload/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3" ref="audio" @timeupdate="updateProgress"></audio>
+                            <audio class="audio" src="https://res.cloudinary.com/eazzie/video/upload/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3" ref="audio" @timeupdate="updateProgress" @ended="nextSong"></audio>
 
-                            <button class="forward">
+                            <button class="forward" @click="forward">
                                 <svg class="w-7" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M29.75 18C29.75 20.5217 29.0022 22.9868 27.6012 25.0835C26.2003 27.1802 24.209 28.8144 21.8792 29.7795C19.5495 30.7445 16.9859 30.997 14.5126 30.505C12.0393 30.0131 9.76751 28.7987 7.98439 27.0156C6.20127 25.2325 4.98695 22.9607 4.49499 20.4874C4.00303 18.0141 4.25552 15.4505 5.22054 13.1208C6.18556 10.791 7.81976 8.79975 9.91649 7.39876C12.0132 5.99777 14.4783 5.25 17 5.25H21.25M21.25 5.25L17 1M21.25 5.25L17 9.5" stroke="#212129" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M15.1014 14.5H13.1014L11.1326 15.7031V17.5469L12.8826 16.5H12.9295V22.5H15.1014V14.5ZM19.7271 22.6094C21.6763 22.6094 22.9497 21.4258 22.9458 19.75C22.9497 18.2305 21.8872 17.1562 20.4615 17.1562C19.649 17.1562 18.9927 17.5156 18.7427 18H18.6958L18.8521 16.2344H22.4458V14.5H17.0708L16.7583 18.9062L18.6646 19.2812C18.8482 18.8906 19.2661 18.6562 19.7271 18.6562C20.3911 18.6562 20.856 19.1133 20.8521 19.8125C20.856 20.5117 20.3911 20.9687 19.7271 20.9687C19.1529 20.9687 18.6802 20.6172 18.6646 20.0625H16.5552C16.5669 21.5547 17.8833 22.6094 19.7271 22.6094Z" fill="#212129"/>
@@ -111,7 +98,7 @@
                             Tracklist
                         </p>
 
-                        <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile">
+                        <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile" @click="play(track.id)">
                             <div class="left-container flex justify-between items-center w-[57%] md:w-[49%]">
                                 <div class=".left-container flex items-center space-x-2">
                                     <div class="cover w-14 h-14 bg-[#E5E5E5] rounded-lg">
@@ -124,7 +111,7 @@
                                 </div>
 
                                 <div class="right-container">
-                                    <button class="mt-1.5" ref="button" @click="play(track.id)">
+                                    <button class="mt-1.5" ref="button">
                                         <svg class="w-7" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="18" cy="18" r="18" fill="#6837FA"/>
                                             <path d="M11.8525 16.6088V19.7827C11.8525 23.3261 11.8525 25.0979 13.0083 25.7913C14.164 26.4847 15.7272 25.651 18.8538 23.9835L21.8294 22.3965C25.295 20.5482 27.0278 19.624 27.0278 18.1957C27.0278 16.7675 25.295 15.8433 21.8294 13.995L18.8538 12.408C15.7272 10.7405 14.164 9.90675 13.0083 10.6002C11.8525 11.2936 11.8525 13.0653 11.8525 16.6088Z" fill="white"/>
@@ -186,7 +173,7 @@
                 </div>
 
                 <div class="relative items-center hidden w-full space-x-5 right-container md:flex lg:space-x-10">
-                    <input class="progress w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" max="100" value="50">
+                    <input class="progress progress-2 w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" min="0" max="100" value="0" @change="seek">
 
                     <button class="speaker md:hidden lg:block" ref="speaker">
                         <svg class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +202,9 @@
 
 <script>
 import { mapState, mapMutations, mapActions } from 'vuex'
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
     layout: 'music',
@@ -359,27 +348,46 @@ export default {
         play(id) {
             let audio = document.querySelector('.audio')
             const currentTile = document.querySelectorAll('.currentTile')
-
-            this.changeSongIndex(id)
-
-            console.log(this.songIndex);
-            
-            this.tracks.map((item) => {
-                if(item.id === id) {
-                    audio.src = item.src
-                    currentTile.forEach((itemTwo, index) => {
-                        itemTwo.classList.remove('current')
-                        
-                        if(index === id) {
-                            itemTwo.classList.add('current')
-                            console.log(id)
-                            console.log(index)
-                        }
+            const isPlaying = audio.classList.contains('playing')
+            let playIcon = document.querySelector('.play-icon')
+            let pauseIcon = document.querySelector('.pause-icon')
+        	
+            if(isPlaying) {
+                this.pauseSong()
+            } else {
+                this.changeSongIndex(id)
+    
+                this.tracks.map((item) => {
+                    if(item.id === id) {
+                        audio.src = item.src
+                        currentTile.forEach((itemTwo, index) => {
+                            itemTwo.classList.remove('current')
+                            
+                            if(index === id) {
+                                itemTwo.classList.add('current')
+                            }
+                    })
+                    }
                 })
-                }
-            })
-            audio.play()
-            console.log(id)
+    
+                audio.classList.add('playing')
+                playIcon.classList.add('hidden')
+                pauseIcon.classList.remove('hidden')
+                audio.play()
+            }
+        },
+
+        pauseSong() {
+            let audio = document.querySelector('.audio')
+            let playIcon = document.querySelector('.play-icon')
+            let pauseIcon = document.querySelector('.pause-icon')
+            
+            audio.classList.remove('playing')
+            playIcon.classList.remove('hidden')
+            pauseIcon.classList.add('hidden')
+            audio.currentTime = currentTime
+            audio.pause()
+            console.log('paused')
         },
 
         nextSong() {
@@ -395,16 +403,71 @@ export default {
         },
         
         updateProgress(e) {
-            // const { currenTime, duration } = e.srcElement
-            // let progress = document.querySelectorAll('.progress')
-            console.log(e.srcElement.currentTime)
-            // progress.
+            const { currentTime, duration } = e.srcElement
+            const progressPercent = (currentTime / duration) * 100
+            const progress = document.querySelectorAll('.progress')
+
+            // const nodeList = document.querySelectorAll(".example");
+            for (let i = 0; i < progress.length; i++) {
+                progress[i].value = progressPercent;
+            }
+            // progress.value = progressPercent
+
+            // console.log(progressPercent)
+
+            // if(progressPercent === 100) {
+            //     this.nextSong()
+            // }
+        },
+
+        seek(e) {
+            const progress = document.querySelector('.progress')
+            const audio = document.querySelector('.audio')
+            const duration = audio.duration
+            let totalValue 
+
+            // for (let i = 0; i < progress.length; i++) {
+            //     audio.currentTime = ( progress[i].value / 100 ) * duration
+            //     console.log(audio.currentTime)
+            // }
+            audio.currentTime = ( progress.value / 100 ) * duration
+        },
+
+        rewind() {
+            const audio = document.querySelector('.audio')
+            audio.currentTime = audio.currentTime - 15
+        },
+
+        forward() {
+            const audio = document.querySelector('.audio')
+            audio.currentTime = audio.currentTime + 15
         }
     },
+
+    mounted() {
+            let ch = document.querySelector('.progress')
+            ch.value = 20
+            console.log(ch.value)
+        
+        ScrollTrigger.matchMedia({
+            "(min-width: 768px)": function() {
+                gsap.to('.top-left-container', {
+                    scrollTrigger: {
+                        trigger: '.top-left-container',
+                        endTrigger: '.mini-player',
+                        start: 'top 20%',
+                        end: '+=1200',
+                        pin: true,
+                    }
+                })
+            }
+        })
+    }
 }
 </script>
 
 <style>
+
 .active {
     font-weight: 700;
     transition: 800ms;
@@ -414,8 +477,12 @@ export default {
     background-color: #6837fa;
 }
 
+.hidden {
+    display: none;
+}
+
 #range {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
 }
 
 #range:focus {
