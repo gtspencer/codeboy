@@ -2,7 +2,8 @@ export const state = () => ({
     id: 0,
     counter: 20,
     songIndex: 0,
-    cover: ''
+    cover: '',
+    currentSongTitle: ''
 })
 
 export const mutations = {
@@ -16,6 +17,10 @@ export const mutations = {
 
   changeSongIndex(state, payload) {
     state.songIndex = payload
+  },
+
+  changeCurrentSongTitle(state, payload) {
+    state.currentSongTitle = payload
   },
 
   prev(state) {

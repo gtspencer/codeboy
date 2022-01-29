@@ -26,7 +26,7 @@
 
                 <div class="bottom-right w-full lg:w-[70%]">
                     <p class="font-cormorant font-bold text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
-                        Now Playing:
+                        Now Playing: {{ currentSongTitle }}
                     </p>
 
                     <div class="mt-4 engine">
@@ -59,9 +59,9 @@
                                 </svg>
                             </button>
 
-                            <button class="play w-14 h-14 rounded-full bg-[#6837FA]" ref="play" @click="play(songIndex)">
+                            <button class="play w-14 h-14 rounded-full bg-[#6837FA]" ref="play" @click="initSong(songIndex)">
                                 <font-awesome-icon class="play-icon text-white" :icon="['fas', 'play']"/>
-                                <font-awesome-icon class="pause-icon text-white hidden" :icon="['fas', 'pause']"/>
+                                <font-awesome-icon class="pause-icon text-white hide" :icon="['fas', 'pause']"/>
                             </button>
 
                             <audio class="audio" src="https://res.cloudinary.com/eazzie/video/upload/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3" ref="audio" @timeupdate="updateProgress" @ended="nextSong"></audio>
@@ -98,7 +98,7 @@
                             Tracklist
                         </p>
 
-                        <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile" @click="play(track.id)">
+                        <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile" @click="playSong(track.id, track.name)">
                             <div class="left-container flex justify-between items-center w-[57%] md:w-[49%]">
                                 <div class=".left-container flex items-center space-x-2">
                                     <div class="cover w-14 h-14 bg-[#E5E5E5] rounded-lg">
@@ -111,11 +111,9 @@
                                 </div>
 
                                 <div class="right-container">
-                                    <button class="mt-1.5" ref="button">
-                                        <svg class="w-7" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="18" cy="18" r="18" fill="#6837FA"/>
-                                            <path d="M11.8525 16.6088V19.7827C11.8525 23.3261 11.8525 25.0979 13.0083 25.7913C14.164 26.4847 15.7272 25.651 18.8538 23.9835L21.8294 22.3965C25.295 20.5482 27.0278 19.624 27.0278 18.1957C27.0278 16.7675 25.295 15.8433 21.8294 13.995L18.8538 12.408C15.7272 10.7405 14.164 9.90675 13.0083 10.6002C11.8525 11.2936 11.8525 13.0653 11.8525 16.6088Z" fill="white"/>
-                                        </svg>
+                                    <button class="play w-7 h-7 rounded-full bg-[#6837FA]" ref="play">
+                                        <font-awesome-icon class="play-icon text-white text-sm" :icon="['fas', 'play']"/>
+                                        <font-awesome-icon class="pause-icon text-white hide text-sm" :icon="['fas', 'pause']"/>
                                     </button>
                                 </div>
                             </div>
@@ -145,7 +143,7 @@
                     </div>
 
                     <p class="title font-inter font-medium text-[10px] lg:text-xs xl:text-sm 2xl:text-base whitespace-nowrap">
-                        Days <br class="lg:hidden"> Amazing
+                        {{ currentSongTitle }}
                     </p>
                 </div>
 
@@ -157,14 +155,12 @@
                         </svg>
                     </button>
 
-                    <button class="play" ref="play" @click="play(songIndex)">
-                        <svg class="w-10" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="46" cy="46" r="46" fill="#6837FA"/>
-                            <path d="M32.667 42.4445V49.5556C32.667 57.4946 32.667 61.4642 35.2563 63.0178C37.8457 64.5714 41.3482 62.7034 48.3533 58.9674L55.0199 55.4118C62.7846 51.2706 66.667 49.2 66.667 46C66.667 42.8 62.7846 40.7294 55.0199 36.5883L48.3533 33.0327C41.3482 29.2967 37.8457 27.4287 35.2563 28.9823C32.667 30.5359 32.667 34.5054 32.667 42.4445Z" fill="white"/>
-                        </svg>
+                    <button class="play w-10 h-10 rounded-full bg-[#6837FA]" ref="play" @click="initSong(songIndex)">
+                        <font-awesome-icon class="play-icon text-white" :icon="['fas', 'play']"/>
+                        <font-awesome-icon class="pause-icon text-white hide" :icon="['fas', 'pause']"/>
                     </button>
 
-                    <button class="next" ref="next" @click="nextSong">
+                    <button class="next" ref="next" @click="nextSong(this.songIndex)">
                         <svg class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 22.5971V25.4028C8 30.1012 8 32.4503 9.5219 33.312C11.0438 34.1737 13.0582 32.9651 17.087 30.5478L19.4251 29.1449C23.2544 26.8473 25.169 25.6985 25.169 24C25.169 22.3014 23.2544 21.1526 19.4251 18.855L17.087 17.4522C13.0582 15.0349 11.0438 13.8263 9.5219 14.6879C8 15.5496 8 17.8988 8 22.5971Z" fill="#212129"/>
                             <path d="M24 22.5971V25.4028C24 30.1012 24 32.4503 25.5219 33.312C27.0438 34.1737 29.0582 32.9651 33.087 30.5478L35.4251 29.1449C39.2544 26.8473 41.169 25.6985 41.169 24C41.169 22.3014 39.2544 21.1526 35.4251 18.855L33.087 17.4522C29.0582 15.0349 27.0438 13.8263 25.5219 14.6879C24 15.5496 24 17.8988 24 22.5971Z" fill="#212129"/>
@@ -208,6 +204,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default {
     layout: 'music',
+
+    transitions: {
+
+    },
     
     data() {
         return {
@@ -339,24 +339,37 @@ export default {
     },
 
     computed: {
-        ...mapState(["songIndex"])
+        ...mapState(["songIndex", "currentSongTitle"])
     },
 
     methods: {
-        ...mapMutations(["next", "prev", "changeSongIndex"]),
+        ...mapMutations(["next", "prev", "changeSongIndex", "changeCurrentSongTitle"]),
 
-        play(id) {
+        initSong(id, name) {
             let audio = document.querySelector('.audio')
-            const currentTile = document.querySelectorAll('.currentTile')
             const isPlaying = audio.classList.contains('playing')
-            let playIcon = document.querySelector('.play-icon')
-            let pauseIcon = document.querySelector('.pause-icon')
+
         	
             if(isPlaying) {
                 this.pauseSong()
             } else {
-                this.changeSongIndex(id)
-    
+                this.changeCurrentSongTitle(name)
+                this.changeSongIndex(songIndex)
+                this.playSong()
+                console.log(this.songIndex)
+            }
+        },
+
+        playSong(id, name) {
+            let audio = document.querySelector('.audio')
+            const currentTile = document.querySelectorAll('.currentTile')
+            const isPlaying = audio.classList.contains('playing')
+            let playIcon = document.querySelectorAll('.play-icon')
+            let pauseIcon = document.querySelectorAll('.pause-icon')
+
+            this.changeSongIndex(id)
+                this.changeCurrentSongTitle(name)
+                
                 this.tracks.map((item) => {
                     if(item.id === id) {
                         audio.src = item.src
@@ -369,12 +382,21 @@ export default {
                     })
                     }
                 })
+
+                playIcon.forEach((playicon) => {
+                    playicon.classList.add('hide')
+                })
+
+                pauseIcon.forEach((pauseicon) => {
+                    pauseicon.classList.remove('hide')
+                })
     
                 audio.classList.add('playing')
-                playIcon.classList.add('hidden')
-                pauseIcon.classList.remove('hidden')
+                // playIcon.classList.add('hide')
+                // pauseIcon.classList.remove('hide')
+
+                this.changeCurrentSongTitle(name)
                 audio.play()
-            }
         },
 
         pauseSong() {
@@ -383,22 +405,32 @@ export default {
             let pauseIcon = document.querySelector('.pause-icon')
             
             audio.classList.remove('playing')
-            playIcon.classList.remove('hidden')
-            pauseIcon.classList.add('hidden')
-            audio.currentTime = currentTime
+            playIcon.classList.remove('hide')
+            pauseIcon.classList.add('hide')
+            audio.currentTime = audio.currentTime
             audio.pause()
             console.log('paused')
         },
 
         nextSong() {
+            let audio = document.querySelector('.audio')
+
+            // this.changeCurrentSongTitle(name)
+
+            
             this.next()
 
-            this.play(this.songIndex)
+            audio.classList.remove('playing')
+            this.playSong(this.songIndex)
+            console.log(this.songIndex)
         },
 
         prevSong() {
+            let audio = document.querySelector('.audio')
+
             this.prev()
 
+            audio.classList.remove('playing')
             this.play(this.songIndex)
         },
         
@@ -466,7 +498,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .active {
     font-weight: 700;
@@ -477,7 +509,7 @@ export default {
     background-color: #6837fa;
 }
 
-.hidden {
+.hide {
     display: none;
 }
 

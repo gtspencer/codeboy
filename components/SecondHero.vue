@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" @mousemove="refresh" @mousewheel="refresh">
     <div class="py-10 hero-container xl:px-10 2xl:px-20 lg:py-16 xl:py-20">
       <div class="top-container flex justify-center">
         <img
@@ -67,6 +67,13 @@ const tl = gsap.timeline();
 
 export default {
   mixins: [aosMixin],
+
+  methods: {
+    refresh() {
+      setInterval(ScrollTrigger.refresh(), 3000)
+      console.log('refreshed');
+    }
+  },
 
   mounted() {
     gsap.to(this.$refs.video, {

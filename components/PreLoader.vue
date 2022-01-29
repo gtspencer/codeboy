@@ -1,6 +1,7 @@
 <template>
-  <div>
-      <section class="w-full h-screen flex justify-center items-center bg-white">
+  <transition name="fade">
+    <div v-if="show">
+      <section class="w-full h-screen flex justify-center items-center bg-white z-50 fixed">
           <div class="section-container flex flex-col justify-center items-center space-y-3">
             <div class="text-beside-logo">
               <h2
@@ -20,15 +21,41 @@
             </div>
         </div>
       </section>
-  </div>
+    </div>
+  </transition>
+
 </template>
 
 <script>
 export default {
-    layout: 'blank'
+    layout: 'blank',
+
+    data() {
+      return {
+        show: true
+      }
+    },
+
+    mounted() {
+      this.showToggle()
+    },
+
+    methods: {
+      showToggle() {
+        setTimeout(() => {
+          this.show = false
+        }, 3000)
+      }
+    }
 }
 </script>
 
-<style>
+<style scoped>
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 1s;
+  }
 
+  .fade-enter, .fade-leave-to {
+    opacity:  0;
+  }
 </style>
