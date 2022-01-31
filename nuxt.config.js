@@ -31,6 +31,9 @@ export default {
 
   image: {
     // Options
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/eazzie/image/upload/'
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

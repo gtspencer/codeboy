@@ -1,7 +1,8 @@
 <template>
-  <section class="mt-24 letter sm:mt-28 md:mt-32">
+  <section class="mt-24 letter sm:mt-28 md:mt-32 overflow-hidden">
     <div class="text-center letter-container">
       <h2
+        data-aos="zoom-in" data-aos-duration="1000"
         class="letter-heading capitalize font-cormorant text-3xl sm:text-4xl lg:text-[40px] xl:text-5xl"
         ref="placeHolder"
       >
@@ -9,6 +10,7 @@
       </h2>
 
       <div
+        data-aos="fade-up" data-aos-duration="1000"
         class="mt-6 space-y-3 text-details md:space-y-5 sm:px-10 md:px-20 lg:px-56 xl:px-72"
       >
         <p class="text-sm font-light letter-details text-inter xl:text-base">
@@ -41,6 +43,7 @@
       </div>
 
       <h2
+        data-aos="zoom-out" data-aos-duration="1000"
         class="letter-footer font-inter mt-5 md:mt-8 text-3xl md:px-36 lg:px-[260px] xl:px-[22rem]"
       >
         “I can be indepedent while being dependent on my fans”

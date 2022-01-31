@@ -32,11 +32,9 @@
               </p>
 
               <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
-                An A&R Rep plays an important role in the development of CODEBOY Sai and other artists
-                on CODE LIFE Records once we begin taking artist submissions through A&R Scouts.
+                An A&R Rep plays an important role in the development of CODEBOY Sai and other artists on CODE LIFE Records once we begin taking artist submissions. 
                   <span class="ar-span hidden">
-                  An A&R Rep plays an important role in the development of CODEBOY Sai and other artists
-                  on CODE LIFE Records once we begin taking artist submissions through A&R Scouts.
+                  A&R Reps have a voice in how CODEBOY Sai will distribute & market his musical art. A&R Reps will also can suggest songwriters orchestrate collaborations by pairing CODEBOY Sai with other artists and even producers.
                   </span>
               </p>
 
@@ -59,9 +57,9 @@
               </p>
 
               <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
-                The merchandiser role is responsible for shipping VINYL records, merch, and other products from CODEBOY SAI for the purpose of sales. 
+                The Merchandiser role is responsible for shipping VINYL records, merch, and other products from CODEBOY SAI for the purpose of sales.
                   <span class="merchandiser-span hidden">
-                  The merchandiser role is responsible for shipping VINYL records, merch, and other products from CODEBOY SAI for the purpose of sales. 
+                   Merchandisers assist with developing promotions strategies by communicating with brands/influencers about music placements. Merchandisers will get compensated for any graphic design work on cover art, merch, memes, and other products for the CODEBoy Sai Merch store.
                   </span>
               </p>
 

@@ -414,7 +414,7 @@
           </div>
 
           <div
-            class="faq-box-11 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-14 border-t py-3 overflow-hidden"
+            class="faq-box-11 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-10 xl:h-14 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
@@ -458,7 +458,7 @@
           </div>
 
           <div
-            class="faq-box-12 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 xl:h-16 border-t py-3 overflow-hidden"
+            class="faq-box-12 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-[68px] sm:h-14 xl:h-16 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
@@ -639,27 +639,49 @@ export default {
 </script>
 
 <style>
-.fade-enter-from {
-  opacity: 0;
+.faq-box {
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
-.fade-enter-active {
-  transition: 0.8s;
+.faq-box:hover {
+  height: 12rem;
+  @apply sm:h-[8rem];
+  @apply md:h-[11rem];
+  @apply lg:h-[10rem];
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
-.fade-enter-to {
-  opacity: 1;
+.faq-box:hover .bottom {
+  display: block;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
-.fade-leave-from {
-  opacity: 1;
+.faq-box:hover .top svg {
+  transform: rotate(180deg);
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 
-.fade-leave-active {
-  transition: 0.8s;
-}
-
-.fade-leave-to {
-  opacity: 0;
+.faq-box::-webkit-scrollbar {
+    visibility: hidden;
 }
 </style>

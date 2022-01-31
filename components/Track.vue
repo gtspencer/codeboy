@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
       <div v-for="track in tracks" :key="track.id" class="track-container relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5]"  @click="pick">
           <div class="left-container flex justify-between items-center w-[57%] md:w-[49%]">
@@ -82,4 +82,4 @@ export default {
     .scale {
         transform: rotate(75deg);
     }
-</style>
+</style> -->

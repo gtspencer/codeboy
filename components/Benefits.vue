@@ -80,7 +80,7 @@
 
                 <div class="flex items-center space-x-5 overflow-hidden fifth-benefit lg:items-start lg:place-self-start">
                     <div data-aos="fade-up" data-aos-duration="1000" class="left">
-                        <img class="w-16" src="/images/Licensing.png" alt="">
+                        <img class="min-w-[4rem] max-w-[4rem]" src="/images/Licensing.png" alt="">
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="right">
@@ -96,7 +96,7 @@
 
                 <div class="flex items-center space-x-5 overflow-hidden sixth-benefit lg:items-start lg:place-self-start">
                     <div data-aos="fade-up" data-aos-duration="1000" class="left">
-                        <img class="w-52 xl:w-72" src="/svg/handshake.svg" alt="">
+                        <img class="min-w-[4rem]" src="/svg/handshake.svg" alt="">
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="right">

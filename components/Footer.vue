@@ -5,11 +5,12 @@
                 <a href="/record-label" class="flex items-center justify-center">
                     <div class="label">
                         <nuxt-img
-                            src="/images/Record-Label-Logo.png"
+                            src="/v1643519045/Codeboy/Record-Label-Logo_kei0t4.webp"
+                            sizes="xs:60px xl:112px"
                             alt="Record Label's Logo"
-                            sizes="60px xl:112px"
                             format="webp"
-                            quality="10"
+                            quality="100"
+                            provider="cloudinary"
                         />
                     </div>
 
@@ -22,7 +23,7 @@
             </div>
 
             <div class="flex items-center justify-center music">
-                <nuxt-link to="/music-player">
+                <nuxt-link to="/#">
                     <button
                         class="music-button uppercase text-black font-sf font-medium text-[10px] xl:text-xs 2xl:text-sm py-1.5 px-4 xl:pl-7 w-56 xl:w-[16.5rem] 2xl:w-[18.5rem] xl:h-14 2xl:h-16 border rounded-full border-black flex justify-between items-center tracking-widest">
                         exclusive music player
@@ -130,10 +131,16 @@
         <div class="hidden mt-16 space-y-10 code-music-socials sm:block md:hidden">
             <div class="code-music-container sm:space-y-0 sm:flex sm:justify-between sm:items-center">
                     <div class="code">
-                        <nuxt-link to="/record-label" class="flex items-center justify-start">
+                        <a href="/record-label" class="flex items-center justify-start">
                             <div class="label">
-                                <img class="w-16 label-image" src="/images/Code Label.png"
-                                    alt="Code Boy Sai's Logo">
+                                <nuxt-img
+                                    src="/v1643519045/Codeboy/Record-Label-Logo_kei0t4.webp"
+                                    sizes="xs:60px xl:112px"
+                                    alt="Record Label's Logo"
+                                    format="webp"
+                                    quality="100"
+                                    provider="cloudinary"
+                                />
                             </div>
 
                             <div class="text-beside-label">
@@ -141,7 +148,7 @@
                                     codelife record dao <br> label
                                 </h2>
                             </div>
-                        </nuxt-link>
+                        </a>
                     </div>
 
                     <div class="flex justify-end music">

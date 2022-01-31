@@ -4,8 +4,9 @@
       <div
         class="items-start justify-center plan-container sm:flex sm:space-x-16 lg:space-x-28"
       >
-        <div class="top-left planTopLeft" ref="planTopLeft">
+        <div class="top-left planTopLeft overflow-hidden" ref="planTopLeft">
           <h3
+             data-aos="fade-up" data-aos-duration="1000"
             class="capitalize font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px] text-center sm:text-left md:leading-normal"
           >
             plan <br class="hidden sm:block md:hidden" />during<br
@@ -77,7 +78,7 @@
           </div>
 
           <div class="space-y-10 plans -ml-14">
-            <div class="plan-1 w-60 lg:w-64 xl:w-72 2xl:w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" class="plan-1 w-60 lg:w-64 xl:w-72 2xl:w-80">
               <h2 class="text-2xl capitalize font-cormorant xl:text-3xl">
                 Family & Friends Random Wallet Airdrop
               </h2>
@@ -91,7 +92,7 @@
               </p>
             </div>
 
-            <div class="plan-2 w-60 lg:w-64 xl:w-72 2xl:w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" class="plan-2 w-60 lg:w-64 xl:w-72 2xl:w-80">
               <h2 class="text-2xl capitalize font-cormorant xl:text-3xl">
                 Listening Pass Random Wallet Airdrop
               </h2>
@@ -105,7 +106,7 @@
               </p>
             </div>
 
-            <div class="plan-2 planStop w-60 lg:w-64 xl:w-80" ref="planStop">
+            <div data-aos="fade-up" data-aos-duration="1000" class="plan-2 planStop w-60 lg:w-64 xl:w-80" ref="planStop">
               <h2 class="text-2xl capitalize font-cormorant xl:text-3xl">
                 Twitter Spaces Interview with CODEBOY Sai
               </h2>
@@ -128,7 +129,7 @@
         class="agenda-container sm:flex justify-center items-start md:space-x-[60px] lg:space-x-[90px]"
       >
         <div class="top-left agendaTopLeft" ref="agendaTopLeft">
-          <h2
+          <h2 data-aos="fade-in" data-aos-duration="1000"
             class="capitalize font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px] text-center sm:text-left md:leading-normal"
           >
             CODE <br class="hidden sm:block md:hidden" />
@@ -138,7 +139,7 @@
             AGENDA
           </h2>
 
-          <p
+          <p data-aos="fade-in" data-aos-duration="1000"
             class="mt-2 text-xs font-light leading-5 text-center font-inter sm:text-left xl:text-sm 2xl:text-base"
           >
             The Record Label Agenda will <br class="hidden sm:block" />
@@ -240,7 +241,7 @@
           </div>
 
           <div class="space-y-10 agendas -ml-14">
-            <div class="agenda-1 w-60 lg:w-64 xl:w-72 2xl:w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" class="agenda-1 w-60 lg:w-64 xl:w-72 2xl:w-80">
               <h2 class="text-2xl capitalize font-cormorant xl:text-3xl">
                 CODE LIFE Records DAO Executive Positions Auction
               </h2>
@@ -256,7 +257,7 @@
               </p>
             </div>
 
-            <div class="agenda-2 w-60 lg:w-64 xl:w-72 2xl:w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" class="agenda-2 w-60 lg:w-64 xl:w-72 2xl:w-80">
               <h2 class="text-2xl capitalize font-cormorant xl:text-3xl">
                 Fund Treasury for CODE LIFE Records
               </h2>
@@ -270,7 +271,7 @@
               </p>
             </div>
 
-            <div class="agenda-3 w-60 lg:w-64 xl:w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" class="agenda-3 w-60 lg:w-64 xl:w-80">
               <h2 class="text-2xl capitalize font-cormorant xl:text-3xl">
                 Assume Label Positions & vote on Label Handbook
               </h2>
@@ -283,7 +284,7 @@
               </p>
             </div>
 
-            <div class="agenda-4 w-60 lg:w-64 xl:w-72 2xl:w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" class="agenda-4 w-60 lg:w-64 xl:w-72 2xl:w-80">
               <h2 class="text-2xl capitalize font-cormorant xl:text-3xl">
                 Public Release For Meetings and Makeups tape
               </h2>
@@ -297,7 +298,7 @@
               </p>
             </div>
 
-            <div
+            <div data-aos="fade-up" data-aos-duration="1000"
               class="agenda-5 agendaStop w-60 lg:w-64 xl:w-72 2xl:w-80"
               ref="agendaStop"
             >
@@ -324,9 +325,12 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import aosMixin from '~/mixins/aos'
 const tl = gsap.timeline();
 
 export default {
+  mixins: [aosMixin],
+  
   mounted() {
     /* Animations for Plans Section */
     ScrollTrigger.matchMedia({

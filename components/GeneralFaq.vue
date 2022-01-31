@@ -469,49 +469,5 @@ export default {};
 </script>
 
 <style>
-.faq-box {
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-}
 
-.faq-box:hover {
-  height: 12rem;
-  @apply sm:h-[8rem];
-  @apply md:h-[11rem];
-  @apply lg:h-[10rem];
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-}
-
-.faq-box:hover .bottom {
-  display: block;
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-}
-
-.faq-box:hover .top svg {
-  transform: rotate(180deg);
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-
-.faq-box::-webkit-scrollbar {
-    visibility: hidden;
-}
 </style>

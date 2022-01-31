@@ -23,9 +23,9 @@ export default {
 
     methods: {
       showToggle() {
-        setTimeout(() => {
+        // setTimeout(() => {
           this.show = true
-        }, 3000)
+        // }, 1000)
       }
     }
 }
