@@ -6,19 +6,19 @@
       >
         <div class="left-nav-container hidden md:flex space-x-5">
           <p
-            class="cover-tracklist uppercase font-inter text-[10px] xl:text-xs 2xl:text-sm"
+            class="cover-tracklist uppercase font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
           >
             Cover Art + Tracklist
           </p>
 
           <p
-            class="cover-tracklist uppercase font-inter text-[10px] xl:text-xs 2xl:text-sm"
+            class="cover-tracklist uppercase font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
           >
             nft traits + benefits
           </p>
 
           <p
-            class="cover-tracklist font-inter text-[10px] xl:text-xs 2xl:text-sm"
+            class="cover-tracklist font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
           >
             FAQs
           </p>
@@ -33,20 +33,19 @@
           >
             <div class="text-beside-logo">
               <h2
-                class="uppercase font-inter text-black text-center text-[10px] xl:text-xs 2xl:text-sm font-medium leading-relaxed lg:leading-relaxed xl:leading-loose"
+                class="uppercase font-inter text-[#2E2B26] text-center text-[10px] xl:text-xs 2xl:text-sm font-medium leading-relaxed lg:leading-relaxed xl:leading-loose"
               >
-                ethereum based <br class="md:hidden" />
-                music artist
+                EVM based music artist
               </h2>
             </div>
 
             <div class="logo">
               <nuxt-img
-                  src="/images/Code Boy Logo.png"
-                  alt="Code Boy Sai's Logo"
-                  sizes="sm:32px md:40px lg:48px xl:64px"
-                  format="webp"
-                />
+                src="/images/Code Boy Logo.png"
+                alt="Code Boy Sai's Logo"
+                sizes="sm:32px md:40px lg:48px xl:64px"
+                format="webp"
+              />
             </div>
           </nuxt-link>
         </div>
@@ -54,7 +53,7 @@
         <div class="right-nav-container justify-self-end">
           <nuxt-link to="" class="">
             <button
-              class="connect-wallet uppercase text-black font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-black"
+              class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
             >
               connect wallet
             </button>

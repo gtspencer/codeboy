@@ -3,11 +3,11 @@
     <RecordNavigationTwo />
 
     <section class="music-label my-10 lg:my-16 xl:my-20 overflow-hidden">
-      <div class="music-label-container space-y-7 lg:space-y-10 xl:px-20">
+      <div class="music-label-container space-y-7 lg:space-y-20 xl:px-20">
         <div class="top sm:grid grid-cols-2 lg:grid-cols-4 space-y-7 sm:space-y-0 sm:gap-y-7 overflow-hidden">
           <div class="header-and-image col-span-2 sm:text-center lg:text-left">
-            <h1 data-aos="fade-right" data-aos-duration="1000" class="font-cormorant text-white text-[34px] sm:text-[40px] lg:text-5xl xl:text-[52px] 2xl:text-6xl">
-                Music Label Positions:
+            <h1 data-aos="fade-right" data-aos-duration="1000" class="font-monument font-normal text-white text-[34px] sm:text-[40px] lg:text-5xl xl:text-[52px] 2xl:text-6xl">
+                Music Label <br> Positions:
             </h1>
 
             <div data-aos="fade-in" data-aos-duration="1000" class="flex justify-center xl:justify-start">
@@ -20,6 +20,31 @@
                 muted
                 />
             </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="position-ar-scout justify-self-center">
+              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+                A&R Scout
+              </p>
+
+              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
+                Required: 1 Listening Pass
+              </p>
+
+              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+                An A&R Scouts listens to CODEBOY Sai leaks, studio live streams, goes to shows, and hopefully in the future: find new artists for the CODE LIFE Records DAO.
+                  <span class="ar-scout-span hidden">
+                   If the scout finds an artist that fits, he'll pass them to an A&R Rep. It's the Rep’s job to get the rest of the department at the label interested in the prospective artist. The Executives will have the final decision on whether to sign an artist. The A&R Scout & Rep will retain the finders fee in the negotiated deal with the prospective artist. 
+                  </span>
+              </p>
+
+              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleArScout">
+                {{ arScoutButtonState }}
+
+                <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3848 6.78536L7.00005 12.771L0.615329 6.78536L1.38476 5.96464L6.43755 10.7016L6.43755 0L7.56255 0L7.56255 10.7016L12.6153 5.96464L13.3848 6.78536Z" fill="white"/>
+                </svg>
+              </button>
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="position-ar-rep justify-self-center">
@@ -46,37 +71,37 @@
                 </svg>
               </button>
           </div>
-
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="position-merchandiser justify-self-center">
-              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
-                Merchandiser
-              </p>
-
-              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
-                Required CB Sai Looks: 2 
-              </p>
-
-              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
-                The Merchandiser role is responsible for shipping VINYL records, merch, and other products from CODEBOY SAI for the purpose of sales.
-                  <span class="merchandiser-span hidden">
-                   Merchandisers assist with developing promotions strategies by communicating with brands/influencers about music placements. Merchandisers will get compensated for any graphic design work on cover art, merch, memes, and other products for the CODEBoy Sai Merch store.
-                  </span>
-              </p>
-
-              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleMerchandiser">
-                {{ merchandiserButtonState }}
-
-                <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3848 6.78536L7.00005 12.771L0.615329 6.78536L1.38476 5.96464L6.43755 10.7016L6.43755 0L7.56255 0L7.56255 10.7016L12.6153 5.96464L13.3848 6.78536Z" fill="white"/>
-                </svg>
-              </button>
-          </div>
         </div>
 
         <div class="bottom sm:grid grid-cols-2 lg:grid-cols-4 space-y-7 sm:space-y-0 sm:gap-y-7 overflow-hidden">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="position-marketing">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="position-merchandiser justify-self-center">
+            <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+              Merchandiser
+            </p>
+
+            <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
+              Required CB Sai Looks: 2 
+            </p>
+
+            <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+              The Merchandiser role is responsible for shipping VINYL records, merch, and other products from CODEBOY SAI for the purpose of sales.
+              <span class="merchandiser-span hidden">
+                Merchandisers assist with developing promotions strategies by communicating with brands/influencers about music placements. Merchandisers will get compensated for any graphic design work on cover art, merch, memes, and other products for the CODEBoy Sai Merch store.
+              </span>
+            </p>
+
+            <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleMerchandiser">
+              {{ merchandiserButtonState }}
+
+              <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3848 6.78536L7.00005 12.771L0.615329 6.78536L1.38476 5.96464L6.43755 10.7016L6.43755 0L7.56255 0L7.56255 10.7016L12.6153 5.96464L13.3848 6.78536Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="position-marketing lg:-mt-10">
               <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
-                Marketing
+                Marketing <br class="hidden sm:block"> Manager
               </p>
 
               <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
@@ -84,9 +109,9 @@
               </p>
 
               <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
-                The marketing manager role develops the communication between CODEBoy Sai and the general public.
+                The Marketing Manager role develops the communication between CODEBoy Sai and the general public.
                   <span class="marketing-span hidden">
-                  The marketing manager role develops the communication between CODEBoy Sai and the general public.
+                   They will create strategies to promote CODEBoy Sai by developing advertisements, designing and planning campaigns, etc. Marketing managers will also manage a budget for the Marketing department, overseeing professionals and expenses like graphic art, content, ads, videographers, and more.
                   </span>
               </p>
 
@@ -111,7 +136,7 @@
               <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 The Publicist role is responsible for sharing information and news about CODEBOY Sai with the press.
                   <span class="publicist-span hidden">
-                  The Publicist role is responsible for sharing information and news about CODEBOY Sai with the press.
+                   They pitch news stories about CODEBOY Sai to media outlets, write press releases, create media kits, and schedule interviews and appearances. 
                   </span>
               </p>
 
@@ -136,7 +161,7 @@
               <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 The music agent role works closely with CODEBOY Sai to coordinate promotions, schedule tours and appearances, and secure deals.
                   <span class="agent-span hidden">
-                  The music agent role works closely with CODEBOY Sai to coordinate promotions, schedule tours and appearances, and secure deals.
+                   Agents will communicate with other professionals in the industry like venue managers, concert organizers, promoters, and scouts to make sure CODEBOY Sai gets adequate support and coverage and is able to share his talents with the public. Music Agents will retain a broker fee for any deals they secure. 
                   </span>
               </p>
 
@@ -159,9 +184,9 @@
               </p>
 
               <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
-                The Resource Admin role is responsible for performing HR tasks like onboarding new CBSAI Look Owners.....
+                The Resource Admin role is responsible for performing HR tasks like onboarding new staff, maintaining/enforcing the CODE LIFE Records handbook policies, and performing payroll for any CODEBOY Sai expenses.
                   <span class="resource-admin-span hidden">
-                  The Resource Admin role is responsible for performing HR tasks like onboarding new CBSAI Look Owners.....
+                   Admins facilitate things like booking recording sessions when/where required.  Resource Admins also share the responsibility of maintaining an accurate list of CODE LIFE Records staff. 
                   </span>
               </p>
 
@@ -222,6 +247,7 @@ export default {
     data() {
       return {
         arButtonState: 'Read more',
+        arScoutButtonState: 'Read more',
         merchandiserButtonState: 'Read more',
         marketingButtonState: 'Read more',
         publicistButtonState: 'Read more',
@@ -239,6 +265,18 @@ export default {
                 span.classList.add('show')
             } else {
                 this.arButtonState = "Read more";
+                span.classList.remove('show')
+            }
+      },
+
+      handleArScout() {
+        const span = document.querySelector('.ar-scout-span')
+            
+            if (this.arScoutButtonState == "Read more") {
+                this.arScoutButtonState = "show less";
+                span.classList.add('show')
+            } else {
+                this.arScoutButtonState = "Read more";
                 span.classList.remove('show')
             }
       },
@@ -303,23 +341,57 @@ export default {
             }
       },
     },
-
-    mounted() {
-
-    }
 }
 </script>
 
 <style>
-body {
-  
-}
-
 .show {
     display: block;
 }
 
-/* button svg {
-  transform: rotate(180deg);
-} */
+.font-monument {
+  font-family: 'Monument Extended';
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Ultrabold.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 </style>
