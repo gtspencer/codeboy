@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <transition name="fade">
     <div v-if="show">
       <section
@@ -63,4 +63,4 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-</style>
+</style> -->

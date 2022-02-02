@@ -1,0 +1,47 @@
+body {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Z
+
+/*width*/
+::-webkit-scrollbar {
+  width:7px;
+}
+
+/*track*/
+::-webkit-scrollbar-track {
+  background:rgba(255, 255, 255, 0.1);
+  border-width:1px;
+  border-style:none;
+  border-radius:10px;
+}
+
+/*thumb*/
+::-webkit-scrollbar-thumb {
+  background:rgb(85, 85, 85);
+  border-color:rgb(153, 153, 153);
+  border-radius:10px;
+}

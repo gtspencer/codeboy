@@ -43,23 +43,49 @@ body {
   opacity:  0;
 }
 
-/*width*/
-::-webkit-scrollbar {
-  width:7px;
+.font-monument {
+  font-family: 'Monument Extended';
 }
 
-/*track*/
-::-webkit-scrollbar-track {
-  background:rgba(255, 255, 255, 0.1);
-  border-width:1px;
-  border-style:none;
-  border-radius:10px;
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
 }
 
-/*thumb*/
-::-webkit-scrollbar-thumb {
-  background:rgb(85, 85, 85);
-  border-color:rgb(153, 153, 153);
-  border-radius:10px;
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Ultrabold.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../static/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 </style>
