@@ -2,18 +2,18 @@
   <section class="mt-20 mixtape sm:mt-24 md:mt-28 lg:px-20 xl:px-40">
     <div class="justify-between mixtape-container md:flex md:space-x-5">
       <div
-        class="flex justify-between mixtape-left-container md:flex-col sm:space-x-5 md:space-x-0"
+        class="flex justify-between mixtape-left-container md:flex-col space-x-2 sm:space-x-5 md:space-x-0"
       >
         <div class="w-2/4 mixtape-texts md:w-full">
           <h3
-            class="font-cormorant text-4xl sm:text-[2.5rem] md:text-5xl xl:text-6xl 2xl:text-[65px] leading-9 sm:leading-tight"
+            class="font-monument font-light text-[1rem] sm:text-[1.5rem] md:text-3xl xl:text-4xl leading-5"
             ref="placeHolder"
           >
-            Mixtape Cover & Tracklist
+            Mixtape Cover & <br class="hidden 2xl:block"> Tracklist
           </h3>
 
           <p
-            class="details uppercase font-inter text-[10px] xl:text-xs 2xl:text-sm mt-3 md:mt-5 pr-4 xl:pr-16"
+            class="details uppercase font-monument font-thin text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm mt-3 md:mt-5 pr-4 xl:pr-16"
           >
             A few words about what is depicted on the images or photos. Be
             concise and creative
@@ -21,11 +21,7 @@
         </div>
 
         <div class="w-2/4 md:w-full">
-          <nuxt-img 
-          src="/images/Mixtape small.png" 
-          alt="" 
-          format="webp"
-          />
+          <nuxt-img src="/images/Mixtape small.png" alt="" format="webp" />
         </div>
       </div>
 

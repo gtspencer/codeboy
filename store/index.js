@@ -3,12 +3,13 @@ export const state = () => ({
     counter: 20,
     songIndex: 0,
     cover: '',
-    currentSongTitle: ''
+    currentSongTitle: 'Bangee (Single)'
 })
 
 export const mutations = {
-  next(state) {
+  next(state, payload) { 
     state.songIndex++
+    state.currentSongTitle = payload
 
     if(state.songIndex > 14) {
       state.songIndex = 0
@@ -23,8 +24,9 @@ export const mutations = {
     state.currentSongTitle = payload
   },
 
-  prev(state) {
+  prev(state, payload) {
     state.songIndex--
+    state.currentSongTitle = payload
 
     if(state.songIndex < 0) {
       state.songIndex = 14

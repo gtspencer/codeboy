@@ -18,7 +18,7 @@
               <h1
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                class="capitalize font-monument font-light text-[#2E2B26] text-[42px] sm:text-[2.75rem] xl:text-[3.5rem] 2xl:text-9xl leading-normal lg:leading-normal lg:whitespace-nowrap"
+                class="capitalize font-monument font-light text-[#2E2B26] text-[42px] sm:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[4rem] leading-normal lg:leading-normal lg:whitespace-nowrap"
               >
                 Listening <br class="hidden lg:block"/>Pass (LP)
               </h1>
@@ -64,7 +64,7 @@
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                class="capitalize font-monument font-light text-[#2E2B26] text-[42px] sm:text-[2.75rem] xl:text-[3.5rem] 2xl:text-9xl leading-normal lg:leading-normal md:whitespace-nowrap lg:whitespace-normal"
+                class="capitalize font-monument font-light text-[#2E2B26] text-[42px] sm:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[4rem] leading-normal lg:leading-normal md:whitespace-nowrap lg:whitespace-normal"
               >
                 Meetings & Makeups
               </h2>

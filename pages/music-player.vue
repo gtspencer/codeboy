@@ -25,11 +25,11 @@
                 </div>
 
                 <div class="bottom-right w-full lg:w-[70%]">
-                    <p class="font-cormorant font-bold text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+                    <!-- <p class="font-cormorant font-bold text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
                         Now Playing: {{ currentSongTitle }}
-                    </p>
+                    </p> -->
 
-                    <div class="mt-4 engine">
+                    <!-- <div class="mt-4 engine">
                         <div class="display w-full h-40 lg:h-48 xl:h-52 bg-[#C4C4C4] rounded-xl xl:rounded-2xl"></div>
 
                         <div class="relative mt-2 input">
@@ -91,7 +91,7 @@
                                 </svg>
                             </button>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="mt-10 tracklist">
                         <p class="font-inter text-[10px] font-bold xl:text-xs 2xl:text-sm">
@@ -111,9 +111,9 @@
                                 </div>
 
                                 <div class="right-container">
-                                    <button class="play w-7 h-7 rounded-full bg-[#6837FA]" ref="play">
-                                        <font-awesome-icon class="play-icon text-white text-sm" :icon="['fas', 'play']"/>
-                                        <font-awesome-icon class="pause-icon text-white hide text-sm" :icon="['fas', 'pause']"/>
+                                    <button class="play w-7 h-7 rounded-full bg-[#6837FA] flex justify-center items-center" ref="play">
+                                        <font-awesome-icon class="play-icon text-white text-sm xl:text-xs" :icon="['fas', 'play']"/>
+                                        <font-awesome-icon class="pause-icon text-white hide text-sm xl:text-xs" :icon="['fas', 'pause']"/>
                                     </button>
                                 </div>
                             </div>
@@ -148,19 +148,19 @@
                 </div>
 
                 <div class="flex items-center justify-between space-x-4 mid-container">
-                    <button class="previous" ref="previous" @click="prevSong">
+                    <button class="previous" ref="previous" @click="prevSong()">
                         <svg  class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M40 22.5971V25.4028C40 30.1012 40 32.4503 38.4781 33.312C36.9562 34.1737 34.9418 32.9651 30.913 30.5478L28.5749 29.1449C24.7456 26.8473 22.831 25.6985 22.831 24C22.831 22.3014 24.7456 21.1526 28.5749 18.855L30.913 17.4522C34.9418 15.0349 36.9562 13.8263 38.4781 14.6879C40 15.5496 40 17.8988 40 22.5971Z" fill="#212129"/>
                             <path d="M24 22.5971V25.4028C24 30.1012 24 32.4503 22.4781 33.312C20.9562 34.1737 18.9418 32.9651 14.913 30.5478L12.5749 29.1449C8.74561 26.8473 6.83095 25.6985 6.83095 24C6.83095 22.3014 8.74561 21.1526 12.5749 18.855L14.913 17.4522C18.9418 15.0349 20.9562 13.8263 22.4781 14.6879C24 15.5496 24 17.8988 24 22.5971Z" fill="#212129"/>
                         </svg>
                     </button>
 
-                    <button class="play w-10 h-10 rounded-full bg-[#6837FA]" ref="play" @click="initSong(songIndex)">
-                        <font-awesome-icon class="play-icon text-white" :icon="['fas', 'play']"/>
-                        <font-awesome-icon class="pause-icon text-white hide" :icon="['fas', 'pause']"/>
+                    <button class="play w-10 h-10 rounded-full bg-[#6837FA]" ref="play" @click="initSong(id, name)">
+                        <font-awesome-icon class="big-play-icon text-white" :icon="['fas', 'play']"/>
+                        <font-awesome-icon class="big-pause-icon text-white hide" :icon="['fas', 'pause']"/>
                     </button>
 
-                    <button class="next" ref="next" @click="nextSong(this.songIndex)">
+                    <button class="next" ref="next" @click="nextSong">
                         <svg class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 22.5971V25.4028C8 30.1012 8 32.4503 9.5219 33.312C11.0438 34.1737 13.0582 32.9651 17.087 30.5478L19.4251 29.1449C23.2544 26.8473 25.169 25.6985 25.169 24C25.169 22.3014 23.2544 21.1526 19.4251 18.855L17.087 17.4522C13.0582 15.0349 11.0438 13.8263 9.5219 14.6879C8 15.5496 8 17.8988 8 22.5971Z" fill="#212129"/>
                             <path d="M24 22.5971V25.4028C24 30.1012 24 32.4503 25.5219 33.312C27.0438 34.1737 29.0582 32.9651 33.087 30.5478L35.4251 29.1449C39.2544 26.8473 41.169 25.6985 41.169 24C41.169 22.3014 39.2544 21.1526 35.4251 18.855L33.087 17.4522C29.0582 15.0349 27.0438 13.8263 25.5219 14.6879C24 15.5496 24 17.8988 24 22.5971Z" fill="#212129"/>
@@ -169,7 +169,7 @@
                 </div>
 
                 <div class="relative items-center hidden w-full space-x-5 right-container md:flex lg:space-x-10">
-                    <input class="progress progress-2 w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" min="0" max="100" value="0" @change="seek">
+                    <input class="progress progress-2 w-full bg-[#E6EEFD] rounded-full h-1 relative" type="range" name="range" id="range" min="0" max="100" value="0" @change="seek" @input="seek">
 
                     <button class="speaker md:hidden lg:block" ref="speaker">
                         <svg class="w-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,6 +193,8 @@
             </div>
         </div>
     </footer>
+
+    <audio class="audio" src="https://res.cloudinary.com/eazzie/video/upload/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3" ref="audio" @timeupdate="updateProgress" @ended="nextSong"></audio>
   </div>
 </template>
 
@@ -332,9 +334,9 @@ export default {
                     src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1643321058/Codeboy/Toast_Up_Mix_1_dtbjc1.mp3'
                 },
             ],
-            currentCover: '',
-            currentTitle: '',
-            currentSong: ''
+            // currentCover: '',
+            // currentTitle: '',
+            // currentSong: this.currenSongTitle
         }
     },
 
@@ -349,100 +351,96 @@ export default {
             let audio = document.querySelector('.audio')
             const isPlaying = audio.classList.contains('playing')
 
+                // this.changeCurrentSongTitle(name)
         	
             if(isPlaying) {
                 this.pauseSong()
             } else {
-                this.changeCurrentSongTitle(name)
-                this.changeSongIndex(songIndex)
-                this.playSong()
-                console.log(this.songIndex)
+                // this.changeSongIndex(songIndex)
+                this.playSong(id, name)
+                console.log(this.currentSongTitle)
             }
+                // this.changeCurrentSongTitle(name)
         },
 
         playSong(id, name) {
             let audio = document.querySelector('.audio')
             const currentTile = document.querySelectorAll('.currentTile')
             const isPlaying = audio.classList.contains('playing')
-            let playIcon = document.querySelectorAll('.play-icon')
-            let pauseIcon = document.querySelectorAll('.pause-icon')
+            let bigPlayIcon = document.querySelector('.big-play-icon')
+            let bigPauseIcon = document.querySelector('.big-pause-icon')
 
             this.changeSongIndex(id)
-                this.changeCurrentSongTitle(name)
-                
-                this.tracks.map((item) => {
-                    if(item.id === id) {
-                        audio.src = item.src
-                        currentTile.forEach((itemTwo, index) => {
-                            itemTwo.classList.remove('current')
-                            
-                            if(index === id) {
-                                itemTwo.classList.add('current')
-                            }
-                    })
-                    }
+            this.changeCurrentSongTitle(name)
+        
+            this.tracks.map((item) => {
+                if(item.id === id) {
+                    audio.src = item.src
+                    currentTile.forEach((itemTwo, index) => {
+                        itemTwo.classList.remove('current')
+                        
+                        if(index === id) {
+                            itemTwo.classList.add('current')
+                        }
                 })
+                }
+            })
 
-                playIcon.forEach((playicon) => {
-                    playicon.classList.add('hide')
-                })
+            bigPlayIcon.classList.add('hide')
+            bigPauseIcon.classList.remove('hide')
 
-                pauseIcon.forEach((pauseicon) => {
-                    pauseicon.classList.remove('hide')
-                })
-    
-                audio.classList.add('playing')
-                // playIcon.classList.add('hide')
-                // pauseIcon.classList.remove('hide')
+            audio.classList.add('playing')
 
-                this.changeCurrentSongTitle(name)
-                audio.play()
+            // this.changeCurrentSongTitle(name)
+            // console.log(this.changeCurrentSongTitle(name)
+            console.log(this.currentSongTitle)
+            audio.play()
         },
 
-        pauseSong() {
+        pauseSong(id, name) {
             let audio = document.querySelector('.audio')
-            let playIcon = document.querySelector('.play-icon')
-            let pauseIcon = document.querySelector('.pause-icon')
+            let bigPlayIcon = document.querySelector('.big-play-icon')
+            let bigPauseIcon = document.querySelector('.big-pause-icon')
             
             audio.classList.remove('playing')
-            playIcon.classList.remove('hide')
-            pauseIcon.classList.add('hide')
+            bigPlayIcon.classList.remove('hide')
+            bigPauseIcon.classList.add('hide')
             audio.currentTime = audio.currentTime
             audio.pause()
+            // this.changeCurrentSongTitle(name)
+            // this.changeCurrentSongTitle(name)
+            console.log(this.currentSongTitle)
             console.log('paused')
         },
 
-        nextSong() {
+        nextSong(name) {
             let audio = document.querySelector('.audio')
-
-            // this.changeCurrentSongTitle(name)
-
             
-            this.next()
+            this.next(name)
 
             audio.classList.remove('playing')
             this.playSong(this.songIndex)
-            console.log(this.songIndex)
         },
 
-        prevSong() {
+        prevSong(name) {
             let audio = document.querySelector('.audio')
 
-            this.prev()
+            this.prev(name)
 
+            this.changeCurrentSongTitle(name)
             audio.classList.remove('playing')
-            this.play(this.songIndex)
+            this.playSong(this.songIndex)
         },
         
         updateProgress(e) {
             const { currentTime, duration } = e.srcElement
             const progressPercent = (currentTime / duration) * 100
-            const progress = document.querySelectorAll('.progress')
+            const progress = document.querySelector('.progress')
 
             // const nodeList = document.querySelectorAll(".example");
-            for (let i = 0; i < progress.length; i++) {
-                progress[i].value = progressPercent;
-            }
+            // for (let i = 0; i < progress.length; i++) {
+            //     progress[i].value = progressPercent;
+            // }
             // progress.value = progressPercent
 
             // console.log(progressPercent)
@@ -450,6 +448,7 @@ export default {
             // if(progressPercent === 100) {
             //     this.nextSong()
             // }
+            progress.value = progressPercent
         },
 
         seek(e) {
@@ -477,11 +476,11 @@ export default {
     },
 
     mounted() {
-            let ch = document.querySelector('.progress')
-            ch.value = 20
-            console.log(ch.value)
-        
-        ScrollTrigger.matchMedia({
+        let ch = document.querySelector('.progress')
+        ch.value = 20
+        console.log(ch.value)
+    
+    ScrollTrigger.matchMedia({
             "(min-width: 768px)": function() {
                 gsap.to('.top-left-container', {
                     scrollTrigger: {
@@ -504,9 +503,7 @@ export default {
     transition: 800ms;
 }
 
-.current {
-    background-color: #6837fa;
-}
+
 
 .hide {
     display: none;
@@ -532,6 +529,11 @@ export default {
   font-family: 'Monument Extended';
 }
 
+.font-monument-regular {
+  font-family: 'Monument Extended Regular';
+  font-weight: 400;
+}
+
 @font-face {
   font-family: 'Monument Extended';
   src: url('../static/font/Monument_Extended_Font/MonumentExtended-Thin.ttf');
@@ -547,7 +549,7 @@ export default {
 }
 
 @font-face {
-  font-family: 'Monument Extended';
+  font-family: 'Monument Extended Regular';
   src: url('../static/font/Monument_Extended_Font/MonumentExtended-Regular.ttf');
   font-weight: 400;
   font-style: normal;

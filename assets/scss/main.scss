@@ -2,9 +2,17 @@ body {
 
 }
 
+.current {
+    background-color: #6837fa;
+}
 
+.currentTile.current .left-container .right-container .play .pause-icon {
+  display: block;
+}
 
-
+.currentTile.current .left-container .right-container .play .play-icon {
+  display: none;
+}
 
 
 
