@@ -20,7 +20,7 @@
           </p>
         </div>
 
-        <div class="w-2/4 md:w-full">
+        <div class="w-2/4 md:w-full 2xl:w-1/2">
           <nuxt-img src="/images/Mixtape small.png" alt="" format="webp" />
         </div>
       </div>

@@ -2,7 +2,7 @@
   <div>
     <nav class="md:flex justify-end">
       <div
-        class="nav-container md:w-[58%] py-5 lg:py-0 xl:py-7 lg:pt-7 lg:pb-2 flex justify-between items-center md:items-start"
+        class="nav-container md:w-[56.5%] py-5 lg:py-0 xl:py-7 lg:pt-7 lg:pb-2 flex justify-between items-center md:items-start"
       >
         <div class="left-nav-container">
           <nuxt-link

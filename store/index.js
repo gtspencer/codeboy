@@ -3,7 +3,8 @@ export const state = () => ({
     counter: 20,
     songIndex: 0,
     cover: '',
-    currentSongTitle: 'Bangee (Single)'
+    currentSongTitle: 'Bangee (Single)',
+    currentSrc: ''
 })
 
 export const mutations = {
@@ -22,6 +23,10 @@ export const mutations = {
 
   changeCurrentSongTitle(state, payload) {
     state.currentSongTitle = payload
+  },
+
+  changeCurrentSrc(state, payload) {
+    state.currentSrc = payload
   },
 
   prev(state, payload) {
