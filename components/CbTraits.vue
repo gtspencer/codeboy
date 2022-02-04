@@ -2,18 +2,18 @@
     <section class="cb-traits mt-28">
         <div class="cb-traits-container overflow-hidden">
             <div class="header-text text-center">
-                <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
+                <h2 class="font-monument-light text-xl sm:text-2xl md:text-3xl xl:text-4xl">
                     CB Sai Look Traits
                 </h2>
             </div>
 
             <div class="outfits-container flex space-x-10 sm:space-x-16 md:space-x-20 xl:space-x-40 mt-10 md:mt-14">
                 <div class="outfit-text md:min-w-[150px] lg:min-w-[170px] xl:max-w-[200px] ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
-                    <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px]">
+                    <h2 class="font-monument-regular text-xl sm:text-2xl md:text-3xl xl:text-4xl">
                         Outfits
                     </h2>
 
-                    <p class="uppercase font-inter text-[10px] xl:text-xs 2xl:text-sm mt-3">
+                    <p class="uppercase font-monument-light text-[10px] xl:text-xs 2xl:text-sm mt-3">
                         5 Outfits influenced by different songs off the Meetings & Makeups Mixtape
                     </p>
                 </div>
@@ -95,109 +95,109 @@ export default {
             ]
         }
     },
-    mounted() {
-        ScrollTrigger.matchMedia({
-    // "(min-width: 1560px)": function () {
+//     mounted() {
+//         ScrollTrigger.matchMedia({
+//     // "(min-width: 1560px)": function () {
 
-    "(min-width: 320px) and (max-width: 639px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                start: 'center center',
-                end: '+=3000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-            },
-            // duration: 10,
-            x: -1400
-        });
-    },
+//     "(min-width: 320px) and (max-width: 639px)": function () {
+//         gsap.to('.outfits-container', {
+//             scrollTrigger: {
+//                 trigger: '.outfits-container',
+//                 start: 'center center',
+//                 end: '+=3000 center',
+//                 pin: true,
+//                 markers: false,
+//                 scrub: 1,
+//             },
+//             // duration: 10,
+//             x: -1400
+//         });
+//     },
 
-    "(min-width: 640px) and (max-width: 1023px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                start: 'center center',
-                end: '+=3000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-            },
-            // duration: 10,
-            x: -1200
-        });
-    },
+//     "(min-width: 640px) and (max-width: 1023px)": function () {
+//         gsap.to('.outfits-container', {
+//             scrollTrigger: {
+//                 trigger: '.outfits-container',
+//                 start: 'center center',
+//                 end: '+=3000 center',
+//                 pin: true,
+//                 markers: false,
+//                 scrub: 1,
+//             },
+//             // duration: 10,
+//             x: -1200
+//         });
+//     },
 
-    "(min-width: 1024px) and (max-width: 1250px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                // endTrigger: ''
-                start: 'center center',
-                end: '+=3000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-                // horizontal: true
-            },
-            // duration: 10,
-            x: -1450
-        });
-    },
+//     "(min-width: 1024px) and (max-width: 1250px)": function () {
+//         gsap.to('.outfits-container', {
+//             scrollTrigger: {
+//                 trigger: '.outfits-container',
+//                 // endTrigger: ''
+//                 start: 'center center',
+//                 end: '+=3000 center',
+//                 pin: true,
+//                 markers: false,
+//                 scrub: 1,
+//                 // horizontal: true
+//             },
+//             // duration: 10,
+//             x: -1450
+//         });
+//     },
 
-    "(min-width: 1251px) and (max-width: 1535px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                // endTrigger: ''
-                start: 'center center',
-                end: '+=4000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-                // horizontal: true
-            },
-            // duration: 10,
-            x: -1750
-        });
-    },
+//     "(min-width: 1251px) and (max-width: 1535px)": function () {
+//         gsap.to('.outfits-container', {
+//             scrollTrigger: {
+//                 trigger: '.outfits-container',
+//                 // endTrigger: ''
+//                 start: 'center center',
+//                 end: '+=4000 center',
+//                 pin: true,
+//                 markers: false,
+//                 scrub: 1,
+//                 // horizontal: true
+//             },
+//             // duration: 10,
+//             x: -1750
+//         });
+//     },
 
-    "(min-width: 1536px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                // endTrigger: ''
-                start: 'center center',
-                end: '+=4500 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-                // horizontal: true
-            },
-            // duration: 10,
-            x: -1800
-        });
-    },
+//     "(min-width: 1536px)": function () {
+//         gsap.to('.outfits-container', {
+//             scrollTrigger: {
+//                 trigger: '.outfits-container',
+//                 // endTrigger: ''
+//                 start: 'center center',
+//                 end: '+=4500 center',
+//                 pin: true,
+//                 markers: false,
+//                 scrub: 1,
+//                 // horizontal: true
+//             },
+//             // duration: 10,
+//             x: -1800
+//         });
+//     },
 
-    // "(min-width: 2001px) and (max-width: 2560px)": function () {
-    //     gsap.to('.outfits-container', {
-    //         scrollTrigger: {
-    //             trigger: '.outfits-container',
-    //             // endTrigger: ''
-    //             start: 'center center',
-    //             end: '+=4500 center',
-    //             pin: true,
-    //             markers: false,
-    //             scrub: 1,
-    //             // horizontal: true
-    //         },
-    //         // duration: 10,
-    //         x: -3300
-    //     });
-    // },
-})
-    }
+//     // "(min-width: 2001px) and (max-width: 2560px)": function () {
+//     //     gsap.to('.outfits-container', {
+//     //         scrollTrigger: {
+//     //             trigger: '.outfits-container',
+//     //             // endTrigger: ''
+//     //             start: 'center center',
+//     //             end: '+=4500 center',
+//     //             pin: true,
+//     //             markers: false,
+//     //             scrub: 1,
+//     //             // horizontal: true
+//     //         },
+//     //         // duration: 10,
+//     //         x: -3300
+//     //     });
+//     // },
+// })
+//     }
 }
 </script>
 

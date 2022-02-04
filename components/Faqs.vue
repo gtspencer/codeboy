@@ -5,7 +5,7 @@
     >
       <div class="top-left faqTopLeft md:w-1/3" ref="faqTopLeft">
         <h2
-          class="text-2xl text-center capitalize md:text-left font-cormorant sm:text-3xl md:text-2xl lg:text-4xl"
+          class="text-xxl text-center capitalize md:text-left font-monument font-light sm:text-2xl md:text-xl lg:text-3xl"
         >
           Frequently asked <br class="hidden lg:block" />
           questions
@@ -17,11 +17,11 @@
       >
         <div>
           <div
-            class="faq-box-1 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-12 border-t py-3 overflow-y-hidden"
+            class="faq-box-1 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-10 border-t py-3 overflow-y-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 What is CB Sai M&M Looks?
               </h5>
@@ -45,7 +45,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 CODEBOY Sai Meetings & Makeups Looks aka CB Sai M&M Looks are
                 randomly generated NFTs inspired by CODEBoySai's latest project
@@ -61,11 +61,11 @@
           </div>
 
           <div
-            class="faq-box-2 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-[52px] sm:h-10 md:h-14 xl:h-16 border-t py-3 overflow-hidden"
+            class="faq-box-2 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-[52px] sm:h-10 md:h-14 xl:h-14 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 What is the difference between “Family & Friends” and “Original”
                 CB Sai M&M Looks?
@@ -90,7 +90,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 Family & Friends CB Sai M&M Looks are more rare and include red
                 packaging with a Family and Friends stamp. There are a total of
@@ -102,11 +102,11 @@
           </div>
 
           <div
-            class="faq-box-3 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 sm:h-10 xl:h-12 border-t py-3 overflow-hidden"
+            class="faq-box-3 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 sm:h-10 xl:h-10 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 What is CODE LIFE RECORDS DAO?
               </h5>
@@ -130,7 +130,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 CODE LIFE Records DAO is a music record label owned/funded by
                 CBSAI M&M Look NFT Holders which are NFT's influenced by CODEBOY
@@ -146,11 +146,11 @@
           </div>
 
           <div
-            class="faq-box-4 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-10 md:h-14 xl:h-12 border-t border-b py-3 overflow-hidden"
+            class="faq-box-4 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-10 md:h-14 xl:h-14 border-t border-b py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 How do I purchase an Original or Family and Friends CB Sai M&M
                 Look?
@@ -175,7 +175,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 CB Sai M&M Looks will be available for purchase on this website
                 through an initial sale. The easiest way to purchase is to
@@ -189,11 +189,11 @@
           </div>
 
           <div
-            class="faq-box-5 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-12 py-3 overflow-y-hidden"
+            class="faq-box-5 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-10 py-3 overflow-y-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 How many CB Sai M&M Looks exist?
               </h5>
@@ -217,7 +217,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 7,302 CODEBOY Sai Meetings & Makeups Looks exist.
               </p>
@@ -225,11 +225,11 @@
           </div>
 
           <div
-            class="faq-box-6 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-12 border-t py-3 overflow-hidden"
+            class="faq-box-6 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-12 xl:h-10 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 What will be the mint cost of each CB Sai M&M Look?
               </h5>
@@ -253,7 +253,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 The mint cost of each Original CB Sai M&M Look is set at 0.08
                 ETH. (not including gas fees.) The mint cost of each Family &
@@ -264,11 +264,11 @@
           </div>
 
           <div
-            class="faq-box-7 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-10 xl:h-12 border-t py-3 overflow-hidden"
+            class="faq-box-7 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-12 xl:h-14 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 How many CB Sai M&M Looks can I purchase in one transaction?
               </h5>
@@ -292,7 +292,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 There is a limit of 3 CB Sai M&M Looks that can be purchased in
                 1 transaction.
@@ -301,11 +301,11 @@
           </div>
 
           <div
-            class="faq-box-8 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-12 border-t border-b py-3 overflow-hidden"
+            class="faq-box-8 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-12 xl:h-10 border-t border-b py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 When will my CB Sai M&M Look be revealed?
               </h5>
@@ -329,7 +329,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 CAll CB Sai M&M Looks will be revealed 73 hours and 02 minutes
                 after start of sale.
@@ -338,11 +338,11 @@
           </div>
 
           <div
-            class="faq-box-9 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-12 border-b py-3 overflow-hidden"
+            class="faq-box-9 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-10 border-b py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 Can I trade/sell my CB Sai M&M Look?
               </h5>
@@ -366,7 +366,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 Yes, all CB Sai M&M Look holders will be able to trade their
                 NFTs on the secondary market. Reminder, selling your CB Sai M&M
@@ -376,11 +376,11 @@
           </div>
 
           <div
-            class="faq-box-10 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-10 md:h-14 lg:h-10 xl:h-12 py-3 overflow-y-hidden"
+            class="faq-box-10 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-10 md:h-14 lg:h-12 xl:h-12 py-3 overflow-y-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 How many CB Sai M&M Looks will be reserved from the mint sale?
               </h5>
@@ -404,7 +404,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 CODEBOY Sai will be reserving 75 CB SAI M&M F&F (Family &
                 Friend) Looks + 75 Original CB Sai M&M Looks from the mint sale
@@ -414,11 +414,11 @@
           </div>
 
           <div
-            class="faq-box-11 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-10 xl:h-14 border-t py-3 overflow-hidden"
+            class="faq-box-11 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-14 sm:h-12 xl:h-10 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 Whats M2E mean? Where does the revenue split go?
               </h5>
@@ -442,7 +442,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 CB Sai M&M Looks is a M2E project which means Manage to Earn.
                 Each CB Sai M&M Look holder will play a role in managing CODEBOY
@@ -458,11 +458,11 @@
           </div>
 
           <div
-            class="faq-box-12 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-[68px] sm:h-14 xl:h-16 border-t py-3 overflow-hidden"
+            class="faq-box-12 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-[68px] sm:h-16 xl:h-14 border-t py-3 overflow-hidden"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 Can I access other CODEBOY Sai music other than the Meetings &
                 Makeups tape with my CB Sai M&M Look?
@@ -487,7 +487,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 You can only access Meetings & Makeups on the Exclusive Music
                 Player if you own a CB Sai M&M Look. If you would like to access
@@ -497,12 +497,12 @@
           </div>
 
           <div
-            class="faq-box-13 faq-box faqStop w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 xl:h-12 border-t border-b py-3 overflow-hidden"
+            class="faq-box-13 faq-box faqStop w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-12 xl:h-12 border-t border-b py-3 overflow-hidden"
             ref="faqStop"
           >
             <div class="flex items-center justify-between top">
               <h5
-                class="font-inter text-xs xl:text-sm 2xl:text-base max-w-[95%]"
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
               >
                 When do CB Sai Executive Looks go on auction?
               </h5>
@@ -526,7 +526,7 @@
 
             <div class="hidden mt-3 bottom">
               <p
-                class="font-inter font-light text-[10px] xl:text-xs 2xl:text-sm"
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 A total of 7 Executive Positions will exist. Only Executive
                 Positions #1 through #3 will go on auction after CB Sai M&M

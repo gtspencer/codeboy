@@ -32,7 +32,60 @@ body {
 
 
 
-Z
+.font-monument {
+  font-family: 'Monument Extended';
+}
+
+.font-monument-light {
+  font-family: 'Monument Extended light';
+  font-weight: 300;
+}
+.font-monument-regular {
+  font-family: 'Monument Extended Regular';
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/font/Monument_Extended_Font/MonumentExtended-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended Light';
+  src: url('/font/Monument_Extended_Font/MonumentExtended-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended Regular';
+  src: url('/font/Monument_Extended_Font/MonumentExtended-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/font/Monument_Extended_Font/MonumentExtended-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/font/Monument_Extended_Font/MonumentExtended-Ultrabold.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*width*/
 ::-webkit-scrollbar {

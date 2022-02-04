@@ -3,17 +3,17 @@
     <div class="text-center letter-container">
       <h2
         data-aos="zoom-in" data-aos-duration="1000"
-        class="letter-heading capitalize font-cormorant text-3xl sm:text-4xl lg:text-[40px] xl:text-5xl"
+        class="letter-heading capitalize font-monument-light text-xl sm:text-2xl md:text-3xl xl:text-4xl"
         ref="placeHolder"
       >
-        Letter from Codeboy Sai
+        Letter from <span class="font-monument-regular">CODEBOY Sai</span>
       </h2>
 
       <div
         data-aos="fade-up" data-aos-duration="1000"
         class="mt-6 space-y-3 text-details md:space-y-5 sm:px-10 md:px-20 lg:px-56 xl:px-72"
       >
-        <p class="text-sm font-light letter-details text-inter xl:text-base">
+        <p class="text-[10px] font-light letter-details font-monument-light lg:text-xs xl:text-sm 2xl:text-base lg:leading-normal xl:leading-normal 2xl:leading-normal">
           Meetings and Makeups is a mixtape about balancing work with toxic fun
           relationships. I wanted to take different sounds and feelings and put
           it all into one project. When I finished recording this mixtape, I
@@ -27,7 +27,7 @@
           with CODE LIFE Records.
         </p>
 
-        <p class="text-sm font-light letter-details text-inter xl:text-base">
+        <p class="text-[10px] font-light letter-details font-monument-light lg:text-xs xl:text-sm 2xl:text-base lg:leading-normal xl:leading-normal 2xl:leading-normal">
           Im signing myself to a life-360 deal to CODE LIFE Records. I’m putting
           my musi career in the hands of people I have never met. Now my true
           fans can make money when I make money. The only way a major label will
@@ -36,7 +36,7 @@
           performances to streaming rev, NFT royalties and more.
         </p>
 
-        <p class="text-sm font-light letter-details text-inter xl:text-base">
+        <p class="text-[10px] font-light letter-details font-monument-light lg:text-xs xl:text-sm 2xl:text-base lg:leading-normal xl:leading-normal 2xl:leading-normal">
           Thank you to everyone who helped work and will work on this project.
           Can’t wait to meet you all at the CODE LIFE Records HQ
         </p>
@@ -44,9 +44,9 @@
 
       <h2
         data-aos="zoom-out" data-aos-duration="1000"
-        class="letter-footer font-inter mt-5 md:mt-8 text-3xl md:px-36 lg:px-[260px] xl:px-[22rem]"
+        class="letter-footer font-monument-regular mt-5 md:mt-14 xl:mt-20 text-xl lg:text-2xl xl:text-3xl md:px-36 lg:px-[200px] xl:px-[250px] 2xl:px-[280px]"
       >
-        “I can be indepedent while being dependent on my fans”
+        <span class="">“</span>I can remain independent while depending on my fans to manage my career giving them the same % share I wouldve given a Major Label.<span class="">“</span>
       </h2>
     </div>
   </section>
@@ -72,4 +72,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>

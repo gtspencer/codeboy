@@ -3,11 +3,11 @@
         <section class="cb-accessories my-32 md:my-38 lg:my-48 xl:my-52 xl:px-10 2xl:px-20 overflow-hidden">
             <div class="cb-accessories-container min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] 2xl:min-w-[15%] flex justify-between space-x-10 ml-5 sm:ml-10 lg:ml-20 xl:ml-24">
                 <div class="texts text-left">
-                    <h2 class="font-cormorant text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px] leading-9 md:leading-10">
-                        CB Sai LOOK Accessories
+                    <h2 class="font-monument-regular text-xl sm:text-2xl md:text-3xl xl:text-4xl">
+                        Accessories
                     </h2>
 
-                    <p class="font-inter uppercase text-[10px] xl:text-xs 2xl:text-sm mt-3">
+                    <p class="font-monument-light uppercase text-[10px] xl:text-xs 2xl:text-sm mt-3">
                         12 items influenced by each song off the Meetings & Makeups Mixtape
                     </p>
                 </div>
@@ -143,90 +143,90 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
 
 export default {
-    mounted() {
-        ScrollTrigger.matchMedia({
-            "(min-width: 320px) and (max-width: 639px)": function () {
-                gsap.to('.cb-accessories-container', {
-                    scrollTrigger: {
-                        trigger: '.cb-accessories-container',
-                        start: 'center center',
-                        end: '+=3000 center',
-                        pin: true,
-                        markers: false,
-                        scrub: 1,
-                    },
-                    x: -550
-                });
-            },
+    // mounted() {
+    //     ScrollTrigger.matchMedia({
+    //         "(min-width: 320px) and (max-width: 639px)": function () {
+    //             gsap.to('.cb-accessories-container', {
+    //                 scrollTrigger: {
+    //                     trigger: '.cb-accessories-container',
+    //                     start: 'center center',
+    //                     end: '+=3000 center',
+    //                     pin: true,
+    //                     markers: false,
+    //                     scrub: 1,
+    //                 },
+    //                 x: -550
+    //             });
+    //         },
 
-            "(min-width: 640px) and (max-width: 1023px)": function () {
-                gsap.to('.cb-accessories-container', {
-                    scrollTrigger: {
-                        trigger: '.cb-accessories-container',
-                        start: 'center center',
-                        end: '+=3000 center',
-                        pin: true,
-                        markers: false,
-                        scrub: 1,
-                    },
-                    // duration: 10,
-                    x: -900
-                });
-            },
+    //         "(min-width: 640px) and (max-width: 1023px)": function () {
+    //             gsap.to('.cb-accessories-container', {
+    //                 scrollTrigger: {
+    //                     trigger: '.cb-accessories-container',
+    //                     start: 'center center',
+    //                     end: '+=3000 center',
+    //                     pin: true,
+    //                     markers: false,
+    //                     scrub: 1,
+    //                 },
+    //                 // duration: 10,
+    //                 x: -900
+    //             });
+    //         },
 
-            "(min-width: 1024px) and (max-width: 1250px)": function () {
-                gsap.to('.cb-accessories-container', {
-                    scrollTrigger: {
-                        trigger: '.cb-accessories-container',
-                        // endTrigger: ''
-                        start: 'center center',
-                        end: '+=3000 center',
-                        pin: true,
-                        markers: false,
-                        scrub: 1,
-                        // horizontal: true
-                    },
-                    // duration: 10,
-                    x: -750
-                });
-            },
+    //         "(min-width: 1024px) and (max-width: 1250px)": function () {
+    //             gsap.to('.cb-accessories-container', {
+    //                 scrollTrigger: {
+    //                     trigger: '.cb-accessories-container',
+    //                     // endTrigger: ''
+    //                     start: 'center center',
+    //                     end: '+=3000 center',
+    //                     pin: true,
+    //                     markers: false,
+    //                     scrub: 1,
+    //                     // horizontal: true
+    //                 },
+    //                 // duration: 10,
+    //                 x: -750
+    //             });
+    //         },
 
-            "(min-width: 1251px) and (max-width: 1535px)": function () {
-                gsap.to('.cb-accessories-container', {
-                    scrollTrigger: {
-                        trigger: '.cb-accessories-container',
-                        // endTrigger: ''
-                        start: 'center center',
-                        end: '+=4000 center',
-                        pin: true,
-                        markers: false,
-                        scrub: 1,
-                        // horizontal: true
-                    },
-                    // duration: 10,
-                    x: -700
-                });
-            },
+    //         "(min-width: 1251px) and (max-width: 1535px)": function () {
+    //             gsap.to('.cb-accessories-container', {
+    //                 scrollTrigger: {
+    //                     trigger: '.cb-accessories-container',
+    //                     // endTrigger: ''
+    //                     start: 'center center',
+    //                     end: '+=4000 center',
+    //                     pin: true,
+    //                     markers: false,
+    //                     scrub: 1,
+    //                     // horizontal: true
+    //                 },
+    //                 // duration: 10,
+    //                 x: -700
+    //             });
+    //         },
 
-            "(min-width: 1536px) and (max-width: 2000px)": function () {
-                gsap.to('.cb-accessories-container', {
-                    scrollTrigger: {
-                        trigger: '.cb-accessories-container',
-                        // endTrigger: ''
-                        start: 'center center',
-                        end: '+=4500 center',
-                        pin: true,
-                        markers: false,
-                        scrub: 1,
-                        // horizontal: true
-                    },
-                    // duration: 10,
-                    x: -400,
-                    ease: 'none'
-                });
-            },
-        })
-    }
+    //         "(min-width: 1536px) and (max-width: 2000px)": function () {
+    //             gsap.to('.cb-accessories-container', {
+    //                 scrollTrigger: {
+    //                     trigger: '.cb-accessories-container',
+    //                     // endTrigger: ''
+    //                     start: 'center center',
+    //                     end: '+=4500 center',
+    //                     pin: true,
+    //                     markers: false,
+    //                     scrub: 1,
+    //                     // horizontal: true
+    //                 },
+    //                 // duration: 10,
+    //                 x: -400,
+    //                 ease: 'none'
+    //             });
+    //         },
+    //     })
+    // }
 }
 </script>
 

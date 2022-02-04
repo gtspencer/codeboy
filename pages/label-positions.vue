@@ -6,7 +6,7 @@
       <div class="music-label-container space-y-7 lg:space-y-20 xl:px-20">
         <div class="top sm:grid grid-cols-2 lg:grid-cols-4 space-y-7 sm:space-y-0 sm:gap-y-7 overflow-hidden">
           <div class="header-and-image col-span-2 sm:text-center lg:text-left">
-            <h1 data-aos="fade-right" data-aos-duration="1000" class="font-monument font-normal text-white text-[34px] sm:text-[40px] lg:text-5xl xl:text-[52px] 2xl:text-6xl">
+            <h1 data-aos="fade-right" data-aos-duration="1000" class="font-monument-light text-white text-[34px] sm:text-[40px] lg:text-5xl xl:text-[52px] 2xl:text-6xl">
                 Music Label <br> Positions:
             </h1>
 
@@ -23,22 +23,22 @@
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="position-ar-scout justify-self-center">
-              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+              <p class="post font-monument-regular text-white text-xl xl:text-xl 2xl:text-4xl">
                 A&R Scout
               </p>
 
-              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
+              <p class="requirement font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm mt-2 xl:mt-3 mb-2 xl:mb-3 leading-normal">
                 Required: 1 Listening Pass
               </p>
 
-              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+              <p class="details font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 An A&R Scouts listens to CODEBOY Sai leaks, studio live streams, goes to shows, and hopefully in the future: find new artists for the CODE LIFE Records DAO.
                   <span class="ar-scout-span hidden">
                    If the scout finds an artist that fits, he'll pass them to an A&R Rep. It's the Rep’s job to get the rest of the department at the label interested in the prospective artist. The Executives will have the final decision on whether to sign an artist. The A&R Scout & Rep will retain the finders fee in the negotiated deal with the prospective artist. 
                   </span>
               </p>
 
-              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleArScout">
+              <button class="ar-read-more font-monument-regular text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleArScout">
                 {{ arScoutButtonState }}
 
                 <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,22 +48,22 @@
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="position-ar-rep justify-self-center">
-              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+              <p class="post font-monument-regular text-white text-xl xl:text-xl 2xl:text-4xl">
                 A&R Rep
               </p>
 
-              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
+              <p class="requirement font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm mt-2 xl:mt-3 mb-2 xl:mb-3 leading-normal">
                 Required CB Sai Looks: 2 
               </p>
 
-              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+              <p class="details font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 An A&R Rep plays an important role in the development of CODEBOY Sai and other artists on CODE LIFE Records once we begin taking artist submissions. 
                   <span class="ar-span hidden">
                   A&R Reps have a voice in how CODEBOY Sai will distribute & market his musical art. A&R Reps will also can suggest songwriters orchestrate collaborations by pairing CODEBOY Sai with other artists and even producers.
                   </span>
               </p>
 
-              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleAr">
+              <button class="ar-read-more font-monument-regular text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleAr">
                 {{ arButtonState }}
 
                 <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,22 +75,22 @@
 
         <div class="bottom sm:grid grid-cols-2 lg:grid-cols-4 space-y-7 sm:space-y-0 sm:gap-y-7 overflow-hidden">
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="position-merchandiser justify-self-center">
-            <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+            <p class="post font-monument-regular text-white text-xl xl:text-xl 2xl:text-4xl">
               Merchandiser
             </p>
 
-            <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
-              Required CB Sai Looks: 2 
+            <p class="requirement font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm mt-2 xl:mt-3 mb-2 xl:mb-3 leading-normal">
+              Required: <span class="font-monument-regular">2 CB Sai Looks</span> <br> or <span class="font-monument-regular">1 CB Sai F&F Look</span>
             </p>
 
-            <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+            <p class="details font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
               The Merchandiser role is responsible for shipping VINYL records, merch, and other products from CODEBOY SAI for the purpose of sales.
               <span class="merchandiser-span hidden">
                 Merchandisers assist with developing promotions strategies by communicating with brands/influencers about music placements. Merchandisers will get compensated for any graphic design work on cover art, merch, memes, and other products for the CODEBoy Sai Merch store.
               </span>
             </p>
 
-            <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleMerchandiser">
+            <button class="ar-read-more font-monument-regular text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleMerchandiser">
               {{ merchandiserButtonState }}
 
               <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,22 +100,22 @@
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="position-marketing lg:-mt-10">
-              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+              <p class="post font-monument-regular text-white text-xl xl:text-xl 2xl:text-4xl">
                 Marketing <br class="hidden sm:block"> Manager
               </p>
 
-              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
-                Required CB Sai Looks: 3
+              <p class="requirement font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm mt-2 xl:mt-3 mb-2 xl:mb-3 leading-normal">
+                Required: <span class="font-monument-regular">3 CB Sai Looks</span> <br> or <span class="font-monument-regular">1 CB Sai F&F Look</span>
               </p>
 
-              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+              <p class="details font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 The Marketing Manager role develops the communication between CODEBoy Sai and the general public.
                   <span class="marketing-span hidden">
                    They will create strategies to promote CODEBoy Sai by developing advertisements, designing and planning campaigns, etc. Marketing managers will also manage a budget for the Marketing department, overseeing professionals and expenses like graphic art, content, ads, videographers, and more.
                   </span>
               </p>
 
-              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleMarketing">
+              <button class="ar-read-more font-monument-regular text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleMarketing">
                 {{ marketingButtonState }}
 
                 <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,22 +125,22 @@
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="position-publicist">
-              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+              <p class="post font-monument-regular text-white text-xl xl:text-xl 2xl:text-4xl">
                 Publicist
               </p>
 
-              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
-                Required CB Sai Looks: 4
+              <p class="requirement font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm mt-2 xl:mt-3 mb-2 xl:mb-3 leading-normal">
+                Required: <span class="font-monument-regular">4 CB Sai Looks</span> <br> or <span class="font-monument-regular">1 CB Sai F&F Look</span>
               </p>
 
-              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+              <p class="details font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 The Publicist role is responsible for sharing information and news about CODEBOY Sai with the press.
                   <span class="publicist-span hidden">
                    They pitch news stories about CODEBOY Sai to media outlets, write press releases, create media kits, and schedule interviews and appearances. 
                   </span>
               </p>
 
-              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handlePublicist">
+              <button class="ar-read-more font-monument-regular text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handlePublicist">
                 {{ publicistButtonState }}
 
                 <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,22 +150,22 @@
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="position-agent">
-              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+              <p class="post font-monument-regular text-white text-xl xl:text-xl 2xl:text-4xl">
                 Agent
               </p>
 
-              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
-                Required CB Sai Looks: 6
+              <p class="requirement font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm mt-2 xl:mt-3 mb-2 xl:mb-3 leading-normal">
+                Required: <span class="font-monument-regular">5 CB Sai Looks</span> <br> or <span class="font-monument-regular">1 CB Sai F&F Look</span>
               </p>
 
-              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+              <p class="details font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 The music agent role works closely with CODEBOY Sai to coordinate promotions, schedule tours and appearances, and secure deals.
                   <span class="agent-span hidden">
                    Agents will communicate with other professionals in the industry like venue managers, concert organizers, promoters, and scouts to make sure CODEBOY Sai gets adequate support and coverage and is able to share his talents with the public. Music Agents will retain a broker fee for any deals they secure. 
                   </span>
               </p>
 
-              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleAgent">
+              <button class="ar-read-more font-monument-regular text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleAgent">
                 {{ agentButtonState }}
 
                 <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,22 +175,22 @@
           </div>
 
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="position-resource-admin">
-              <p class="post font-cormorant text-white text-2xl xl:text-3xl 2xl:text-4xl">
+              <p class="post font-monument-regular text-white text-xl xl:text-xl 2xl:text-4xl">
                 Resource Admin
               </p>
 
-              <p class="requirement font-inter font-bold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
-                Required CB Sai Looks: 7
+              <p class="requirement font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm mt-2 xl:mt-3 mb-2 xl:mb-3 leading-normal">
+                Required: <span class="font-monument-regular">6 CB Sai Looks</span> <br> or <span class="font-monument-regular">1 CB Sai F&F Look</span>
               </p>
 
-              <p class="details font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
+              <p class="details font-monument-light text-white text-[10px] xl:text-xs 2xl:text-sm pr-10 xl:pr-24 2xl:pr-28">
                 The Resource Admin role is responsible for performing HR tasks like onboarding new staff, maintaining/enforcing the CODE LIFE Records handbook policies, and performing payroll for any CODEBOY Sai expenses.
                   <span class="resource-admin-span hidden">
                    Admins facilitate things like booking recording sessions when/where required.  Resource Admins also share the responsibility of maintaining an accurate list of CODE LIFE Records staff. 
                   </span>
               </p>
 
-              <button class="ar-read-more font-inter font-light text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleResourceAdmin">
+              <button class="ar-read-more font-monument-regular text-white text-[10px] xl:text-xs 2xl:text-sm flex justify-between items-center mt-1 xl:mt-2" @click="handleResourceAdmin">
                 {{ resourceAdminButtonState }}
 
                 <svg class="w-2 xl:w-3 ml-2 xl:ml-3" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
         </div>
 
         <div class="bottom-right-herex justify-start overflow-hidden">
-          <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="" class="font-cormorant text-white text-[34px] sm:text-[40px] lg:text-5xl xl:text-[52px] 2xl:text-6xl">
+          <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="" class="font-monument-regular text-white text-[34px] sm:text-[40px] lg:text-5xl xl:text-[52px] 2xl:text-6xl">
             Executive
           </h2>
 
@@ -223,12 +223,12 @@
             Positions will go on auction after CB Sai Looks are 100% Minted.
           </p>
 
-          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" class="details font-inter font-light text-white text-[10px] lg:text-xs xl:text-sm 2xl:text-base leading-loose">
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" class="details font-monument-light text-white text-[10px] lg:text-xs xl:text-sm 2xl:text-base leading-loose">
             The Executive role will make executive decisions and oversee the publishing, manufacturing, marketing, promotion,
               production, distribution, and touring decisions for CODEBoy Sai and CODE LIFE Rec(Dis)cord Label. 
           </p>
 
-          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class="requirement font-inter font-extrabold text-white text-sm xl:text-base 2xl:text-lg mt-2 xl:mt-3 mb-1 xl:mb-2">
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class="requirement font-inter font-extrabold text-white text-xs xl:text-sm 2xl:text-base mt-2 xl:mt-3 mb-1 xl:mb-2">
             5 Total Executives
           </p>
         </div>

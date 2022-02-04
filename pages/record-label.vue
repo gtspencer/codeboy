@@ -11,16 +11,33 @@
           />
         </div>
 
-        <p class="latest uppercase text-white  font-inter text-[10px] xl:text-xs 2xl:text-s mt-10" id="drops">
-          latest drop:
+        <p class="latest uppercase text-white font-monument-regular text-[10px] xl:text-xs 2xl:text-s mt-10" id="drops">
+          latest drops:
         </p>
 
-        <div class="meetings-drop relative flex justify-center items-center my-40">
-          <h2 class="m-m font-cormorant text-white text-4xl sm:text-[40px] lg:text-5xl xl:text-[56px] text-center z-50">
-             
+        <div class="listening-pass relative md:flex justify-center items-center mt-28">
+          <h2 class="l-p font-monument-light text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center md:text-left z-50">
+            Listening <br class="hidden md:block"> Pass
           </h2>
 
-          <img class="absolute-image absolute opacity-0" src="/images/Meetings-and-Makeups.png" alt="">
+          <div class="video md:w-1/2">
+            <video
+              class="transform"
+              src="https://res.cloudinary.com/eazzie/video/upload/c_scale,h_644,q_100,w_638/v1642648085/Codeboy/LISTENINGPASS-LANYARD_upwzog.webm"
+              alt="The Listening Pass Asset"
+              autoplay
+              loop
+              muted
+            />
+          </div>
+        </div>
+
+        <div class="listening-pass relative md:flex justify-center items-center md:space-x-20">
+            <h2 class="m-m font-monument-light text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center md:text-left z-50">
+              Meetings <br class="hidden md:block"> & <br class="hidden md:block"> Makeups
+            </h2>
+
+            <img class="md:w-[40%]" src="../static/images/First-Drop-Image.png" alt="Meetings & Makeups">
         </div>
       </section>
   </div>
@@ -53,25 +70,25 @@ export default {
       // }
       this.increase()
 
-      gsap.to('.m-m', {
-        scrollTrigger: {
-          trigger: '.m-m',
-          start: 'center 80%',
-          // markers: true
-        },
-        duration: 2,
-        text: 'Meetings and makeups NFT'
-      })
+      // gsap.to('.m-m', {
+      //   scrollTrigger: {
+      //     trigger: '.m-m',
+      //     start: 'center 80%',
+      //     // markers: true
+      //   },
+      //   duration: 2,
+      //   text: 'Meetings and makeups NFT'
+      // })
 
-      gsap.to('.absolute-image', {
-        scrollTrigger: {
-          trigger: '.m-m',
-          start: 'center 80%',
-        },
-        duration: 2,
-        opacity: 1,
-        delay: 2
-      })
+      // gsap.to('.absolute-image', {
+      //   scrollTrigger: {
+      //     trigger: '.m-m',
+      //     start: 'center 80%',
+      //   },
+      //   duration: 2,
+      //   opacity: 1,
+      //   delay: 2
+      // })
     }
 }
 </script>
