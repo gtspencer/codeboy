@@ -639,7 +639,7 @@ export default {
 </script>
 
 <style>
-.faq-box {
+/* .faq-box {
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -683,5 +683,5 @@ export default {
 
 .faq-box::-webkit-scrollbar {
     visibility: hidden;
-}
+} */
 </style>

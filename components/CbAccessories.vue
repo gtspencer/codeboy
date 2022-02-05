@@ -143,90 +143,90 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
 
 export default {
-    // mounted() {
-    //     ScrollTrigger.matchMedia({
-    //         "(min-width: 320px) and (max-width: 639px)": function () {
-    //             gsap.to('.cb-accessories-container', {
-    //                 scrollTrigger: {
-    //                     trigger: '.cb-accessories-container',
-    //                     start: 'center center',
-    //                     end: '+=3000 center',
-    //                     pin: true,
-    //                     markers: false,
-    //                     scrub: 1,
-    //                 },
-    //                 x: -550
-    //             });
-    //         },
+    mounted() {
+        ScrollTrigger.matchMedia({
+            "(min-width: 320px) and (max-width: 639px)": function () {
+                gsap.to('.cb-accessories-container', {
+                    scrollTrigger: {
+                        trigger: '.cb-accessories-container',
+                        start: 'center center',
+                        end: '+=3000 center',
+                        pin: true,
+                        markers: false,
+                        scrub: 1,
+                    },
+                    x: -550
+                });
+            },
 
-    //         "(min-width: 640px) and (max-width: 1023px)": function () {
-    //             gsap.to('.cb-accessories-container', {
-    //                 scrollTrigger: {
-    //                     trigger: '.cb-accessories-container',
-    //                     start: 'center center',
-    //                     end: '+=3000 center',
-    //                     pin: true,
-    //                     markers: false,
-    //                     scrub: 1,
-    //                 },
-    //                 // duration: 10,
-    //                 x: -900
-    //             });
-    //         },
+            "(min-width: 640px) and (max-width: 1023px)": function () {
+                gsap.to('.cb-accessories-container', {
+                    scrollTrigger: {
+                        trigger: '.cb-accessories-container',
+                        start: 'center center',
+                        end: '+=3000 center',
+                        pin: true,
+                        markers: false,
+                        scrub: 1,
+                    },
+                    // duration: 10,
+                    x: -900
+                });
+            },
 
-    //         "(min-width: 1024px) and (max-width: 1250px)": function () {
-    //             gsap.to('.cb-accessories-container', {
-    //                 scrollTrigger: {
-    //                     trigger: '.cb-accessories-container',
-    //                     // endTrigger: ''
-    //                     start: 'center center',
-    //                     end: '+=3000 center',
-    //                     pin: true,
-    //                     markers: false,
-    //                     scrub: 1,
-    //                     // horizontal: true
-    //                 },
-    //                 // duration: 10,
-    //                 x: -750
-    //             });
-    //         },
+            "(min-width: 1024px) and (max-width: 1250px)": function () {
+                gsap.to('.cb-accessories-container', {
+                    scrollTrigger: {
+                        trigger: '.cb-accessories-container',
+                        // endTrigger: ''
+                        start: 'center center',
+                        end: '+=3000 center',
+                        pin: true,
+                        markers: false,
+                        scrub: 1,
+                        // horizontal: true
+                    },
+                    // duration: 10,
+                    x: -750
+                });
+            },
 
-    //         "(min-width: 1251px) and (max-width: 1535px)": function () {
-    //             gsap.to('.cb-accessories-container', {
-    //                 scrollTrigger: {
-    //                     trigger: '.cb-accessories-container',
-    //                     // endTrigger: ''
-    //                     start: 'center center',
-    //                     end: '+=4000 center',
-    //                     pin: true,
-    //                     markers: false,
-    //                     scrub: 1,
-    //                     // horizontal: true
-    //                 },
-    //                 // duration: 10,
-    //                 x: -700
-    //             });
-    //         },
+            "(min-width: 1251px) and (max-width: 1535px)": function () {
+                gsap.to('.cb-accessories-container', {
+                    scrollTrigger: {
+                        trigger: '.cb-accessories-container',
+                        // endTrigger: ''
+                        start: 'center center',
+                        end: '+=4000 center',
+                        pin: true,
+                        markers: false,
+                        scrub: 1,
+                        // horizontal: true
+                    },
+                    // duration: 10,
+                    x: -700
+                });
+            },
 
-    //         "(min-width: 1536px) and (max-width: 2000px)": function () {
-    //             gsap.to('.cb-accessories-container', {
-    //                 scrollTrigger: {
-    //                     trigger: '.cb-accessories-container',
-    //                     // endTrigger: ''
-    //                     start: 'center center',
-    //                     end: '+=4500 center',
-    //                     pin: true,
-    //                     markers: false,
-    //                     scrub: 1,
-    //                     // horizontal: true
-    //                 },
-    //                 // duration: 10,
-    //                 x: -400,
-    //                 ease: 'none'
-    //             });
-    //         },
-    //     })
-    // }
+            "(min-width: 1536px) and (max-width: 2000px)": function () {
+                gsap.to('.cb-accessories-container', {
+                    scrollTrigger: {
+                        trigger: '.cb-accessories-container',
+                        // endTrigger: ''
+                        start: 'center center',
+                        end: '+=4500 center',
+                        pin: true,
+                        markers: false,
+                        scrub: 1,
+                        // horizontal: true
+                    },
+                    // duration: 10,
+                    x: -400,
+                    ease: 'none'
+                });
+            },
+        })
+    }
 }
 </script>
 

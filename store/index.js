@@ -4,7 +4,9 @@ export const state = () => ({
     songIndex: 0,
     cover: '',
     currentSongTitle: 'Bangee (Single)',
-    currentSrc: ''
+    currentSrc: '',
+    category: 'All',
+    assetsLoaded: true
 })
 
 export const mutations = {
@@ -27,6 +29,14 @@ export const mutations = {
 
   changeCurrentSrc(state, payload) {
     state.currentSrc = payload
+  },
+
+  changeCategory(state, payload) {
+    state.category = payload
+  },
+
+  changeLoaderState(state, payload) {
+    state.assetsLoaded = payload
   },
 
   prev(state, payload) {

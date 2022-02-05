@@ -1,9 +1,9 @@
 <template>
-  <transition name="fade">
-    <div v-if="show">
+  <!-- <transition name="fade"> -->
+    <div>
       <Hero />
     </div>
-  </transition>
+  <!-- </transition> -->
 </template>
 
 <script>
@@ -23,9 +23,9 @@ export default {
 
     methods: {
       showToggle() {
-        // setTimeout(() => {
+        setTimeout(() => {
           this.show = true
-        // }, 1000)
+        }, 2000)
       }
     }
 }

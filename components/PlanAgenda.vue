@@ -122,7 +122,7 @@
         class="agenda-container sm:flex justify-center items-start md:space-x-[50px] lg:space-x-[140px] xl:space-x-[40px]"
       >
         <div class="top-left agendaTopLeft" ref="agendaTopLeft">
-          <h2 data-aos="fade-in" data-aos-duration="1000"
+          <h2 
             class="capitalize font-monument-light text-2xl lg:text-3xl xl:text-5xl text-center sm:text-left md:leading-normal xl:leading-tight"
           >
             CODE <br class="hidden md:hidden" />
@@ -323,67 +323,67 @@ const tl = gsap.timeline();
 export default {
   mixins: [aosMixin],
   
-  // mounted() {
-  //   /* Animations for Plans Section */
-  //   ScrollTrigger.matchMedia({
-  //     /* Animation off for small screens */
-  //     "(max-width: 639px)": function () {
-  //       gsap.to(".planTopLeft", {
-  //         scrollTrigger: {
-  //           trigger: ".planTopLeft",
-  //           endTrigger: ".planStop",
-  //           start: "top 30%",
-  //           end: "top 30%",
-  //           pin: false,
-  //         },
-  //       });
-  //     },
+  mounted() {
+    /* Animations for Plans Section */
+    ScrollTrigger.matchMedia({
+      /* Animation off for small screens */
+      "(max-width: 639px)": function () {
+        gsap.to(".planTopLeft", {
+          scrollTrigger: {
+            trigger: ".planTopLeft",
+            endTrigger: ".planStop",
+            start: "top 30%",
+            end: "top 30%",
+            pin: false,
+          },
+        });
+      },
 
-  //     /* Animation on for big screens */
-  //     "(min-width: 640px)": function () {
-  //       gsap.to(".planTopLeft", {
-  //         scrollTrigger: {
-  //           trigger: ".planTopLeft",
-  //           endTrigger: ".planStop",
-  //           start: "top 30%",
-  //           end: "top 30%",
-  //           pin: true,
-  //           markers: false,
-  //         },
-  //       });
-  //     },
-  //   });
+      /* Animation on for big screens */
+      "(min-width: 640px)": function () {
+        gsap.to(".planTopLeft", {
+          scrollTrigger: {
+            trigger: ".planTopLeft",
+            endTrigger: ".planStop",
+            start: "top 30%",
+            end: "top 30%",
+            pin: true,
+            markers: false,
+          },
+        });
+      },
+    });
 
-  //   /* Animations for Agenda Section */
-  //   ScrollTrigger.matchMedia({
-  //     /* Animation off for small screens */
-  //     "(max-width: 639px)": function () {
-  //       gsap.to(".agendaTopLeft", {
-  //         scrollTrigger: {
-  //           trigger: ".agendaTopLeft",
-  //           endTrigger: ".agendaStop",
-  //           start: "top 30%",
-  //           end: "top 30%",
-  //           pin: false,
-  //         },
-  //       });
-  //     },
+    /* Animations for Agenda Section */
+    ScrollTrigger.matchMedia({
+      /* Animation off for small screens */
+      "(max-width: 639px)": function () {
+        gsap.to(".agendaTopLeft", {
+          scrollTrigger: {
+            trigger: ".agendaTopLeft",
+            endTrigger: ".agendaStop",
+            start: "top 30%",
+            end: "top 30%",
+            pin: false,
+          },
+        });
+      },
 
-  //     /* Animation on for big screens */
-  //     "(min-width: 640px)": function () {
-  //       gsap.to(".agendaTopLeft", {
-  //         scrollTrigger: {
-  //           trigger: ".agendaTopLeft",
-  //           endTrigger: ".agendaStop",
-  //           start: "top 30%",
-  //           end: "top 30%",
-  //           pin: true,
-  //           markers: false,
-  //         },
-  //       });
-  //     },
-  //   });
-  // },
+      /* Animation on for big screens */
+      "(min-width: 640px)": function () {
+        gsap.to(".agendaTopLeft", {
+          scrollTrigger: {
+            trigger: ".agendaTopLeft",
+            endTrigger: ".agendaStop",
+            start: "top 30%",
+            end: "top 50%",
+            pin: true,
+            markers: false,
+          },
+        });
+      },
+    });
+  },
 };
 </script>
 

@@ -65,7 +65,7 @@
 
                     <div class="lyrics mt-10">
                       <div v-for="lyric in lyrics" :key="lyric.id" class="font-inter text-xs lg:text-sm xl:text-base whitespace-pre-line">
-                        {{ lyric.name }}
+                        {{ lyric.lyrics }}
                       </div>
                     </div>
                 </div>

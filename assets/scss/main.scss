@@ -1,10 +1,6 @@
-body {
-
-}
-
-.current {
-    background-color: #6837fa;
-}
+// .current {
+//     background-color: #6837fa;
+// }
 
 .currentTile.current .left-container .right-container .play .pause-icon {
   display: block;
@@ -14,6 +10,54 @@ body {
   display: none;
 }
 
+
+
+
+.faq-box {
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.faq-box:hover {
+  height: 12rem;
+  @apply sm:h-[8rem];
+  @apply md:h-[11rem];
+  @apply lg:h-[10rem];
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.faq-box:hover .bottom {
+  display: block;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.faq-box:hover .top svg {
+  transform: rotate(180deg);
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.faq-box::-webkit-scrollbar {
+    visibility: hidden;
+}
 
 
 
@@ -88,12 +132,12 @@ body {
 }
 
 /*width*/
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width:7px;
 }
 
 /*track*/
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background:rgba(255, 255, 255, 0.1);
   border-width:1px;
   border-style:none;
@@ -101,7 +145,7 @@ body {
 }
 
 /*thumb*/
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background:rgb(85, 85, 85);
   border-color:rgb(153, 153, 153);
   border-radius:10px;

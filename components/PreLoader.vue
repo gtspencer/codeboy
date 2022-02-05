@@ -1,6 +1,6 @@
-<!-- <template>
-  <transition name="fade">
-    <div v-if="show">
+<template>
+  <!-- <transition name="fade"> -->
+    <div>
       <section
         class="w-full h-screen flex justify-center items-center bg-white z-50 fixed"
       >
@@ -26,10 +26,12 @@
         </div>
       </section>
     </div>
-  </transition>
+  <!-- </transition> -->
 </template>
 
 <script>
+import { mapState, mapMutations, mapActions } from 'vuex'
+
 export default {
   layout: "blank",
 
@@ -37,6 +39,10 @@ export default {
     return {
       show: true,
     };
+  },
+
+  computed: {
+    ...mapState(["assetsLoaded"]),
   },
 
   mounted() {
@@ -47,7 +53,7 @@ export default {
     showToggle() {
       setTimeout(() => {
         this.show = false;
-      }, 3000);
+      }, 2000);
     },
   },
 };
@@ -63,4 +69,4 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-</style> -->
+</style>

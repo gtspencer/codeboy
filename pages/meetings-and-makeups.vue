@@ -33,6 +33,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default {
   layout: "second",
+  scrollToTop: true,
+
 
   methods: {
     refresh() {

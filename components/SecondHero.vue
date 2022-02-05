@@ -111,6 +111,7 @@ const tl = gsap.timeline();
 
 export default {
   mixins: [aosMixin],
+  scrollToTop: true,
 
   methods: {
     refresh() {
