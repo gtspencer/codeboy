@@ -303,7 +303,7 @@
               >
                 We will work on designing and lauching a music studio within the
                 Metaverse. CB Sai Look holders will be able to watch CODEBoy Sai
-                record. CB Sai will also host listening parting
+                record. CB Sai will also host listening parties
               </p>
             </div>
           </div>

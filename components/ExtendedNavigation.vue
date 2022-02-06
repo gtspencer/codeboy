@@ -5,23 +5,29 @@
         class="nav-container py-5 lg:py-0 xl:py-7 lg:pt-7 lg:pb-2 grid grid-cols-2 md:grid-cols-3 justify-between items-center"
       >
         <div class="left-nav-container hidden md:flex space-x-5">
-          <p
-            class="cover-tracklist uppercase font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
-          >
-            Cover Art + Tracklist
-          </p>
+          <a href="#mixtape">
+            <p
+              class="cover-tracklist uppercase font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
+            >
+              Cover Art + Tracklist
+            </p>
+          </a>
 
-          <p
-            class="cover-tracklist uppercase font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
-          >
-            nft traits + benefits
-          </p>
+          <a href="#benefits">
+            <p
+              class="cover-tracklist uppercase font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
+            >
+              nft traits + benefits
+            </p>
+          </a>
 
-          <p
-            class="cover-tracklist font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
-          >
-            FAQs
-          </p>
+          <a href="#faq">
+            <p
+              class="cover-tracklist font-inter text-[#2E2B26] text-[10px] xl:text-xs 2xl:text-sm"
+            >
+              FAQs
+            </p>
+          </a>
         </div>
 
         <div

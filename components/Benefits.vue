@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-20 benefits sm:mt-24 md:mt-28">
+  <section class="mt-20 benefits sm:mt-24 md:mt-28" id="benefits">
     <div class="benefits-container">
       <h2
         class="font-caudex text-4xl sm:text-[40px] lg:text-5xl xl:text-[52px] text-center"

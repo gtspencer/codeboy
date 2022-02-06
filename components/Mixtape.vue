@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-20 mixtape sm:mt-24 md:mt-28 lg:px-20 xl:px-40">
+  <section class="mt-20 mixtape sm:mt-24 md:mt-28 lg:px-20 xl:px-40" id="mixtape">
     <div class="justify-between mixtape-container md:flex md:space-x-5">
       <div
         class="flex justify-between mixtape-left-container md:flex-col space-x-2 sm:space-x-5 md:space-x-0"
@@ -54,4 +54,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>

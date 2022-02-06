@@ -227,17 +227,21 @@
             The Executives will make executive decisions and oversee the publishing, manufacturing, marketing, promotion, production, distribution, and touring decisions for CODEBoy Sai and CODE LIFE Records DAO. 
           </p>
 
-          <ul class="mt-5">
+          <ul data-aos="fade-in" data-aos-duration="1000" class="mt-5">
             <li class="font-monument-light text-white text-xs xl:text-sm">
               <span class="font-monument-regular text-lg">*</span>Only Positions #1, #2, & #3, #4 will go on auction after CB Sai Looks are 100% Minted. 
             </li>
 
             <li class="font-monument-light text-white text-xs xl:text-sm">
-              <span class="font-monument-regular text-lg">*</span>Only Positions #1, #2, & #3, #4 will go on auction after CB Sai Looks are 100% Minted. 
+              <span class="font-monument-regular text-lg">*</span>*#5 #6 Executive Positions will be reserved for elected officials from CODE LIFE RECORDS DAO.   
             </li>
 
             <li class="font-monument-light text-white text-xs xl:text-sm">
-              <span class="font-monument-regular text-lg">*</span>Only Positions #1, #2, & #3, #4 will go on auction after CB Sai Looks are 100% Minted. 
+              <span class="font-monument-regular text-lg">*</span>#7 Executive Position will be reserved for CODEBOY Sai.
+            </li>
+
+            <li class="font-monument-light text-white text-xs xl:text-sm">
+              <span class="font-monument-regular text-lg">*</span>*Sales from auction will be split 50/50 between CODEBOY Sai and CODE LIFE Records DAO
             </li>
           </ul>
         </div>

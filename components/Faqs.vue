@@ -1,5 +1,5 @@
 <template>
-  <section class="faq my-28 sm:my-32 md:my-36 lg:px-20">
+  <section class="faq my-28 sm:my-32 md:my-36 lg:px-20" id="faq">
     <div
       class="items-start justify-center faq-container md:flex md:space-x-10 xl:space-x-32"
     >

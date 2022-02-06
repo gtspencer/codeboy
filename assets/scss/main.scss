@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 // .current {
 //     background-color: #6837fa;
 // }
@@ -10,7 +14,9 @@
   display: none;
 }
 
-
+.mini-player {
+  box-shadow: 0px -3px 20px -5px rgba(128, 128, 128, 0.412);
+}
 
 
 .faq-box {
@@ -142,6 +148,10 @@ body::-webkit-scrollbar-track {
   border-width:1px;
   border-style:none;
   border-radius:10px;
+}
+
+body::-webkit-scrollbar-track-piece {
+  background-color: transparent;
 }
 
 /*thumb*/

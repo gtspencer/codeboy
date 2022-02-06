@@ -5,7 +5,7 @@
             All Tracks
         </p>
 
-        <div v-for="track in data" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile">
+        <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile">
             <div class="left-container flex justify-between items-center w-[57%] md:w-[49%]">
                 <div class=".left-container flex items-center space-x-2">
                     <div class="cover w-14 h-14 rounded-lg bg-center bg-contain" :style="{ backgroundImage: `url( ${track.cover} )`}">
@@ -52,7 +52,7 @@ export default {
     layout: 'music',
 
     props: {
-        data: Array
+        tracks: Array
     },
 
     transitions: {
