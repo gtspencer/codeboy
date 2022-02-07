@@ -1,37 +1,40 @@
 <template>
   <div>
-        <section class="mt-10 mb-20 player">
-            <div class="space-y-10 player-container md:flex md:space-y-0 md:space-x-5">
-                <div class="top-left lg:w-[30%]">
-                    <div class="top-left-container">
-                        <h2 class="text-2xl text-center capitalize md:text-left font-monument-regular sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:leading-normal xl:leading-normal 2xl:leading-normal">
-                            listening <br class="hidden lg:block"> player
-                        </h2>
+    <section class="mt-10 mb-20 player">
+        <div class="space-y-10 player-container md:flex md:space-y-0 md:space-x-5">
+            <div class="top-left lg:w-[30%]">
+                <div class="top-left-container">
+                    <h2 class="text-2xl text-center capitalize md:text-left font-monument-regular sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:leading-normal xl:leading-normal 2xl:leading-normal">
+                        listening <br class="hidden lg:block"> player
+                    </h2>
 
-                        <p class="font-monument-light font-light text-[10px] uppercase text-center lg:mt-2 xl:mt-3 md:text-left xl:text-xs 2xl:text-sm md:px-0 px-10 py-2 lg:leading-normal xl:leading-normal">
-                            A short paragraph describing <br class="hidden md:block"> your team. You may want to <br class="hidden md:block"> describe what they are <br class="hidden md:block"> responsible for
-                        </p>
+                    <p class="font-monument-light font-light text-[10px] uppercase text-center lg:mt-2 xl:mt-3 md:text-left xl:text-xs 2xl:text-sm md:px-0 px-10 py-2 lg:leading-normal xl:leading-normal">
+                        A short paragraph describing <br class="hidden md:block"> your team. You may want to <br class="hidden md:block"> describe what they are <br class="hidden md:block"> responsible for
+                    </p>
 
-                        <ul class="tray w-full font-monument-light font-light text-[#2E2B26] text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm flex md:flex-col justify-around items-center md:items-start mt-4 sm:mt-6 md:space-y-1">
-                            <li><button class="uppercase all-button active leading-loose" ref="all" @click="handleAll">- all</button></li>
-                            <li><button class="uppercase mixtapes-button leading-loose" ref="mixtapes" @click="handleMixtapes">- mixtapes</button></li>
-                            <li><button class="uppercase singles-button leading-loose" ref="singles" @click="handleSingles">- singles</button></li>
-                            <li><button class="uppercase musicVideo-button leading-loose" ref="musicVideo" @click="handleMusicVideos">- music videos</button></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="bottom-right w-full lg:w-[70%]">
-                    <component
-                        :is="screens[position]"
-                        @goto="handleGoTo"
-                        :tracks="tracks"
-                        :singles="singles"
-                        :playSong="playSong"
-                    />
+                    <ul class="tray w-full font-monument-light font-light text-[#2E2B26] text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm flex md:flex-col justify-around items-center md:items-start mt-4 sm:mt-6 md:space-y-1">
+                        <li><button class="uppercase all-button active leading-loose" ref="all" @click="handleAll">- all</button></li>
+                        <li><button class="uppercase mixtapes-button leading-loose" ref="mixtapes" @click="handleMixtapes">- mixtapes</button></li>
+                        <li><button class="uppercase singles-button leading-loose" ref="singles" @click="handleSingles">- singles</button></li>
+                        <li><button class="uppercase musicVideo-button leading-loose" ref="musicVideo" @click="handleMusicVideos">- music videos</button></li>
+                    </ul>
                 </div>
             </div>
-        </section>    
+
+            <div class="bottom-right w-full lg:w-[70%]">
+                <component
+                    :is="screens[position]"
+                    @goto="handleGoTo"
+                    :tracks="tracks"
+                    :singles="singles"
+                    :playSong="playSong"
+                    :init="initSong"
+                    @meetings="handleMeetings"
+                    @code="handleCodeLife"
+                />
+            </div>
+        </div>
+    </section>    
     <audio class="audio" src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773073/Codeboy/Banjee_SINGLE_a8uvtn.mp3" ref="audio" @timeupdate="updateProgress" @ended="nextSong"></audio>
   </div>
 </template>
@@ -51,8 +54,8 @@ export default {
     
     data() {
         return {
-            screens: ["All", "Mixtapes", "Singles", "DeliveryFaq"],
-            position: 2,
+            screens: ["All", "Mixtapes", "Singles", "DeliveryFaq", "Meetings", "CodeLife"],
+            position: 0,
 
             tracks: [
                 {
@@ -203,7 +206,7 @@ export default {
             singles: [
                 {
                 name: 'Never Change Up',
-                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773130/Codeboy/Never_Change_Up_COVER_ART_dwof1i.webp',
+                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1644246687/Codeboy/Never_Change_Up_COVER_ART_jjib4q.webp',
                 duration: '3:30',
                 id: 0,
                 src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773083/Codeboy/Never_Change_Up_SINGLE_up5mrz.mp3',
@@ -268,9 +271,6 @@ export default {
                 
                 
             ],
-            // currentCover: '',
-            // currentTitle: '',
-            // currentSong: this.currenSongTitle
         }
     },
 
@@ -326,6 +326,7 @@ export default {
                     })
                     }
                 })
+                console.log('working for all')
             }
 
             if(this.category === 'singles') {
@@ -343,8 +344,11 @@ export default {
                     })
                     }
                 })
+                console.log('working for singles')
+
             }
 
+            console.log(this.category)
             console.log(this.currentSrc)
             bigPlayIcon.classList.add('hide')
             bigPauseIcon.classList.remove('hide')
@@ -373,21 +377,22 @@ export default {
             console.log('paused')
         },
 
-        nextSong(name) {
+        nextSong() {
             let audio = document.querySelector('.audio')
             
-            this.next(name)
+            console.log('new', this.songIndex)
+            this.next()
 
             audio.classList.remove('playing')
             this.playSong(this.songIndex)
         },
 
-        prevSong(name) {
+        prevSong() {
             let audio = document.querySelector('.audio')
 
-            this.prev(name)
+            this.prev()
 
-            this.changeCurrentSongTitle(name)
+            // this.changeCurrentSongTitle(name)
             audio.classList.remove('playing')
             this.playSong(this.songIndex)
         },
@@ -442,6 +447,7 @@ export default {
         handleAll() {
             this.position = 0;
 
+            this.changeCategory('all')
             this.$refs.all.classList.add("active");
             this.$refs.mixtapes.classList.remove("active");
             this.$refs.singles.classList.remove("active");
@@ -466,6 +472,7 @@ export default {
         this.$refs.all.classList.remove("active");
         this.$refs.mixtapes.classList.remove("active");
         this.$refs.musicVideo.classList.remove("active");
+        console.log(this.category)
 
         return this.tracks.filter(track => track.type === 'singles')
         },
@@ -477,6 +484,18 @@ export default {
         this.$refs.all.classList.remove("active");
         this.$refs.mixtapes.classList.remove("active");
         this.$refs.singles.classList.remove("active");
+        },
+
+        handleMeetings() {
+            this.position = 4;
+
+            this.changeCategory('meetings')
+        },
+
+        handleCodeLife() {
+            this.position = 5;
+
+            this.changeCategory('codeLife')
         },
     },
 

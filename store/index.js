@@ -5,7 +5,6 @@ export const state = () => ({
     cover: '',
     currentSongTitle: 'Bangee (Single)',
     currentSrc: '',
-    category: 'All',
     assetsLoaded: true,
     category: 'all'
 })

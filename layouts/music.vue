@@ -216,69 +216,72 @@ export default {
       ],
 
       singles: [
-        {
-          name: 'Bangee (Single)',
-          cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773122/Codeboy/BANJEE_COVER_ART_vqpnxx.webp',
-          duration: '3:44',
-          id: 0,
-          src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773073/Codeboy/Banjee_SINGLE_a8uvtn.mp3',
-          type: 'singles',
-          link: '/lyrics/Bangee (Single)'
-        },
+                {
+                name: 'Never Change Up',
+                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1644246687/Codeboy/Never_Change_Up_COVER_ART_jjib4q.webp',
+                duration: '3:30',
+                id: 0,
+                src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773083/Codeboy/Never_Change_Up_SINGLE_up5mrz.mp3',
+                type: 'singles'
+                },
 
-        {
-          name: 'Capable (Single)',
-          cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773120/Codeboy/CAPABLE_COVER_ART_l62y4f.webp',
-          duration: '2:36',
-          id: 1,
-          src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773117/Codeboy/Capable_SINGLE_s8sumh.wav',
-          type: 'singles'
-        },
+                {
+                name: 'Rough Patches',
+                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773123/Codeboy/Rough_Patches_COVER_ART_bqlmqr.webp',
+                duration: '3:04',
+                id: 1,
+                src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773087/Codeboy/Rough_Patches_SINGLE_vyvyl7.mp3',
+                type: 'singles'
+                },
 
-        {
-          name: 'MPR (Single)',
-          cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773121/Codeboy/MPR_COVER_ART_wrm1el.webp',
-          duration: '3:13',
-          id: 2,
-          src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773069/Codeboy/MPR_SINGLE_ge5ssh.mp3',
-          type: 'singles'
-        },
+                {
+                    name: 'Nun to Prove',
+                    cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773126/Codeboy/Nothing_2_Prove_COVER_ART_nluixb.webp',
+                    duration: '3:14',
+                    id: 2,
+                    src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3',
+                    type: 'singles'
+                },
+                
+                {
+                name: 'Capable',
+                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773120/Codeboy/CAPABLE_COVER_ART_l62y4f.webp',
+                duration: '2:36',
+                id: 3,
+                src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773117/Codeboy/Capable_SINGLE_s8sumh.wav',
+                type: 'singles'
+                },
 
-        {
-          name: 'Never Change Up',
-          cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773130/Codeboy/Never_Change_Up_COVER_ART_dwof1i.webp',
-          duration: '3:30',
-          id: 3,
-          src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773083/Codeboy/Never_Change_Up_SINGLE_up5mrz.mp3',
-          type: 'singles'
-        },
+                 {
+                name: 'MPR',
+                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773121/Codeboy/MPR_COVER_ART_wrm1el.webp',
+                duration: '3:13',
+                id: 4,
+                src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773069/Codeboy/MPR_SINGLE_ge5ssh.mp3',
+                type: 'singles'
+                },
 
-        {
-          name: 'Nothing 2 Prove',
-          cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773126/Codeboy/Nothing_2_Prove_COVER_ART_nluixb.webp',
-          duration: '3:14',
-          id: 4,
-          src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3',
-          type: 'singles'
-        },
 
-        {
-          name: 'Tony Parker (Single)',
-          cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773120/Codeboy/TONY_PARKER_COVER_ART_eddorz.webp',
-          duration: '2:39',
-          id: 5,
-          src: 'https://res.cloudinary.com/eazzie/video/upload/v1642772986/Codeboy/Tony_Parker_SINGLE_feuend.mp3',
-          type: 'singles'
-        },
-        
-        {
-          name: 'Rough Patches',
-          cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773123/Codeboy/Rough_Patches_COVER_ART_bqlmqr.webp',
-          duration: '3:04',
-          id: 6,
-          src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773087/Codeboy/Rough_Patches_SINGLE_vyvyl7.mp3',
-          type: 'singles'
-        },
+                {
+                name: 'Bangee',
+                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773122/Codeboy/BANJEE_COVER_ART_vqpnxx.webp',
+                duration: '3:44',
+                id: 5,
+                src: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773073/Codeboy/Banjee_SINGLE_a8uvtn.mp3',
+                type: 'singles',
+                link: '/lyrics/Bangee'
+                },
+
+                {
+                name: 'Tony Parker',
+                cover: 'https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773120/Codeboy/TONY_PARKER_COVER_ART_eddorz.webp',
+                duration: '2:39',
+                id: 6,
+                src: 'https://res.cloudinary.com/eazzie/video/upload/v1642772986/Codeboy/Tony_Parker_SINGLE_feuend.mp3',
+                type: 'singles'
+                },
+                
+                
       ],
 
       muted: false
@@ -313,9 +316,10 @@ export default {
         let bigPlayIcon = document.querySelector('.big-play-icon')
         let bigPauseIcon = document.querySelector('.big-pause-icon')
 
-        this.changeSongIndex(id)
-    
-        this.tracks.map((item) => {
+        // this.changeSongIndex(id)
+
+        console.log('our', this.singles)
+        this.singles.map((item) => {
           if(item.id === id) {
             audio.src = item.src
             this.changeCurrentSrc(item.src)
@@ -337,7 +341,7 @@ export default {
 
         // this.changeCurrentSongTitle(name)
         // console.log(this.changeCurrentSongTitle(name)
-        console.log(this.currentSongTitle)
+        console.log('this.currentSongTitle')
         audio.play()
     },
 
@@ -365,7 +369,7 @@ export default {
 
         audio.classList.remove('playing')
         this.playSong(this.songIndex)
-        console.log(this.songIndex)
+        console.log('new', this.songIndex)
     },
 
     prevSong(name) {

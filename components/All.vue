@@ -43,7 +43,8 @@
   </div>
 </template>
 
-<script>import { mapState, mapMutations, mapActions } from 'vuex'
+<script>
+// import { mapState, mapMutations, mapActions } from 'vuex'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -52,162 +53,164 @@ export default {
     layout: 'music',
 
     props: {
-        tracks: Array
+        tracks: Array,
+        playSong: Function,
+        init: Function
     },
 
     transitions: {
 
     },
     
-    data() {
-        return {
-            screens: ["All", "CollectionFaq", "RepairFaq", "DeliveryFaq"],
-            position: 0,
+    // data() {
+    //     return {
+    //         screens: ["All", "CollectionFaq", "RepairFaq", "DeliveryFaq"],
+    //         position: 0,
 
-            // 
-            // currentCover: '',
-            // currentTitle: '',
-            // currentSong: this.currenSongTitle
-        }
-    },
+    //         // 
+    //         // currentCover: '',
+    //         // currentTitle: '',
+    //         // currentSong: this.currenSongTitle
+    //     }
+    // },
 
-    computed: {
-        ...mapState(["songIndex", "currentSongTitle", "currentSrc"])
-    },
+    // computed: {
+    //     ...mapState(["songIndex", "currentSongTitle", "currentSrc"])
+    // },
 
-    methods: {
-        ...mapMutations(["next", "prev", "changeSongIndex", "changeCurrentSongTitle", "changeCurrentSrc"]),
+    // methods: {
+    //     ...mapMutations(["next", "prev", "changeSongIndex", "changeCurrentSongTitle", "changeCurrentSrc"]),
 
-        initSong(id, name) {
-            let audio = document.querySelector('.audio')
-            const isPlaying = audio.classList.contains('playing')
+    //     initSong(id, name) {
+    //         let audio = document.querySelector('.audio')
+    //         const isPlaying = audio.classList.contains('playing')
 
-                // this.changeCurrentSongTitle(name)
+    //             // this.changeCurrentSongTitle(name)
         	
-            if(isPlaying) {
-                this.pauseSong()
-            } else {
-                // this.changeSongIndex(songIndex)
-                this.playSong(id, name)
-                console.log(this.currentSongTitle)
-            }
-                // this.changeCurrentSongTitle(name)
-        },
+    //         if(isPlaying) {
+    //             this.pauseSong()
+    //         } else {
+    //             // this.changeSongIndex(songIndex)
+    //             this.playSong(id, name)
+    //             console.log(this.currentSongTitle)
+    //         }
+    //             // this.changeCurrentSongTitle(name)
+    //     },
 
-        playSong(id, name) {
-            let audio = document.querySelector('.audio')
-            const currentTile = document.querySelectorAll('.currentTile')
-            const isPlaying = audio.classList.contains('playing')
-            let bigPlayIcon = document.querySelector('.big-play-icon')
-            let bigPauseIcon = document.querySelector('.big-pause-icon')
+    //     playSong(id, name) {
+    //         let audio = document.querySelector('.audio')
+    //         const currentTile = document.querySelectorAll('.currentTile')
+    //         const isPlaying = audio.classList.contains('playing')
+    //         let bigPlayIcon = document.querySelector('.big-play-icon')
+    //         let bigPauseIcon = document.querySelector('.big-pause-icon')
 
-            this.changeSongIndex(id)
-            this.changeCurrentSongTitle(name)
+    //         this.changeSongIndex(id)
+    //         this.changeCurrentSongTitle(name)
         
-            this.data.map((item) => {
-                if(item.id === id) {
-                    audio.src = item.src
-                    this.changeCurrentSrc(item.src)
-                    console.log(item.src)
-                    currentTile.forEach((itemTwo, index) => {
-                        itemTwo.classList.remove('current')
+    //         this.data.map((item) => {
+    //             if(item.id === id) {
+    //                 audio.src = item.src
+    //                 this.changeCurrentSrc(item.src)
+    //                 console.log(item.src)
+    //                 currentTile.forEach((itemTwo, index) => {
+    //                     itemTwo.classList.remove('current')
                         
-                        if(index === id) {
-                            itemTwo.classList.add('current')
-                        }
-                })
-                }
-            })
+    //                     if(index === id) {
+    //                         itemTwo.classList.add('current')
+    //                     }
+    //             })
+    //             }
+    //         })
 
-            console.log(this.currentSrc)
-            bigPlayIcon.classList.add('hide')
-            bigPauseIcon.classList.remove('hide')
+    //         console.log(this.currentSrc)
+    //         bigPlayIcon.classList.add('hide')
+    //         bigPauseIcon.classList.remove('hide')
 
-            audio.classList.add('playing')
+    //         audio.classList.add('playing')
 
-            // this.changeCurrentSongTitle(name)
-            // console.log(this.changeCurrentSongTitle(name)
-            console.log(this.currentSongTitle)
-            audio.play()
-        },
+    //         // this.changeCurrentSongTitle(name)
+    //         // console.log(this.changeCurrentSongTitle(name)
+    //         console.log(this.currentSongTitle)
+    //         audio.play()
+    //     },
 
-        pauseSong(id, name) {
-            let audio = document.querySelector('.audio')
-            let bigPlayIcon = document.querySelector('.big-play-icon')
-            let bigPauseIcon = document.querySelector('.big-pause-icon')
+    //     pauseSong(id, name) {
+    //         let audio = document.querySelector('.audio')
+    //         let bigPlayIcon = document.querySelector('.big-play-icon')
+    //         let bigPauseIcon = document.querySelector('.big-pause-icon')
             
-            audio.classList.remove('playing')
-            bigPlayIcon.classList.remove('hide')
-            bigPauseIcon.classList.add('hide')
-            audio.currentTime = audio.currentTime
-            audio.pause()
-            // this.changeCurrentSongTitle(name)
-            // this.changeCurrentSongTitle(name)
-            console.log(this.currentSongTitle)
-            console.log('paused')
-        },
+    //         audio.classList.remove('playing')
+    //         bigPlayIcon.classList.remove('hide')
+    //         bigPauseIcon.classList.add('hide')
+    //         audio.currentTime = audio.currentTime
+    //         audio.pause()
+    //         // this.changeCurrentSongTitle(name)
+    //         // this.changeCurrentSongTitle(name)
+    //         console.log(this.currentSongTitle)
+    //         console.log('paused')
+    //     },
 
-        // nextSong(name) {
-        //     let audio = document.querySelector('.audio')
+    //     // nextSong(name) {
+    //     //     let audio = document.querySelector('.audio')
             
-        //     this.next(name)
+    //     //     this.next(name)
 
-        //     audio.classList.remove('playing')
-        //     this.playSong(this.songIndex)
-        // },
+    //     //     audio.classList.remove('playing')
+    //     //     this.playSong(this.songIndex)
+    //     // },
 
-        // prevSong(name) {
-        //     let audio = document.querySelector('.audio')
+    //     // prevSong(name) {
+    //     //     let audio = document.querySelector('.audio')
 
-        //     this.prev(name)
+    //     //     this.prev(name)
 
-        //     this.changeCurrentSongTitle(name)
-        //     audio.classList.remove('playing')
-        //     this.playSong(this.songIndex)
-        // },
+    //     //     this.changeCurrentSongTitle(name)
+    //     //     audio.classList.remove('playing')
+    //     //     this.playSong(this.songIndex)
+    //     // },
         
-        // updateProgress(e) {
-        //     const { currentTime, duration } = e.srcElement
-        //     const progressPercent = (currentTime / duration) * 100
-        //     const progress = document.querySelector('.progress')
+    //     // updateProgress(e) {
+    //     //     const { currentTime, duration } = e.srcElement
+    //     //     const progressPercent = (currentTime / duration) * 100
+    //     //     const progress = document.querySelector('.progress')
 
-        //     // const nodeList = document.querySelectorAll(".example");
-        //     // for (let i = 0; i < progress.length; i++) {
-        //     //     progress[i].value = progressPercent;
-        //     // }
-        //     // progress.value = progressPercent
+    //     //     // const nodeList = document.querySelectorAll(".example");
+    //     //     // for (let i = 0; i < progress.length; i++) {
+    //     //     //     progress[i].value = progressPercent;
+    //     //     // }
+    //     //     // progress.value = progressPercent
 
-        //     // console.log(progressPercent)
+    //     //     // console.log(progressPercent)
 
-        //     // if(progressPercent === 100) {
-        //     //     this.nextSong()
-        //     // }
-        //     progress.value = progressPercent
-        // },
+    //     //     // if(progressPercent === 100) {
+    //     //     //     this.nextSong()
+    //     //     // }
+    //     //     progress.value = progressPercent
+    //     // },
 
-        // seek(e) {
-        //     const progress = document.querySelector('.progress')
-        //     const audio = document.querySelector('.audio')
-        //     const duration = audio.duration
-        //     let totalValue 
+    //     // seek(e) {
+    //     //     const progress = document.querySelector('.progress')
+    //     //     const audio = document.querySelector('.audio')
+    //     //     const duration = audio.duration
+    //     //     let totalValue 
 
-        //     // for (let i = 0; i < progress.length; i++) {
-        //     //     audio.currentTime = ( progress[i].value / 100 ) * duration
-        //     //     console.log(audio.currentTime)
-        //     // }
-        //     audio.currentTime = ( progress.value / 100 ) * duration
-        // },
+    //     //     // for (let i = 0; i < progress.length; i++) {
+    //     //     //     audio.currentTime = ( progress[i].value / 100 ) * duration
+    //     //     //     console.log(audio.currentTime)
+    //     //     // }
+    //     //     audio.currentTime = ( progress.value / 100 ) * duration
+    //     // },
 
-        // rewind() {
-        //     const audio = document.querySelector('.audio')
-        //     audio.currentTime = audio.currentTime - 15
-        // },
+    //     // rewind() {
+    //     //     const audio = document.querySelector('.audio')
+    //     //     audio.currentTime = audio.currentTime - 15
+    //     // },
 
-        // forward() {
-        //     const audio = document.querySelector('.audio')
-        //     audio.currentTime = audio.currentTime + 15
-        // },
-    },
+    //     // forward() {
+    //     //     const audio = document.querySelector('.audio')
+    //     //     audio.currentTime = audio.currentTime + 15
+    //     // },
+    // },
 }
 </script>
 
