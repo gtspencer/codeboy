@@ -31,7 +31,7 @@
                         data-aos-duration="1000"
                         class="uppercase  font-monument font-bold text-white text-[10px] xl:text-sm 2xl:text-base tracking-widest"
                       >
-                        first drop
+                        second drop
                       </p>
                     </div>
 
@@ -71,7 +71,7 @@
                         data-aos-duration="1000"
                         class="uppercase font-monument text-white font-bold text-[10px] xl:text-sm 2xl:text-base tracking-widest"
                       >
-                        second drop
+                        first drop
                       </p>
                     </div>
 
@@ -104,9 +104,6 @@
             </div>
           </div>
         </section>
-
-
-
         <!-- <div class="listening-pass relative md:flex justify-center items-center mt-28">
           <h2 class="l-p font-monument-light text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center md:text-left z-50">
             Listening <br class="hidden md:block"> Pass

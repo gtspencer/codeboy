@@ -73,7 +73,7 @@ export default {
                 },
 
                 {
-                    vid: '/videos/CHARACTER Title -Kid Chocolate.mp4',
+                    vid: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1644358187/Codeboy/Character_Name_-_Carlton_hj09ep.webm',
                     alt: 'An Asset of the Carlton Outfit',
                     name: 'Carlton',
                     description: 'The outfit Carlton features plaid shorts, button up shirt with a sweater vest and boat shoes. Inspired by the song ‘Feelings Can’t Fade Away’'

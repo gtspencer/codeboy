@@ -1,20 +1,28 @@
 export const state = () => ({
     id: 0,
-    counter: 20,
     songIndex: 0,
-    cover: '',
-    currentSongTitle: 'Bangee (Single)',
+    currentCover: "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
+    currentSongTitle: 'Days Amazing',
     currentSrc: '',
-    assetsLoaded: true,
-    category: 'all'
+    category: 'all',
+    mixtape: '',
+    currentLyrics:  ``,
 })
 
 export const mutations = {
   next(state) { 
     state.songIndex++
 
-    if(state.songIndex > 14) {
+    if(state.songIndex > 28) {
       state.songIndex = 0
+    }
+  },
+
+  prev(state) {
+    state.songIndex--
+
+    if(state.songIndex < 0) {
+      state.songIndex = 28
     }
   },
 
@@ -30,6 +38,10 @@ export const mutations = {
     state.currentSrc = payload
   },
 
+  changeCover(state, payload) {
+    state.currentCover = payload
+  },
+
   changeCategory(state, payload) {
     state.category = payload
   },
@@ -38,12 +50,12 @@ export const mutations = {
     state.assetsLoaded = payload
   },
 
-  prev(state) {
-    state.songIndex--
+  changeMixtape(state, payload) {
+    state.mixtape = payload
+  },
 
-    if(state.songIndex < 0) {
-      state.songIndex = 14
-    }
+  changeLyrics(state, payload) {
+    state.currrentLyrics = payload
   },
 
   increement(state) {

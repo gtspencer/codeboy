@@ -12,12 +12,12 @@
             Mixtape Cover & <br class="hidden 2xl:block"> Tracklist
           </h3>
 
-          <p
+          <!-- <p
             class="details uppercase font-monument font-thin text-[8px] lg:text-[10px] xl:text-xs 2xl:text-sm mt-3 md:mt-5 pr-4 xl:pr-16"
           >
             A few words about what is depicted on the images or photos. Be
             concise and creative
-          </p>
+          </p> -->
         </div>
 
         <div class="w-2/4 md:w-full 2xl:w-1/2">

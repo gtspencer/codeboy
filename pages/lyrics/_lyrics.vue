@@ -1,6 +1,6 @@
 <template>
   <div>
-      <section class="mt-10 mb-20 lyrics-section">
+    <section class="mt-10 mb-20 lyrics-section">
         <div class="space-y-10 player-container md:flex md:space-y-0 md:space-x-5">
             <div class="top-left lg:w-[30%]">
                 <div class="top-left-container">

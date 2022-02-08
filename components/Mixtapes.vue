@@ -35,16 +35,25 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
+
 export default {
     props: [ 'meetings', 'code' ],
 
     methods: {
+        ...mapMutations(["next", "prev", "changeSongIndex", "changeCurrentSongTitle", "changeCurrentSrc", "changeCategory", "changeLyrics"]),
+        
         gotoMeetings() {
             this.$emit('goto', 4)
+
+            this.changeCategory('meetings')
         },
 
         gotoCodeLife() {
             this.$emit('goto', 5)
+
+            this.changeCategory('codeLife')
         }
     }
 }

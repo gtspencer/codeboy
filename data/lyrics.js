@@ -194,7 +194,7 @@ export const lyrics = [
 
                         You aint in the picture
 
-                        I hope you get the picture (yea, yea)`
+    I hope you get the picture (yea, yea)`
   },
 
   {
@@ -205,7 +205,7 @@ export const lyrics = [
     "src": "https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773117/Codeboy/Capable_SINGLE_s8sumh.wav",
     "type": "singles"
   },
-
+  
   {
     "name": "MPR (Single)",
     "cover": "https://res.cloudinary.com/eazzie/image/upload/q_100/v1642773121/Codeboy/MPR_COVER_ART_wrm1el.webp",
