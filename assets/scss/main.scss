@@ -73,7 +73,52 @@
 
 
 
+* {
+  outline: none;
+}
 
+.connect-wallet {
+  background: -webkit-linear-gradient(0deg, transparent 50%, black 50%);
+  background-size: 310px 80px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  position: relative;
+}
+
+.connect-wallet:hover {
+  background-position: 155px 0px;
+  color: white;
+  border: 1px solid white;
+}
+
+.connect-wallet::after {
+  content: 'You can connect your wallet once minting starts.';
+  text-transform: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 16px;
+  bottom: -70px;
+  left: 50%;
+  border: 1px solid;
+  /* height: 70px; */
+  width: 95%;
+  background-color: #c4c4c4;
+  transform: translate(-50%) scale(0);
+  /* transition: 800ms ease-in; */
+  @apply bg-center bg-contain bg-no-repeat py-2 sm:py-3 shadow-lg;
+  @apply sm:-bottom-[80px];
+  @apply xl:leading-normal xl:-bottom-[90px];
+}
+
+.connect-wallet:hover::after {
+  transform: translate(-50%) scale(1);
+}
 
 
 
@@ -106,6 +151,7 @@
   src: url('/font/Monument_Extended_Font/MonumentExtended-Thin.ttf');
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -113,6 +159,7 @@
   src: url('/font/Monument_Extended_Font/MonumentExtended-Light.ttf');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -120,6 +167,7 @@
   src: url('/font/Monument_Extended_Font/MonumentExtended-Regular.ttf');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -127,6 +175,7 @@
   src: url('/font/Monument_Extended_Font/MonumentExtended-Bold.ttf');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -134,6 +183,7 @@
   src: url('/font/Monument_Extended_Font/MonumentExtended-Ultrabold.otf');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -141,6 +191,7 @@
   src: url('/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /*width*/

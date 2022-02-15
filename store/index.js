@@ -1,8 +1,8 @@
 export const state = () => ({
     id: 0,
     songIndex: 0,
-    currentCover: "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
-    currentSongTitle: 'Days Amazing',
+    currentCover: "",
+    currentSongTitle: '',
     currentSrc: '',
     category: 'all',
     mixtape: '',

@@ -19,9 +19,11 @@
               </div>
 
               <div class="mid-container">
-                  <p class="top font-inter text-white text-[10px] md:text-xs xl:text-sm 2xl:text-base text-center">
-                      Music Label DAO for <br><span class="font-bold text-xs xl:text-sm 2xl:text-base">CODEBOY Sai</span>
-                  </p>
+                  <NuxtLink to="/" >
+                    <p class="top font-inter text-white text-[10px] md:text-xs xl:text-sm 2xl:text-base text-center">
+                        Music Label DAO for <br><span class="font-bold text-xs xl:text-sm 2xl:text-base">CODEBOY Sai</span>
+                    </p>
+                  </NuxtLink>
               </div>
 
               <div class="right-nav-container justify-self-end">

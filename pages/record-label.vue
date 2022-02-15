@@ -149,7 +149,7 @@ export default {
         const image = document.querySelector('.image')
 
         image.classList.add('increase')
-        console.log('increased');
+        // console.log('increased');
       }
     },
     mounted() {

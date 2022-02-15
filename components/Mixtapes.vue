@@ -8,7 +8,7 @@
         <div class="grid grid-cols-2 gap-x-5 lg:gap-x-10 gap-y-7 lg:gap-y-10">
             <div class="m-m cursor-pointer justify-self-center" @click="gotoMeetings">
                 <div class="top-container">
-                    <img class="rounded-xl" src="/images/mixtape small.png" alt="">
+                    <img class="rounded-xl" src="https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp" alt="">
                 </div>
 
                 <div class="bottom-container mt-3">
@@ -20,7 +20,7 @@
 
             <div class="c-l cursor-pointer justify-self-center" @click="gotoCodeLife">
                 <div class="top-container">
-                    <img class="rounded-xl" src="https://res.cloudinary.com/eazzie/image/upload/q_100/v1643853024/Codeboy/CODE_LIFE_ALBUM_COVER_ART_isbmud.webp" alt="">
+                    <img class="rounded-xl" src="https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840756/Codeboy/CODE_LIFE_ALBUM_COVER_ART_cjbn9d.webp" alt="">
                 </div>
 
                 <div class="bottom-container mt-3">
@@ -30,6 +30,8 @@
                 </div>
             </div>
         </div>
+
+        <div class="stop"></div>
     </section>
   </div>
 </template>

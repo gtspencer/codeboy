@@ -22,7 +22,7 @@
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                class="capitalize font-monument font-light text-[#2E2B26] text-[38px] sm:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[4rem] leading-normal lg:leading-normal md:whitespace-nowrap lg:whitespace-normal"
+                class="capitalize font-monument font-light text-[#2E2B26] text-[38px] sm:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[4rem] leading-normal lg:leading-normal  lg:whitespace-normal"
               >
                 Meetings & Makeups
               </h2>
@@ -45,7 +45,7 @@
         </div>
       </div>
     
-      <div class="second-drop lg:flex justify-around xl:justify-start items-center mt-16 xl:mt-0 lg:px-24 xl:px-32 lg:space-x-20 overflow-hidden">
+      <div class="second-drop lg:flex justify-around xl:justify-start items-center mt-16 xl:mt-0 lg:px-10 xl:px-32 lg:space-x-20 overflow-hidden">
         <div class="texts xl:w-1/2">
           <nuxt-link to="/listening-pass">
             <div class="animation-container space-y-2 overflow-hidden">
@@ -102,14 +102,14 @@ export default {
   methods: {
     refresh() {
       ScrollTrigger.refresh();
-      console.log("scroll trigger refreshed");
+      // console.log("scroll trigger refreshed");
     },
   },
 
   mounted() {
     document.onreadystatechange = () => {
       if (document.readyState == "complete") {
-        console.log("All assets are loaded");
+        // console.log("All assets are loaded");
       }
     };
   },

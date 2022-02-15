@@ -71,7 +71,12 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
-<style></style>
+<style>
+.left-nav-container a p:hover {
+  font-weight: 500;
+  transition: 500ms;
+}
+</style>

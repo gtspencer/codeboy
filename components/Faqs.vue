@@ -49,7 +49,7 @@
               >
                 CODEBOY Sai Meetings & Makeups Looks aka CB Sai M&M Looks are
                 randomly generated NFTs inspired by CODEBoySai's latest project
-                Meetings N Makeups that will soon release to the public. There
+                Meetings N Makeups that will soon be released to the public. There
                 are 7,302 different CB Sai M&M Looks and each CB Sai M&M Look is
                 completely unique. Each NFT wallet holder will recieve early
                 access to Meetings and Makeups via the Exclusive Listening
@@ -133,7 +133,7 @@
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
                 CODE LIFE Records DAO is a music record label owned/funded by
-                CBSAI M&M Look NFT Holders which are NFT's influenced by CODEBOY
+                CB SAI M&M Look NFT Holders which are NFT's influenced by CODEBOY
                 Sai's Meetings & Makeups mixtape. The CODE LIFE Record Label is
                 responsible for all things CODEBOY SAI. The Positions within the
                 record label will be A&R, Merchandiser, Marketing Manager,

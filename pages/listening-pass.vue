@@ -223,7 +223,7 @@
                 <h5
                   class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
                 >
-                  What is CB Sai M&M Looks?
+                  What is a Listening Pass (LP)?
                 </h5>
 
                 <div class="svg-container">
@@ -247,15 +247,7 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  CODEBOY Sai Meetings & Makeups Looks aka CB Sai M&M Looks are
-                  randomly generated NFTs inspired by CODEBoySai's latest project
-                  Meetings N Makeups that will soon release to the public. There
-                  are 7,302 different CB Sai M&M Looks and each CB Sai M&M Look is
-                  completely unique. Each NFT wallet holder will recieve early
-                  access to Meetings and Makeups via the Exclusive Listening
-                  Player and they will have a position within 'CODE LIFE Records
-                  DAO', a Music Record Label fully ran/operated by CB Sai M&M Look
-                  NFT wallet holders.
+                  The Listening Pass unlocks all the CODEBOY Sai content on the Exclusive Music Player and a position within 'CODE LIFE Records DAO', a Music Record Label fully ran/operated by CODEBOY Sai NFT wallet holders. 
                 </p>
               </div>
             </div>
@@ -267,8 +259,7 @@
                 <h5
                   class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
                 >
-                  What is the difference between “Family & Friends” and “Original”
-                  CB Sai M&M Looks?
+                  How do I purchase a Listening Pass (LP)?
                 </h5>
 
                 <div class="svg-container">
@@ -292,11 +283,7 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  Family & Friends CB Sai M&M Looks are more rare and include red
-                  packaging with a Family and Friends stamp. There are a total of
-                  302 Family & Friend CB Sai M&M Looks. Original CB Sai M&M Looks
-                  are unique and include white or black packaging. There are a
-                  total of 7,000 Original CB Sai M&M Looks.
+                  Listening Passes (LPs) will be available for purchase on this website. The easiest way to purchase is to install a MetaMask extension in your browser and link your crypto wallet to it. Ensure you have enough ETH in your wallet to cover the cost of a CB Sai M&M Look plus the associated gas fees. Approve the desired transaction on MetaMask and you are all set.
                 </p>
               </div>
             </div>
@@ -308,7 +295,7 @@
                 <h5
                   class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
                 >
-                  What is CODE LIFE RECORDS DAO?
+                  How many Listening Passes (LPs) exist?
                 </h5>
 
                 <div class="svg-container">
@@ -332,15 +319,7 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  CODE LIFE Records DAO is a music record label owned/funded by
-                  CBSAI M&M Look NFT Holders which are NFT's influenced by CODEBOY
-                  Sai's Meetings & Makeups mixtape. The CODE LIFE Record Label is
-                  responsible for all things CODEBOY SAI. The Positions within the
-                  record label will be A&R, Merchandiser, Marketing Manager,
-                  Publicist, Music Agent, Resource Admin & Executive. CB Sai M&M
-                  Look owners discuss label matters privately within the Discord
-                  within Position Teams. Positions in CODE LIFE RECORDS DAO is
-                  granted for as long as you hold your NFT.
+                  There are 1,302 total Listening Passes available. CODEBOY Sai will release more as more music and content is released. 
                 </p>
               </div>
             </div>
@@ -352,8 +331,7 @@
                 <h5
                   class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
                 >
-                  How do I purchase an Original or Family and Friends CB Sai M&M
-                  Look?
+                  What will be the mint cost of each Listening Pass?
                 </h5>
 
                 <div class="svg-container">
@@ -377,16 +355,54 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  CB Sai M&M Looks will be available for purchase on this website
-                  through an initial sale. The easiest way to purchase is to
-                  install a MetaMask extension in your browser and link your
-                  crypto wallet to it. Ensure you have enough ETH in your wallet
-                  to cover the cost of a CB Sai M&M Look plus the associated gas
-                  fees. Approve the desired transaction on MetaMask and you are
-                  all set.
+                  The mint cost of each Original CB Sai M&M Look is set at 0.0302 ETH. (not including gas fees.)
                 </p>
               </div>
             </div>
+
+            <div
+            class="faq-box-3 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 sm:h-10 xl:h-10 border-t py-3 overflow-hidden"
+          >
+            <div class="flex items-center justify-between top">
+              <h5
+                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
+              >
+                What is CODE LIFE RECORDS DAO?
+              </h5>
+
+              <div class="svg-container">
+                <svg
+                  class="w-2 transition duration-500"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.9998 6.20479L1.39755 0.602539L0.602051 1.39803L6.9998 7.79578L13.3975 1.39803L12.602 0.602539L6.9998 6.20479Z"
+                    fill="#2E2B26"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="hidden mt-3 bottom">
+              <p
+                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
+              >
+                CODE LIFE Records DAO is a music record label owned/funded by
+                CBSAI M&M Look NFT Holders which are NFT's influenced by CODEBOY
+                Sai's Meetings & Makeups mixtape. The CODE LIFE Record Label is
+                responsible for all things CODEBOY SAI. The Positions within the
+                record label will be A&R, Merchandiser, Marketing Manager,
+                Publicist, Music Agent, Resource Admin & Executive. CB Sai M&M
+                Look owners discuss label matters privately within the Discord
+                within Position Teams. Positions in CODE LIFE RECORDS DAO is
+                granted for as long as you hold your NFT.
+              </p>
+            </div>
+          </div>
           </div>
 
           <!-- <transition name="fade" appear mode="out-in">

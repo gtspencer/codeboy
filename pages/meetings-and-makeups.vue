@@ -40,7 +40,7 @@ export default {
     refresh() {
       // var tl = gsap.timeline({repeat: -1})
       setInterval(ScrollTrigger.refresh(), 3000)
-      console.log('refreshed');
+      // console.log('refreshed');
     }
   },
 

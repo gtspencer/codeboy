@@ -22,7 +22,7 @@
                     <div v-for="outfit in outfits" :key="outfit.id" class="grid-container min-w-[50%] xl:w-[150px] 2xl:w-[220px]">
                         <div class="video">
                             <video
-                            class="" 
+                            class="min-h-[281px] md:min-h-[305px] lg:min-h-[347px] xl:min-h-[455px] 2xl:min-h-[630px]" 
                             :src="outfit.vid"
                             :alt="outfit.alt"
                             autoplay
@@ -73,7 +73,7 @@ export default {
                 },
 
                 {
-                    vid: 'https://res.cloudinary.com/eazzie/video/upload/q_100/v1644358187/Codeboy/Character_Name_-_Carlton_hj09ep.webm',
+                    vid: 'https://res.cloudinary.com/eazzie/video/upload/c_scale,h_1400,q_100,w_1400/v1644826517/Codeboy/Character_Name_-_Carlton_nj4zru.webm',
                     alt: 'An Asset of the Carlton Outfit',
                     name: 'Carlton',
                     description: 'The outfit Carlton features plaid shorts, button up shirt with a sweater vest and boat shoes. Inspired by the song ‘Feelings Can’t Fade Away’'
@@ -96,107 +96,107 @@ export default {
         }
     },
     mounted() {
-        ScrollTrigger.matchMedia({
-    // "(min-width: 1560px)": function () {
+            ScrollTrigger.matchMedia({
+        // "(min-width: 1560px)": function () {
 
-    "(min-width: 320px) and (max-width: 639px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                start: 'center center',
-                end: '+=3000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-            },
-            // duration: 10,
-            x: -1400
-        });
-    },
+        "(min-width: 320px) and (max-width: 639px)": function () {
+            gsap.to('.outfits-container', {
+                scrollTrigger: {
+                    trigger: '.outfits-container',
+                    start: 'center center',
+                    end: '+=3000 center',
+                    pin: true,
+                    markers: false,
+                    scrub: 1,
+                },
+                // duration: 10,
+                x: -1400
+            });
+        },
 
-    "(min-width: 640px) and (max-width: 1023px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                start: 'center center',
-                end: '+=3000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-            },
-            // duration: 10,
-            x: -1200
-        });
-    },
+        "(min-width: 640px) and (max-width: 1023px)": function () {
+            gsap.to('.outfits-container', {
+                scrollTrigger: {
+                    trigger: '.outfits-container',
+                    start: 'center center',
+                    end: '+=3000 center',
+                    pin: true,
+                    markers: false,
+                    scrub: 1,
+                },
+                // duration: 10,
+                x: -1200
+            });
+        },
 
-    "(min-width: 1024px) and (max-width: 1250px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                // endTrigger: ''
-                start: 'center center',
-                end: '+=3000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-                // horizontal: true
-            },
-            // duration: 10,
-            x: -1450
-        });
-    },
+        "(min-width: 1024px) and (max-width: 1250px)": function () {
+            gsap.to('.outfits-container', {
+                scrollTrigger: {
+                    trigger: '.outfits-container',
+                    // endTrigger: ''
+                    start: 'center center',
+                    end: '+=3000 center',
+                    pin: true,
+                    markers: false,
+                    scrub: 1,
+                    // horizontal: true
+                },
+                // duration: 10,
+                x: -1450
+            });
+        },
 
-    "(min-width: 1251px) and (max-width: 1535px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                // endTrigger: ''
-                start: 'center center',
-                end: '+=4000 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-                // horizontal: true
-            },
-            // duration: 10,
-            x: -1750
-        });
-    },
+        "(min-width: 1251px) and (max-width: 1535px)": function () {
+            gsap.to('.outfits-container', {
+                scrollTrigger: {
+                    trigger: '.outfits-container',
+                    // endTrigger: ''
+                    start: 'center center',
+                    end: '+=4000 center',
+                    pin: true,
+                    markers: false,
+                    scrub: 1,
+                    // horizontal: true
+                },
+                // duration: 10,
+                x: -1750
+            });
+        },
 
-    "(min-width: 1536px)": function () {
-        gsap.to('.outfits-container', {
-            scrollTrigger: {
-                trigger: '.outfits-container',
-                // endTrigger: ''
-                start: 'center center',
-                end: '+=4500 center',
-                pin: true,
-                markers: false,
-                scrub: 1,
-                // horizontal: true
-            },
-            // duration: 10,
-            x: -1800
-        });
-    },
+        "(min-width: 1536px)": function () {
+            gsap.to('.outfits-container', {
+                scrollTrigger: {
+                    trigger: '.outfits-container',
+                    // endTrigger: ''
+                    start: 'center center',
+                    end: '+=4500 center',
+                    pin: true,
+                    markers: false,
+                    scrub: 1,
+                    // horizontal: true
+                },
+                // duration: 10,
+                x: -1800
+            });
+        },
 
-    // "(min-width: 2001px) and (max-width: 2560px)": function () {
-    //     gsap.to('.outfits-container', {
-    //         scrollTrigger: {
-    //             trigger: '.outfits-container',
-    //             // endTrigger: ''
-    //             start: 'center center',
-    //             end: '+=4500 center',
-    //             pin: true,
-    //             markers: false,
-    //             scrub: 1,
-    //             // horizontal: true
-    //         },
-    //         // duration: 10,
-    //         x: -3300
-    //     });
-    // },
-})
+        // "(min-width: 2001px) and (max-width: 2560px)": function () {
+        //     gsap.to('.outfits-container', {
+        //         scrollTrigger: {
+        //             trigger: '.outfits-container',
+        //             // endTrigger: ''
+        //             start: 'center center',
+        //             end: '+=4500 center',
+        //             pin: true,
+        //             markers: false,
+        //             scrub: 1,
+        //             // horizontal: true
+        //         },
+        //         // duration: 10,
+        //         x: -3300
+        //     });
+        // },
+    })
     }
 }
 </script>

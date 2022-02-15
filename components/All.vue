@@ -8,21 +8,21 @@
         <div v-for="track in tracks" :key="track.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile">
             <div class="left-container flex justify-between items-center w-[57%] md:w-[49%]">
                 <div class=".left-container flex items-center space-x-2">
-                    <div class="cover w-14 h-14 rounded-lg bg-center bg-contain" :style="{ backgroundImage: `url( ${track.cover} )`}">
+                    <div class="cover min-w-[54px] h-14 rounded-lg bg-center bg-contain bg-no-repeat" :style="{ backgroundImage: `url( ${track.cover} )`}">
                         <!-- <p>
                             {{ track.cover }}
                         </p> -->
                     </div>
 
-                    <p class="title font-inter font-medium text-[10px] lg:text-xs xl:text-sm 2xl:text-base">
+                    <p class="title font-inter font-medium text-[10px] lg:text-xs xl:text-sm 2xl:text-base break-words pr-2">
                         {{ track.name }}
                     </p>
                 </div>
 
                 <div class="right-container">
                     <button class="play w-7 h-7 rounded-full bg-[#6837FA] flex justify-center items-center" ref="play" @click="playSong(track.id, track.name)">
-                        <font-awesome-icon class="play-icon text-white text-sm xl:text-xs" :icon="['fas', 'play']"/>
-                        <font-awesome-icon class="pause-icon text-white hide text-sm xl:text-xs" :icon="['fas', 'pause']"/>
+                        <font-awesome-icon class="play-icon text-white text-[10px] xl:text-xs" :icon="['fas', 'play']"/>
+                        <font-awesome-icon class="pause-icon text-white hide text-[10px] xl:text-xs" :icon="['fas', 'pause']"/>
                     </button>
                 </div>
             </div>
@@ -39,6 +39,8 @@
                 </button>
             </div>
         </div>
+
+        <div class="stop"></div>
     </div>
   </div>
 </template>

@@ -206,7 +206,7 @@
       <div class="executive space-y-10 sm:space-y-0 sm:grid grid-cols-2">
         <div data-aos="fade-in" data-aos-duration="1000" class="top-left flex justify-center">
           <video 
-            src="https://res.cloudinary.com/eazzie/video/upload/c_crop,h_320,q_100,w_250/c_scale,w_350/v1643320795/Codeboy/Character_Name_-_Executive_swmicc.webm"
+            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1644676113/Codeboy/EXECUTIVE_ag9s8g.webm"
             alt="An Asset of the Executive"
             autoplay
             loop

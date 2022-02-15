@@ -43,27 +43,11 @@
             <li
               data-aos="fade-right"
               data-aos-duration="300"
-              data-aos-delay="200"
-              class="leading-loose xl:leading-[2.5]"
-            >
-              Presale Date: <span class="text-[#2E2B26]">25 Nov, 11am UTC</span>
-            </li>
-            <li
-              data-aos="fade-right"
-              data-aos-duration="300"
-              data-aos-delay="300"
-              class="leading-loose xl:leading-[2.5]"
-            >
-              Presale Mint Price: <span class="text-[#2E2B26]">0.0302 ETH</span>
-            </li>
-            <li
-              data-aos="fade-right"
-              data-aos-duration="300"
               data-aos-delay="400"
-              class="pt-5 leading-loose xl:leading-[2.5]"
+              class="leading-loose xl:leading-[2.5]"
             >
               Public Sale Date:
-              <span class="text-[#2E2B26]">Nov 26, 11am UTC</span>
+              <span class="text-[#2E2B26]">Coming soon.</span>
             </li>
             <li
               data-aos="fade-right"
