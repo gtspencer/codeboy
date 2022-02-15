@@ -8,14 +8,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'codeboy',
+    title: 'CODEBOY SAI Official Website',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'CODEBOY Sai is an Ethereum Virtual Machine (EVM) based musician that is signed to CODE LIFE RECORDS DAO, a decentralized music record label.' },
+      { hid: 'keywords', name: 'keywords', content: 'Codeboy, Codeboysai, EVM, Record, Record Based Music Artist, Music, Artist, Sai, Code, Codelife, Codelife Records, Decentralized, Record Label' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -79,6 +80,11 @@ export default {
       Cormorant: [300, 400, 500, 600, 700]
     }
   },
+
+  sitemap: () => ({
+        hostname: 'https://codeboysai.com',
+        gzip: true
+    }),
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

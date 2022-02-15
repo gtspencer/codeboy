@@ -47,15 +47,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                CODEBOY Sai Meetings & Makeups Looks aka CB Sai M&M Looks are
-                randomly generated NFTs inspired by CODEBoySai's latest project
-                Meetings N Makeups that will soon be released to the public. There
-                are 7,302 different CB Sai M&M Looks and each CB Sai M&M Look is
-                completely unique. Each NFT wallet holder will recieve early
-                access to Meetings and Makeups via the Exclusive Listening
-                Player and they will have a position within 'CODE LIFE Records
-                DAO', a Music Record Label fully ran/operated by CB Sai M&M Look
-                NFT wallet holders.
+                CB Sai M&M Looks are randomly generated NFTs inspired by CODEBoySai's latest project Meetings & Makeups that will soon release to the public. There are 7,302 unique CB Sai M&M Looks. Each NFT wallet holder will recieve early access to Meetings and Makeups via the Exclusive Music Player and they will have a position within 'CODE LIFE Records DAO', a Music Record Label fully managed/funded by CB Sai NFT wallet holders. 
               </p>
             </div>
           </div>
@@ -92,11 +84,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                Family & Friends CB Sai M&M Looks are more rare and include red
-                packaging with a Family and Friends stamp. There are a total of
-                302 Family & Friend CB Sai M&M Looks. Original CB Sai M&M Looks
-                are unique and include white or black packaging. There are a
-                total of 7,000 Original CB Sai M&M Looks.
+                The Family & Friends CB Sai M&M Looks are more rare and include red packaging with a Family and Friends stamp. There are a total of 302 Family & Friend CB Sai M&M Looks. Original CB Sai M&M Looks are unique and include either a white or black packaging. There are a total of 7,000 Original CB Sai M&M Looks. 
               </p>
             </div>
           </div>
@@ -132,15 +120,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                CODE LIFE Records DAO is a music record label owned/funded by
-                CB SAI M&M Look NFT Holders which are NFT's influenced by CODEBOY
-                Sai's Meetings & Makeups mixtape. The CODE LIFE Record Label is
-                responsible for all things CODEBOY SAI. The Positions within the
-                record label will be A&R, Merchandiser, Marketing Manager,
-                Publicist, Music Agent, Resource Admin & Executive. CB Sai M&M
-                Look owners discuss label matters privately within the Discord
-                within Position Teams. Positions in CODE LIFE RECORDS DAO is
-                granted for as long as you hold your NFT.
+                CODE LIFE Records DAO is a music record label managed/funded by CBSAI NFT Holders. The CODE LIFE Record Label is responsible for all things CODEBOY SAI. The Positions within the record label will be A&R, Merchandiser, Marketing Manager, Publicist, Music Agent, Resource Admin & Executive. CB Sai M&M Look owners discuss label matters privately within the Discord within Position Teams. Positions in CODE LIFE RECORDS DAO is granted for as long as you hold your NFT. 
               </p>
             </div>
           </div>
@@ -177,13 +157,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                CB Sai M&M Looks will be available for purchase on this website
-                through an initial sale. The easiest way to purchase is to
-                install a MetaMask extension in your browser and link your
-                crypto wallet to it. Ensure you have enough ETH in your wallet
-                to cover the cost of a CB Sai M&M Look plus the associated gas
-                fees. Approve the desired transaction on MetaMask and you are
-                all set.
+                CB Sai M&M Looks will be available for purchase on this website through an initial sale. The easiest way to purchase is to install a MetaMask extension in your browser and link your crypto wallet to it. Ensure you have enough ETH in your wallet to cover the cost of a CB Sai M&M Look plus the associated gas fees. Approve the desired transaction on MetaMask and you are all set.
               </p>
             </div>
           </div>
@@ -255,10 +229,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                The mint cost of each Original CB Sai M&M Look is set at 0.08
-                ETH. (not including gas fees.) The mint cost of each Family &
-                Friends CB Sai M&M Look is set at 0.0302 ETH. (not including gas
-                fees.)
+                The mint cost of each Original CB Sai M&M Look is set at 0.08 ETH. (not including gas fees.)
               </p>
             </div>
           </div>
@@ -294,8 +265,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                There is a limit of 3 CB Sai M&M Looks that can be purchased in
-                1 transaction.
+                There is a limit of 3 CB Sai M&M Looks that can be purchased in 1 transaction. 
               </p>
             </div>
           </div>
@@ -331,8 +301,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                CAll CB Sai M&M Looks will be revealed 73 hours and 02 minutes
-                after start of sale.
+                All CB Sai M&M Looks will be revealed 73 hours and 02 minutes after start of sale.
               </p>
             </div>
           </div>
@@ -368,9 +337,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                Yes, all CB Sai M&M Look holders will be able to trade their
-                NFTs on the secondary market. Reminder, selling your CB Sai M&M
-                Look will forfiet your position within CODE LIFE RECORDS DAO.
+                Yes, all CB Sai M&M Look holders will be able to trade their NFTs on the secondary market. Reminder, selling your CB Sai M&M Look may forfiet your position within CODE LIFE RECORDS DAO.
               </p>
             </div>
           </div>
@@ -406,9 +373,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                CODEBOY Sai will be reserving 75 CB SAI M&M F&F (Family &
-                Friend) Looks + 75 Original CB Sai M&M Looks from the mint sale
-                for his team, giveaways and competitions.
+                CODEBOY Sai will be reserving 75 CB SAI M&M F&F (Family & Friend) Looks + 75 Original CB Sai M&M Looks from the mint sale for his team, giveaways and competitions.
               </p>
             </div>
           </div>
@@ -444,15 +409,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                CB Sai M&M Looks is a M2E project which means Manage to Earn.
-                Each CB Sai M&M Look holder will play a role in managing CODEBOY
-                Sai’s music career. In return, CODEBOY Sai will split 15% of all
-                revenue between the NFT sales, music streams, future
-                performances, etc. with CODE LIFE RECORDS DAO. For example, 15%
-                of all CB SAI Look sales will be locked in the CODE LIFE RECORDS
-                DAO Treasury. The CODE LIFE RECORDS DAO will use the treasury
-                for the ‘Meetings and Makeups’ mixtape marketing budget as well
-                as other label matters.
+                CB Sai M&M Looks is a M2E project which means Manage to Earn. Each CB Sai M&M Look  holder will play a role in managing CODEBOY Sai’s music career. In return, CODEBOY Sai will split 15% of all revenue between the NFT sales, music streams, future performances, etc. with CODE LIFE RECORDS DAO. For example, 15% of all CB SAI Look sales will be locked in the CODE LIFE RECORDS DAO Treasury. The CODE LIFE RECORDS DAO will use the treasury for the ‘Meetings and Makeups’ mixtape marketing budget as well as other label matters.
               </p>
             </div>
           </div>
@@ -489,9 +446,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                You can only access Meetings & Makeups on the Exclusive Music
-                Player if you own a CB Sai M&M Look. If you would like to access
-                more music + future releases, you have to mint a listening pass.
+                YYou can only access Meetings & Makeups on the Exclusive Music Player if you own a CB Sai M&M Look. If you would like to access more music + future releases, you have to mint a listening pass.  
               </p>
             </div>
           </div>
@@ -528,11 +483,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                A total of 7 Executive Positions will exist. Only Executive
-                Positions #1 through #3 will go on auction after CB Sai M&M
-                Looks are 100% Minted. #4 through #6 Executive positions will be
-                reserved for elected officials from the DAO. #7 Executive
-                position will be reserved for CODEBOY Sai decision.
+                A total of 7 Executive Positions will exist. Only Executive Positions #1 through #4 will go on auction after CB Sai M&M Looks are 100% Minted. #5 and #6 Executive positions will be reserved for elected officials from the DAO. #7 Executive position will be reserved for CODEBOY Sai decision.
               </p>
             </div>
           </div>

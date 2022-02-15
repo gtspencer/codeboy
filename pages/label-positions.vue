@@ -362,7 +362,7 @@ export default {
     display: block;
 }
 
-.font-monument {
+/* .font-monument {
   font-family: 'Monument Extended';
 }
 
@@ -406,5 +406,5 @@ export default {
   src: url('../static/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
   font-weight: normal;
   font-style: normal;
-}
+} */
 </style>

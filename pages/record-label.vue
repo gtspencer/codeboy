@@ -194,7 +194,7 @@ export default {
   clip-path: inset(0 0 0 0);
 }
 
-.font-monument {
+/* .font-monument {
   font-family: 'Monument Extended';
 }
 
@@ -238,5 +238,5 @@ export default {
   src: url('../static/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
   font-weight: normal;
   font-style: normal;
-}
+} */
 </style>

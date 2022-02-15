@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div class="container mx-auto px-5 sm:px-10 lg:px-14 xl:px-5">
+    <Navigation />
+    
     <section class="listening-pass py-10 md:py-0 lg:py-10">
       <div
         class="second-drop lg:flex justify-between xl:justify-center items-center md:grid grid-cols-2"
@@ -319,7 +321,7 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  There are 1,302 total Listening Passes available. CODEBOY Sai will release more as more music and content is released. 
+                  There are 1,302 total Listening Passes available. CODEBOY Sai will release more Listening Passes as more music and content is released. 
                 </p>
               </div>
             </div>
@@ -355,7 +357,7 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  The mint cost of each Original CB Sai M&M Look is set at 0.0302 ETH. (not including gas fees.)
+                  The mint cost of each Listening Pass is set at 0.0302 ETH. (not including gas fees.)
                 </p>
               </div>
             </div>
@@ -391,15 +393,7 @@
               <p
                 class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
               >
-                CODE LIFE Records DAO is a music record label owned/funded by
-                CBSAI M&M Look NFT Holders which are NFT's influenced by CODEBOY
-                Sai's Meetings & Makeups mixtape. The CODE LIFE Record Label is
-                responsible for all things CODEBOY SAI. The Positions within the
-                record label will be A&R, Merchandiser, Marketing Manager,
-                Publicist, Music Agent, Resource Admin & Executive. CB Sai M&M
-                Look owners discuss label matters privately within the Discord
-                within Position Teams. Positions in CODE LIFE RECORDS DAO is
-                granted for as long as you hold your NFT.
+                CODE LIFE Records DAO is a music record label managed/funded by CBSAI NFT Holders. CODE LIFE Records DAO is responsible for all things CODEBOY SAI. The Positions within the record label will be A&R, Merchandiser, Marketing Manager, Publicist, Music Agent, Resource Admin & Executive. CB Sai NFT holders discuss label matters privately in the HQ within Position Teams. Positions in CODE LIFE RECORDS DAO is granted for as long as you hold your NFT. 
               </p>
             </div>
           </div>
@@ -474,7 +468,7 @@ export default {
     visibility: hidden;
 }
 
-.font-monument {
+/* .font-monument {
   font-family: 'Monument Extended';
 }
 
@@ -523,5 +517,5 @@ export default {
   src: url('../static/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
   font-weight: normal;
   font-style: normal;
-}
+} */
 </style>

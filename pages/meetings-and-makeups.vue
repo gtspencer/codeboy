@@ -1,5 +1,7 @@
 <template>
   <div class="m-m-body">
+    <ExtendedNavigation />
+      
     <div class="container px-5 mx-auto sm:px-10 lg:px-14 xl:px-5">
       <SecondHero />
 
@@ -32,7 +34,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default {
-  layout: "second",
+  // layout: "second",
   scrollToTop: true,
 
 
@@ -60,7 +62,7 @@ export default {
 </script>
 
 <style>
-.font-monument {
+/* .font-monument {
   font-family: 'Monument Extended';
 }
 
@@ -104,25 +106,25 @@ export default {
   src: url('../static/font/Monument_Extended_Font/MonumentExtended-Black.ttf');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /*width*/
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width:7px;
-}
+} */
 
 /*track*/
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background:rgba(255, 255, 255, 0.1);
   border-width:1px;
   border-style:none;
   border-radius:10px;
-}
+} */
 
 /*thumb*/
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background:rgb(85, 85, 85);
   border-color:rgb(153, 153, 153);
   border-radius:10px;
-}
+} */
 </style>

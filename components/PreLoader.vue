@@ -1,8 +1,8 @@
 <template>
-  <!-- <transition name="fade"> -->
+  <transition name="fade">
     <div>
       <section
-        class="w-full h-screen flex justify-center items-center bg-white z-50 fixed"
+        class="w-full h-screen flex justify-center items-center bg-white z-50 fixed -mt-[65px]"
       >
         <div
           class="section-container flex flex-col justify-center items-center space-y-3"
@@ -26,7 +26,7 @@
         </div>
       </section>
     </div>
-  <!-- </transition> -->
+  </transition>
 </template>
 
 <script>
