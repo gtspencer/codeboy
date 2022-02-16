@@ -3,7 +3,9 @@ export default {
   target: 'static',
   server: {
     host: process.env.HOST || '0.0.0.0',
-    port: process.env.PORT || 8080
+    port: process.env.PORT || 8080,
+    
+
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -83,7 +85,7 @@ export default {
 
   sitemap: () => ({
         hostname: 'https://codeboysai.com',
-        gzip: true
+        gzip: false
     }),
 
   // Modules: https://go.nuxtjs.dev/config-modules

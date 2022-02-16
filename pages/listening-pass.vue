@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto px-5 sm:px-10 lg:px-14 xl:px-5">
     <Navigation />
-    
+
     <section class="listening-pass py-10 md:py-0 lg:py-10">
       <div
         class="second-drop lg:flex justify-between xl:justify-center items-center md:grid grid-cols-2"
@@ -26,7 +26,7 @@
         >
           <video
             class="transform"
-            src="https://res.cloudinary.com/eazzie/video/upload/q_100,c_crop,w_450,h_550/v1643129201/Codeboy/Listening-Pass_pn1oy4.webm"
+            src="https://res.cloudinary.com/eazzie/video/upload/q_100,c_crop,w_450,h_550/v1643129201/Codeboy/Listening-Pass_pn1oy4.mp4"
             alt="The Listening Pass Asset"
             autoplay
             loop
@@ -99,7 +99,9 @@
     </section>
 
     <section class="benefits my-20">
-      <div class="benefits-container lg:flex justify-between items-start lg:space-x-10 2xl:space-x-20">
+      <div
+        class="benefits-container lg:flex justify-between items-start lg:space-x-10 2xl:space-x-20"
+      >
         <div
           data-aos="zoom-in"
           data-aos-duration="1000"
@@ -109,11 +111,15 @@
           <h2
             class="font-monument font-light capitalize text-center lg:text-left text-[2rem] xl:text-[2.5rem] md:px-20 lg:px-0 2xl:pr-10 leading-normal lg:leading-tight xl:leading-normal xl:whitespace-nowrap"
           >
-            Benefits of <br class="hidden xl:block"> each LP <br class="hidden xl:block"> token
+            Benefits of <br class="hidden xl:block" />
+            each LP <br class="hidden xl:block" />
+            token
           </h2>
         </div>
 
-        <div class="bottom-right-container xl:w-[60%] mt-10 lg:mt-0 sm:grid grid-cols-2 space-y-7 sm:space-y-0 sm:gap-y-10 sm:gap-x-10 md:gap-x-5 xl:gap-x-20">
+        <div
+          class="bottom-right-container xl:w-[60%] mt-10 lg:mt-0 sm:grid grid-cols-2 space-y-7 sm:space-y-0 sm:gap-y-10 sm:gap-x-10 md:gap-x-5 xl:gap-x-20"
+        >
           <div
             class="first-benefit flex items-start space-x-5 lg:place-self-start overflow-hidden"
           >
@@ -128,7 +134,9 @@
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1000" class="right">
-              <p class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed">
+              <p
+                class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed"
+              >
                 Gain Unlimited Access to
                 <span class="font-bold">Music Player</span> <br />
                 One Mint = Access to CODEBOY Sai music forever
@@ -150,7 +158,9 @@
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1000" class="right">
-              <p class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed ml-2">
+              <p
+                class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed ml-2"
+              >
                 <span class="font-bold">A&R Scout</span> position within the
                 CODE LIFE Records DAO, a music label fully run by CB Sai Look
                 holders.
@@ -172,11 +182,15 @@
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1000" class="right">
-              <p class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed">
+              <p
+                class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed"
+              >
                 License to Stream Music on websites like Twitch
               </p>
 
-              <p class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed pt-1">
+              <p
+                class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed pt-1"
+              >
                 <span class="font-bold"> Tell the DMCA to fuck off! </span>
               </p>
             </div>
@@ -190,7 +204,9 @@
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1000" class="right">
-              <p class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed">
+              <p
+                class="font-monument font-light text-[10px] xl:text-xs leading-relaxed md:leading-normal xl:leading-relaxed"
+              >
                 Listening Pass holders have <br />
                 <span class="font-bold">Non-Exclusive Licensee Rights</span>
                 <br />
@@ -204,7 +220,9 @@
     </section>
 
     <section class="faq my-28 sm:my-32 md:my-36 lg:px-20">
-      <div class="items-start justify-center faq-container md:flex md:space-x-10 xl:space-x-32">
+      <div
+        class="items-start justify-center faq-container md:flex md:space-x-10 xl:space-x-32"
+      >
         <div class="top-left faqTopLeft md:w-1/3" ref="faqTopLeft">
           <h2
             class="text-xxl text-center capitalize md:text-left font-monument font-light sm:text-2xl md:text-xl lg:text-3xl"
@@ -249,7 +267,10 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  The Listening Pass unlocks all the CODEBOY Sai content on the Exclusive Music Player and a position within 'CODE LIFE Records DAO', a Music Record Label fully ran/operated by CODEBOY Sai NFT wallet holders. 
+                  The Listening Pass unlocks all the CODEBOY Sai content on the
+                  Exclusive Music Player and a position within 'CODE LIFE
+                  Records DAO', a Music Record Label fully ran/operated by
+                  CODEBOY Sai NFT wallet holders.
                 </p>
               </div>
             </div>
@@ -285,7 +306,12 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  Listening Passes (LPs) will be available for purchase on this website. The easiest way to purchase is to install a MetaMask extension in your browser and link your crypto wallet to it. Ensure you have enough ETH in your wallet to cover the cost of a CB Sai M&M Look plus the associated gas fees. Approve the desired transaction on MetaMask and you are all set.
+                  Listening Passes (LPs) will be available for purchase on this
+                  website. The easiest way to purchase is to install a MetaMask
+                  extension in your browser and link your crypto wallet to it.
+                  Ensure you have enough ETH in your wallet to cover the cost of
+                  a CB Sai M&M Look plus the associated gas fees. Approve the
+                  desired transaction on MetaMask and you are all set.
                 </p>
               </div>
             </div>
@@ -321,7 +347,9 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  There are 1,302 total Listening Passes available. CODEBOY Sai will release more Listening Passes as more music and content is released. 
+                  There are 1,302 total Listening Passes available. CODEBOY Sai
+                  will release more Listening Passes as more music and content
+                  is released.
                 </p>
               </div>
             </div>
@@ -357,46 +385,54 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  The mint cost of each Listening Pass is set at 0.0302 ETH. (not including gas fees.)
+                  The mint cost of each Listening Pass is set at 0.0302 ETH.
+                  (not including gas fees.)
                 </p>
               </div>
             </div>
 
             <div
-            class="faq-box-3 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 sm:h-10 xl:h-10 border-t py-3 overflow-hidden"
-          >
-            <div class="flex items-center justify-between top">
-              <h5
-                class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
-              >
-                What is CODE LIFE RECORDS DAO?
-              </h5>
-
-              <div class="svg-container">
-                <svg
-                  class="w-2 transition duration-500"
-                  viewBox="0 0 14 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              class="faq-box-3 faq-box w-full md:w-[24.5rem] lg:w-[26rem] xl:w-[35rem] h-10 sm:h-10 xl:h-10 border-t py-3 overflow-hidden"
+            >
+              <div class="flex items-center justify-between top">
+                <h5
+                  class="font-monument-regular text-[10px] xl:text-xs 2xl:text-sm max-w-[95%]"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.9998 6.20479L1.39755 0.602539L0.602051 1.39803L6.9998 7.79578L13.3975 1.39803L12.602 0.602539L6.9998 6.20479Z"
-                    fill="#2E2B26"
-                  />
-                </svg>
+                  What is CODE LIFE RECORDS DAO?
+                </h5>
+
+                <div class="svg-container">
+                  <svg
+                    class="w-2 transition duration-500"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.9998 6.20479L1.39755 0.602539L0.602051 1.39803L6.9998 7.79578L13.3975 1.39803L12.602 0.602539L6.9998 6.20479Z"
+                      fill="#2E2B26"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="hidden mt-3 bottom">
+                <p
+                  class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
+                >
+                  CODE LIFE Records DAO is a music record label managed/funded
+                  by CBSAI NFT Holders. CODE LIFE Records DAO is responsible for
+                  all things CODEBOY SAI. The Positions within the record label
+                  will be A&R, Merchandiser, Marketing Manager, Publicist, Music
+                  Agent, Resource Admin & Executive. CB Sai NFT holders discuss
+                  label matters privately in the HQ within Position Teams.
+                  Positions in CODE LIFE RECORDS DAO is granted for as long as
+                  you hold your NFT.
+                </p>
               </div>
             </div>
-
-            <div class="hidden mt-3 bottom">
-              <p
-                class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
-              >
-                CODE LIFE Records DAO is a music record label managed/funded by CBSAI NFT Holders. CODE LIFE Records DAO is responsible for all things CODEBOY SAI. The Positions within the record label will be A&R, Merchandiser, Marketing Manager, Publicist, Music Agent, Resource Admin & Executive. CB Sai NFT holders discuss label matters privately in the HQ within Position Teams. Positions in CODE LIFE RECORDS DAO is granted for as long as you hold your NFT. 
-              </p>
-            </div>
-          </div>
           </div>
 
           <!-- <transition name="fade" appear mode="out-in">
@@ -465,7 +501,7 @@ export default {
 }
 
 .faq-box::-webkit-scrollbar {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /* .font-monument {

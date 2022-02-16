@@ -8,14 +8,14 @@
                     </h2>
 
                     <p class="font-monument-light uppercase text-[10px] xl:text-xs 2xl:text-sm mt-3">
-                        12 items influenced by each song off the Meetings & Makeups Mixtape
+                        13 items influenced by each song off the Meetings & Makeups Mixtape
                     </p>
                 </div>
 
                 <div class="assets min-w-[180vw] flex space-x-1 md:space-x-1.5 xl:px-10">
                     <div class="container-1 w-auto lg:w-[200px] xl:w-[200px] space-y-1 md:space-y-2">
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200239/Codeboy/Never_Change_Up_Item_-_Mirror_ekjdkb.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200239/Codeboy/Never_Change_Up_Item_-_Mirror_ekjdkb.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -23,7 +23,7 @@
                         />
 
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643202510/Codeboy/Meetings_NMakeups_Item_-_Work_Desk_Laptop_Trim_wdukpb.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643202510/Codeboy/Meetings_NMakeups_Item_-_Work_Desk_Laptop_Trim_wdukpb.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -33,7 +33,7 @@
 
                     <div class="container-2 w-auto lg:w-[200px] xl:w-[200px] space-y-1 md:space-y-2">
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643203212/Codeboy/Caress_Me_Item_-_Restaurant_Bill_Trim_dociqj.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643203212/Codeboy/Caress_Me_Item_-_Restaurant_Bill_Trim_dociqj.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -41,7 +41,7 @@
                         />
 
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200249/Codeboy/Nun_To_Prove_Item_-_Championship_Belt_lieunz.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200249/Codeboy/Nun_To_Prove_Item_-_Championship_Belt_lieunz.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -51,7 +51,7 @@
 
                     <div class="container-3 w-auto lg:w-[200px] xl:w-[200px] space-y-1 md:space-y-2">
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200243/Codeboy/Meetings_N_Makeups_Item_-_Work_Desk_Laptop_pgivmj.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200243/Codeboy/Meetings_N_Makeups_Item_-_Work_Desk_Laptop_pgivmj.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -59,7 +59,7 @@
                         />
 
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643203613/Codeboy/Kid_Chocolate_Item_-_Boxing_Gloves_Trim_jvgks9.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643203613/Codeboy/Kid_Chocolate_Item_-_Boxing_Gloves_Trim_jvgks9.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -69,7 +69,7 @@
 
                     <div class="container-4 w-auto lg:w-[200px] xl:w-[200px] space-y-1 md:space-y-2">
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200254/Codeboy/Days_Amazing_Item_-_Sunglasses_with_Pill_Bottle_imgewo.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200254/Codeboy/Days_Amazing_Item_-_Sunglasses_with_Pill_Bottle_imgewo.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -77,7 +77,7 @@
                         />
 
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,q_100,w_266/v1642772726/Codeboy/Song_Name_-_Capable_Item_-_Dumbell_skztqi.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,q_100,w_266/v1642772726/Codeboy/Song_Name_-_Capable_Item_-_Dumbell_skztqi.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -87,7 +87,7 @@
 
                     <div class="container-5 w-auto lg:w-[200px] xl:w-[200px] space-y-1 md:space-y-2">
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,q_100,w_266/v1642772735/Codeboy/Song_Name_-_Feelings_Can_t_Fade_Away_Item_-_Old_School_Radio_xq9tmj.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,q_100,w_266/v1642772735/Codeboy/Song_Name_-_Feelings_Can_t_Fade_Away_Item_-_Old_School_Radio_xq9tmj.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -95,7 +95,7 @@
                         />
 
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,h_474,q_100,w_266/v1642772742/Codeboy/Song_Name_-_Made_For_This_-_Item_1_Award_Medal_jpg8ge.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,h_474,q_100,w_266/v1642772742/Codeboy/Song_Name_-_Made_For_This_-_Item_1_Award_Medal_jpg8ge.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -105,7 +105,7 @@
 
                     <div class="container-6 w-auto lg:w-[200px] xl:w-[200px] space-y-1 md:space-y-2">
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,h_474,q_100,w_266/v1642772732/Codeboy/Song_Name_-_Hopeless_Romantic_Item_-_Dead_Roses_Bouquet_lunnd6.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,h_474,q_100,w_266/v1642772732/Codeboy/Song_Name_-_Hopeless_Romantic_Item_-_Dead_Roses_Bouquet_lunnd6.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -113,7 +113,7 @@
                         />
 
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,q_100,w_266/v1642772751/Codeboy/Song_Name_-_Trolley_Item_-_Four_Loko_n9ykzj.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/c_scale,q_100,w_266/v1642772751/Codeboy/Song_Name_-_Trolley_Item_-_Four_Loko_n9ykzj.mp4" 
                             alt=""
                             autoplay
                             loop
@@ -123,7 +123,7 @@
 
                     <div class="container-7 w-auto lg:w-[200px] xl:w-[200px] space-y-1 md:space-y-2">
                         <video 
-                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200261/Codeboy/SHOTGUN_RING_-_ITEM_-_VINTAGE_TELEPHONE_pvxeub.webm" 
+                            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643200261/Codeboy/SHOTGUN_RING_-_ITEM_-_VINTAGE_TELEPHONE_pvxeub.mp4" 
                             alt=""
                             autoplay
                             loop
