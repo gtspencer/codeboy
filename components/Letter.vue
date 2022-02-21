@@ -29,10 +29,10 @@
 
         <p class="text-[10px] font-light letter-details font-monument-light lg:text-xs xl:text-sm 2xl:text-base lg:leading-normal xl:leading-normal 2xl:leading-normal">
           Im signing myself to a life-360 deal to CODE LIFE Records. I’m putting
-          my musi career in the hands of people I have never met. Now my true
+          my music career in the hands of people I have never met. Now my true
           fans can make money when I make money. The only way a major label will
           make revenue from me is if they own a CB SAI Look. I will split all of
-          my earnings 80/20 with CODE LIFE Records. From inperson/metaverse
+          my earnings 85/15 with CODE LIFE Records. From inperson/metaverse
           performances to streaming rev, NFT royalties and more.
         </p>
 

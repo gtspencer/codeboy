@@ -41,6 +41,7 @@
                 :src="outfit.vid"
                 :alt="outfit.alt"
                 autoplay
+                playsinline
                 loop
                 muted
               />
@@ -91,7 +92,7 @@ export default {
         },
 
         {
-          vid: "https://res.cloudinary.com/eazzie/video/upload/c_scale,h_1400,q_100,w_1400/v1644826517/Codeboy/Character_Name_-_Carlton_nj4zru.mp4",
+          vid: "https://res.cloudinary.com/eazzie/video/upload/c_scale,h_1400,,w_1400/v1644826517/Codeboy/Character_Name_-_Carlton_nj4zru.mp4",
           alt: "An Asset of the Carlton Outfit",
           name: "Carlton",
           description:

@@ -99,9 +99,10 @@
             >
               <video
                 class=""
-                src="https://res.cloudinary.com/eazzie/video/upload/c_crop,w_1100,q_100/v1642648085/Codeboy/LISTENINGPASS-LANYARD_upwzog.mp4"
+                src="https://res.cloudinary.com/eazzie/video/upload/c_crop,w_1100/v1642648085/Codeboy/LISTENINGPASS-LANYARD_upwzog.mp4"
                 alt="The Listening Pass Asset"
                 autoplay
+                playsinline
                 loop
                 muted
               />
@@ -119,7 +120,7 @@
               class="transform"
               src="https://res.cloudinary.com/eazzie/video/upload/c_scale,h_644,q_100,w_638/v1642648085/Codeboy/LISTENINGPASS-LANYARD_upwzog.mp4"
               alt="The Listening Pass Asset"
-              autoplay
+              autoplay playsinline
               loop
               muted
             />

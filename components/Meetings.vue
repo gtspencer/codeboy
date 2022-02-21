@@ -14,7 +14,7 @@
         <div v-for="meeting in meetings" :key="meeting.id" class="track-container currentTile relative py-3 flex justify-between after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#E5E5E5] cursor-pointer" ref="currentTile">
             <div class="left-container flex justify-between items-center w-[57%] md:w-[49%]">
                 <div class=".left-container flex items-center space-x-2">
-                    <div class="cover w-14 h-14 rounded-lg bg-center bg-contain" style="background-image: url('https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webps');">
+                    <div class="cover w-14 h-14 rounded-lg bg-center bg-contain" style="background-image: url('https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp');">
                         <!-- <p>
                             {{ track.cover }}
                         </p> -->

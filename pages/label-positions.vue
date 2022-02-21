@@ -24,9 +24,10 @@
             >
               <video
                 class="md:-ml-10"
-                src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643320828/Codeboy/SILVERDESK-215X716_jk4vhv.mp4"
+                src="https://res.cloudinary.com/eazzie/video/upload//v1643320828/Codeboy/SILVERDESK-215X716_jk4vhv.mp4"
                 alt="A video of the label positions"
                 autoplay
+                playsinline
                 loop
                 muted
               />
@@ -439,9 +440,10 @@
           class="top-left flex justify-center"
         >
           <video
-            src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1644676113/Codeboy/EXECUTIVE_ag9s8g.mp4"
+            src="https://res.cloudinary.com/eazzie/video/upload//v1644676113/Codeboy/EXECUTIVE_ag9s8g.mp4"
             alt="An Asset of the Executive"
             autoplay
+            playsinline
             loop
             muted
           />

@@ -9,7 +9,7 @@
             <h2
               class="text-2xl text-center capitalize md:text-left font-monument-regular sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:leading-normal xl:leading-normal 2xl:leading-normal"
             >
-              listening <br class="hidden lg:block" />
+              Exclusive listening <br class="hidden lg:block" />
               player
             </h2>
 

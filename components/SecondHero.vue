@@ -15,6 +15,7 @@
             class="xl:w-[90%]"
             src="https://res.cloudinary.com/eazzie/video/upload/q_80/v1643157092/Codeboy/VID-20220125-WA0086_q1ujzx.mp4"
             autoplay
+            playsinline
             loop
             muted
           />

@@ -26,9 +26,10 @@
         >
           <video
             class="transform"
-            src="https://res.cloudinary.com/eazzie/video/upload/q_100,c_crop,w_450,h_550/v1643129201/Codeboy/Listening-Pass_pn1oy4.mp4"
+            src="https://res.cloudinary.com/eazzie/video/upload/q_auto,c_crop,w_450,h_550/v1643129201/Codeboy/Listening-Pass_pn1oy4.mp4"
             alt="The Listening Pass Asset"
             autoplay
+            playsinline
             loop
             muted
           />
@@ -51,7 +52,7 @@
                 <span class="text-[#6B6761] font-bold">1,302</span>
                 <span class="font-monument font-light"
                   >(more LPs <br class="hidden md:block lg:hidden xl:block" />
-                  would be released as more music is released)</span
+                  will be released as more music is released)</span
                 >
               </li>
               <li

@@ -10,22 +10,25 @@
         class="images flex flex-col justify-center items-center lg:grid grid-cols-3 place-items-center"
       >
         <video
-          src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643269595/Codeboy/PACK-460X476_BLACK_nvvdc1.mp4"
+          src="https://res.cloudinary.com/eazzie/video/upload/v1643269595/Codeboy/PACK-460X476_BLACK_nvvdc1.mp4"
           autoplay
+          playsinline
           loop
           muted
         />
 
         <video
-          src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643269594/Codeboy/PACK-460X476_RED_zrjl3e.mp4"
+          src="https://res.cloudinary.com/eazzie/video/upload/v1643269594/Codeboy/PACK-460X476_RED_zrjl3e.mp4"
           autoplay
+          playsinline
           loop
           muted
         />
 
         <video
-          src="https://res.cloudinary.com/eazzie/video/upload/q_100/v1643269593/Codeboy/PACK-460X476_WHITE_bddpnk.mp4"
+          src="https://res.cloudinary.com/eazzie/video/upload/v1643269593/Codeboy/PACK-460X476_WHITE_bddpnk.mp4"
           autoplay
+          playsinline
           loop
           muted
         />
