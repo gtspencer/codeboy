@@ -7,10 +7,11 @@ export const state = () => ({
     category: 'all',
     mixtape: '',
     currentLyrics:  ``,
+    account: '',
 })
 
 export const mutations = {
-  next(state) { 
+  next(state) {
     state.songIndex++
 
     if(state.songIndex > 28) {
@@ -60,5 +61,16 @@ export const mutations = {
 
   increement(state) {
     state.counter++
+  },
+
+  changeAccount(state, payload) {
+    state.account = payload
+  }
+}
+
+//store/index.js
+export const getters = {
+  getAccount(state) {
+    return state.account
   }
 }

@@ -70,7 +70,7 @@
                 class="leading-[2.5]"
               >
                 Lifetime LP Mint Fee:
-                <span class="text-[#6B6761]">0.0302 ETH</span>
+                <span class="text-[#6B6761]">Free!</span>
               </li>
               <li
                 data-aos="fade-right"
@@ -89,6 +89,7 @@
               class="button flex lg:block justify-center mt-5"
             >
               <button
+                @click="mintClicked"
                 class="uppercase relative font-sf text-white text-xs px-28 xl:px-32 py-1.5 xl:py-2 bg-black"
               >
                 mint
@@ -386,8 +387,8 @@
                 <p
                   class="font-monument font-light text-[8px] xl:text-[10px] 2xl:text-[xs] leading-relaxed"
                 >
-                  The mint cost of each Listening Pass is set at 0.0302 ETH.
-                  (not including gas fees.)
+                  The minting of each Listening Pass is free (not including gas fees).
+                  Listening passes allow early mint access to future projects.
                 </p>
               </div>
             </div>
@@ -450,10 +451,85 @@
 
 <script>
 import aosMixin from "~/mixins/aos";
+import { ethers } from "ethers";
+import lp from "~/abi/CBSaiListeningPass.json";
 
 export default {
   layout: "default",
   mixins: [aosMixin],
+  methods: {
+    async mintClicked() {
+      if (this.$store.getters["getAccount"] == '') {
+        try {
+          var account = await window.ethereum.request({method: 'eth_requestAccounts' })
+          this.$store.commit("changeAccount", account)
+
+          // const provider = new ethers.providers.Web3Provider(window.ethereum)
+          var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+          document.getElementById("connectButton").style.display = 'none'
+          document.getElementById("addressField").style.display = 'inline'
+          document.getElementById("addressField").innerText = accountStr
+
+          console.log("Connected with " + this.$store.getters["getAccount"])
+        } catch (err) {
+
+        }
+      } else {
+        try {
+          // todo get price from contract, set price here
+          const provider = new ethers.providers.Web3Provider(window.ethereum)
+          const signer = provider.getSigner()
+          const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
+          /*var gas = await contract.estimateGas.mint()
+          console.log('gas ' + gas)
+          var overrides = {
+            value: 1,
+            gasLimit:gas + 1
+          }*/
+          const transaction = await contract.mint(/*overrides*/)
+          console.log(transaction)
+        } catch (err) {
+
+        }
+
+        /*try {
+          const provider = new ethers.providers.Web3Provider(window.ethereum)
+          const signer = provider.getSigner()
+          const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
+          var overrides = {
+            value: ethers.utils.parseEther("1.0")
+          }
+          const transaction = await contract.mint(overrides)
+          console.log(transaction)
+        } catch (err) {
+          console.log(err)
+          console.log("if you see this, please refresh.  i'm doing by best")
+        }*/
+
+      }
+    }
+  },
+  mounted: async function() {
+    // gotta do a big ol try catch or it fails if the user doesn't connect....
+    // def better way to do this but i'm no web dev so fuck it
+    try {
+      document.getElementById("addressField").style.display = 'none'
+      var account = await window.ethereum.request({method: 'eth_requestAccounts'})
+      if (account != '') {
+
+        this.$store.commit("changeAccount", account)
+
+        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+        document.getElementById("addressField").style.display = 'inline'
+        document.getElementById("connectButton").style.display = 'none'
+        document.getElementById("addressField").innerText = accountStr
+
+        console.log("Connected with " + this.$store.getters["getAccount"])
+      }
+    } catch (err) {
+      console.log("gimme dat account plz")
+    }
+  }
 };
 </script>
 

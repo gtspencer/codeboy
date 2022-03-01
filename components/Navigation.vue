@@ -30,12 +30,17 @@
 
         <div class="right-nav-container md:mt-5 xl:mt-10">
           <nuxt-link to="" class="">
-            <button
+            <button @click="ConnectWallet" id="connectButton"
               class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
             >
               connect wallet
             </button>
           </nuxt-link>
+          <button
+            class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
+            id="addressField">
+
+          </button>
         </div>
       </div>
     </nav>
@@ -43,7 +48,51 @@
 </template>
 
 <script>
-export default {};
+import { ethers } from "ethers";
+
+export default {
+  methods: {
+    async ConnectWallet() {
+      try {
+        var account = await window.ethereum.request({method: 'eth_requestAccounts' })
+        this.$store.commit("changeAccount", account)
+
+        // const provider = new ethers.providers.Web3Provider(window.ethereum)
+        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+        document.getElementById("connectButton").style.display = 'none'
+        document.getElementById("addressField").style.display = 'inline'
+        document.getElementById("addressField").innerText = accountStr
+
+        console.log("Connected with " + this.$store.getters["getAccount"])
+      } catch (err) {
+
+      }
+
+    }
+  },
+  mounted: async function() {
+    // gotta do a big ol try catch or it fails if the user doesn't connect....
+    // def better way to do this but i'm no web dev so fuck it
+    try {
+      document.getElementById("addressField").style.display = 'none'
+      var account = await window.ethereum.request({method: 'eth_requestAccounts' })
+      if (account != '') {
+
+        this.$store.commit("changeAccount", account)
+
+        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+        document.getElementById("addressField").style.display = 'inline'
+        document.getElementById("connectButton").style.display = 'none'
+        document.getElementById("addressField").innerText = accountStr
+
+        console.log("Connected with " + this.$store.getters["getAccount"])
+      }
+    } catch (err) {
+        console.log("gimme dat account plz")
+    }
+
+  }
+};
 </script>
 
 <style>
