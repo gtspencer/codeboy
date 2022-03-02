@@ -124,7 +124,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 0,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
         },
 
         {
@@ -134,7 +134,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 1,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
         },
 
         {
@@ -144,7 +144,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 2,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
         },
 
         {
@@ -154,7 +154,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 3,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
         },
 
         {
@@ -164,7 +164,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 4,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
         },
 
         {
@@ -957,7 +957,7 @@ export default {
 #range:focus {
   outline: none;
 }
-/* 
+/*
 #range::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;

@@ -30,10 +30,15 @@
 
         <div class="right-nav-container md:mt-5 xl:mt-10">
           <nuxt-link to="" class="">
-            <button @click="ConnectWallet" id="connectButton"
+            <button @click="ConnectWalletMM" id="connectButtonMeta"
               class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
             >
-              connect wallet
+              connect metamask
+            </button>
+            <button @click="ConnectWalletWC" id="connectButtonWC"
+                    class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
+            >
+              connect walletconnect
             </button>
           </nuxt-link>
           <button
@@ -48,13 +53,31 @@
 </template>
 
 <script>
-import { ethers } from "ethers";
+import { ethers, providers } from "ethers";
+import WalletConnectProvider from "@walletconnect/web3-provider";
+import lp from "~/abi/CBSaiListeningPass.json";
 
 export default {
   methods: {
-    async ConnectWallet() {
+    async ConnectWalletMM() {
       try {
-        var account = await window.ethereum.request({method: 'eth_requestAccounts' })
+        console.log("start try connect!")
+        const provider = new ethers.providers.Web3Provider(window.ethereum)
+        console.log(provider)
+        console.log(typeof(provider))
+        console.log("got provider!")
+        var account = await provider.send('eth_requestAccounts', [])
+/*        console.log("got account!")
+        this.$store.commit("changeAccount", account)
+        console.log("changed account!")
+        this.$store.commit("changeProvider", provider)
+        console.log("change provider!")
+        console.log("connected!")*/
+        /*console.log(provider)
+        const signer = await provider.getSigner()
+        console.log(signer)*/
+
+/*        var account = await window.ethereum.request({method: 'eth_requestAccounts' })
         this.$store.commit("changeAccount", account)
 
         // const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -63,7 +86,37 @@ export default {
         document.getElementById("addressField").style.display = 'inline'
         document.getElementById("addressField").innerText = accountStr
 
-        console.log("Connected with " + this.$store.getters["getAccount"])
+        console.log("Connected with " + this.$store.getters["getAccount"])*/
+      } catch (err) {
+
+      }
+
+    },
+    async ConnectWalletWC() {
+      try {
+        // wallet connect
+        const provider = new WalletConnectProvider({
+          infuraId: "7c297bd58a0244b491d076df8d2ac0a7",
+        });
+        await provider.enable();
+
+        const web3Provider = new providers.Web3Provider(provider)
+        console.log(web3Provider)
+        provider.on("accountsChanged", (accounts) => {
+          console.log(accounts);
+        });
+        // var account = await window.ethereum.request({method: 'eth_requestAccounts' })
+
+        /*var account = await window.ethereum.request({method: 'eth_requestAccounts' })
+        this.$store.commit("changeAccount", account)
+
+        // const provider = new ethers.providers.Web3Provider(window.ethereum)
+        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+        document.getElementById("connectButton").style.display = 'none'
+        document.getElementById("addressField").style.display = 'inline'
+        document.getElementById("addressField").innerText = accountStr
+
+        console.log("Connected with " + this.$store.getters["getAccount"])*/
       } catch (err) {
 
       }
@@ -71,10 +124,15 @@ export default {
     }
   },
   mounted: async function() {
+    await this.ConnectWalletMM()
     // gotta do a big ol try catch or it fails if the user doesn't connect....
     // def better way to do this but i'm no web dev so fuck it
-    try {
-      document.getElementById("addressField").style.display = 'none'
+    /*try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const signer = provider.getSigner()
+      /!*document.getElementById("addressField").style.display = 'none'
+      const provider = await ethers.getDefaultProvider();
+      console.log(provider)
       var account = await window.ethereum.request({method: 'eth_requestAccounts' })
       if (account != '') {
 
@@ -86,10 +144,11 @@ export default {
         document.getElementById("addressField").innerText = accountStr
 
         console.log("Connected with " + this.$store.getters["getAccount"])
-      }
+      }*!/
     } catch (err) {
+      console.log(err)
         console.log("gimme dat account plz")
-    }
+    }*/
 
   }
 };

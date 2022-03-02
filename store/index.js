@@ -8,6 +8,7 @@ export const state = () => ({
     mixtape: '',
     currentLyrics:  ``,
     account: '',
+    provider: Object,
 })
 
 export const mutations = {
@@ -65,6 +66,10 @@ export const mutations = {
 
   changeAccount(state, payload) {
     state.account = payload
+  },
+
+  changeProvider(state, payload) {
+    state.provider = payload;
   }
 }
 
@@ -72,5 +77,8 @@ export const mutations = {
 export const getters = {
   getAccount(state) {
     return state.account
+  },
+  getProvider(state) {
+    return state.provider;
   }
 }

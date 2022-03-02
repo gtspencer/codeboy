@@ -86,12 +86,6 @@ export default {
       gzip: false
   }),
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // Simple usage
-    "nuxt-web3"
-  ],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ["gsap"],

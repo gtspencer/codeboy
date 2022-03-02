@@ -479,7 +479,7 @@ export default {
           // todo get price from contract, set price here
           const provider = new ethers.providers.Web3Provider(window.ethereum)
           const signer = provider.getSigner()
-          const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
+          const contract = new ethers.Contract("0x5e9dC633830Af18AA43dDB7B042646AADEDCCe81", lp.abi, signer)
           /*var gas = await contract.estimateGas.mint()
           console.log('gas ' + gas)
           var overrides = {
@@ -489,7 +489,7 @@ export default {
           const transaction = await contract.mint(/*overrides*/)
           console.log(transaction)
         } catch (err) {
-
+          console.log(err)
         }
 
         /*try {
@@ -512,7 +512,7 @@ export default {
   mounted: async function() {
     // gotta do a big ol try catch or it fails if the user doesn't connect....
     // def better way to do this but i'm no web dev so fuck it
-    try {
+    /*try {
       document.getElementById("addressField").style.display = 'none'
       var account = await window.ethereum.request({method: 'eth_requestAccounts'})
       if (account != '') {
@@ -528,7 +528,7 @@ export default {
       }
     } catch (err) {
       console.log("gimme dat account plz")
-    }
+    }*/
   }
 };
 </script>
