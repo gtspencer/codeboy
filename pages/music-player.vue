@@ -124,7 +124,8 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 0,
           status: "/svg/lock.svg",
-          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
+          src: "",
+          locked: true
         },
 
         {
@@ -135,6 +136,7 @@ export default {
           id: 1,
           status: "/svg/lock.svg",
           src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
+          locked: true
         },
 
         {
@@ -144,7 +146,8 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 2,
           status: "/svg/lock.svg",
-          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
+          src: "",
+          locked: true
         },
 
         {
@@ -154,7 +157,8 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 3,
           status: "/svg/lock.svg",
-          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
+          src: "",
+          locked: true
         },
 
         {
@@ -164,7 +168,8 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 4,
           status: "/svg/lock.svg",
-          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1644335921/Codeboy/Never_Change_Up_eccwyu.wav",
+          src: "",
+          locked: true
         },
 
         {
@@ -175,6 +180,7 @@ export default {
           id: 5,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -185,6 +191,7 @@ export default {
           id: 6,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -195,6 +202,7 @@ export default {
           id: 7,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -205,6 +213,7 @@ export default {
           id: 8,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -215,6 +224,7 @@ export default {
           id: 9,
           status: "/svg/lock.svg",
           src: "https://res.cloudinary.com/eazzie/video/upload/v1644335803/Codeboy/Capable_wmcn4x.wav",
+          locked: true
         },
 
         {
@@ -224,7 +234,8 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 10,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/eazzie/video/upload/q_100/v1642773081/Codeboy/Nothing_2_Prove_SINGLE_ys2oof.mp3",
+          locked: true
         },
 
         {
@@ -235,6 +246,7 @@ export default {
           id: 11,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -245,6 +257,7 @@ export default {
           id: 12,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -486,6 +499,7 @@ export default {
           id: 0,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -496,6 +510,7 @@ export default {
           id: 1,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -505,6 +520,7 @@ export default {
           id: 2,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -515,6 +531,7 @@ export default {
           id: 3,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -525,6 +542,7 @@ export default {
           id: 4,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -535,6 +553,7 @@ export default {
           id: 5,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -545,6 +564,7 @@ export default {
           id: 6,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -555,6 +575,7 @@ export default {
           id: 7,
           status: "/svg/lock.svg",
           src: "https://res.cloudinary.com/eazzie/video/upload/v1644335984/Codeboy/Rough_Patches_qq6pnh.wav",
+          locked: true
         },
 
         {
@@ -565,6 +586,7 @@ export default {
           id: 8,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -575,6 +597,7 @@ export default {
           id: 9,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -585,6 +608,7 @@ export default {
           id: 10,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -595,6 +619,7 @@ export default {
           id: 11,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
 
         {
@@ -605,6 +630,7 @@ export default {
           id: 12,
           status: "/svg/lock.svg",
           src: "",
+          locked: true
         },
       ],
 
@@ -740,6 +766,11 @@ export default {
       if (this.category === "all") {
         this.tracks.map((item) => {
           if (item.id === id) {
+            if (item.locked) {
+              console.log("locked")
+              return;
+            }
+
             audio.src = item.src;
             this.changeCurrentSrc(item.src);
             this.changeCover(item.cover);

@@ -7,8 +7,7 @@ export const state = () => ({
     category: 'all',
     mixtape: '',
     currentLyrics:  ``,
-    account: '',
-    provider: Object,
+    account: ''
 })
 
 export const mutations = {

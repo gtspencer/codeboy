@@ -88,11 +88,12 @@
               data-aos-delay="400"
               class="button flex lg:block justify-center mt-5"
             >
+              <!--@click="mintClicked"-->
               <button
-                @click="mintClicked"
+
                 class="uppercase relative font-sf text-white text-xs px-28 xl:px-32 py-1.5 xl:py-2 bg-black"
               >
-                mint
+                mint (coming soon)
               </button>
             </div>
           </div>
@@ -459,6 +460,8 @@ export default {
   mixins: [aosMixin],
   methods: {
     async mintClicked() {
+      // const txHash = await web3.eth.sendTransaction(tx);
+
       if (this.$store.getters["getAccount"] == '') {
         try {
           var account = await window.ethereum.request({method: 'eth_requestAccounts' })
@@ -471,6 +474,8 @@ export default {
           document.getElementById("addressField").innerText = accountStr
 
           console.log("Connected with " + this.$store.getters["getAccount"])
+
+          // do mint here too
         } catch (err) {
 
         }
@@ -479,33 +484,12 @@ export default {
           // todo get price from contract, set price here
           const provider = new ethers.providers.Web3Provider(window.ethereum)
           const signer = provider.getSigner()
-          const contract = new ethers.Contract("0x5e9dC633830Af18AA43dDB7B042646AADEDCCe81", lp.abi, signer)
-          /*var gas = await contract.estimateGas.mint()
-          console.log('gas ' + gas)
-          var overrides = {
-            value: 1,
-            gasLimit:gas + 1
-          }*/
+          const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
           const transaction = await contract.mint(/*overrides*/)
           console.log(transaction)
         } catch (err) {
           console.log(err)
         }
-
-        /*try {
-          const provider = new ethers.providers.Web3Provider(window.ethereum)
-          const signer = provider.getSigner()
-          const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
-          var overrides = {
-            value: ethers.utils.parseEther("1.0")
-          }
-          const transaction = await contract.mint(overrides)
-          console.log(transaction)
-        } catch (err) {
-          console.log(err)
-          console.log("if you see this, please refresh.  i'm doing by best")
-        }*/
-
       }
     }
   },

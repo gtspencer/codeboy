@@ -33,12 +33,12 @@
             <button @click="ConnectWalletMM" id="connectButtonMeta"
               class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
             >
-              connect metamask
+              metamask
             </button>
             <button @click="ConnectWalletWC" id="connectButtonWC"
                     class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
             >
-              connect walletconnect
+              walletconnect
             </button>
           </nuxt-link>
           <button
@@ -55,6 +55,8 @@
 <script>
 import { ethers, providers } from "ethers";
 import WalletConnectProvider from "@walletconnect/web3-provider";
+const Moralis = require('moralis');
+// const Moralis = require('moralis');
 import lp from "~/abi/CBSaiListeningPass.json";
 
 export default {
@@ -63,16 +65,18 @@ export default {
       try {
         console.log("start try connect!")
         const provider = new ethers.providers.Web3Provider(window.ethereum)
-        console.log(provider)
-        console.log(typeof(provider))
-        console.log("got provider!")
+
         var account = await provider.send('eth_requestAccounts', [])
-/*        console.log("got account!")
+
+        console.log("got account! " + account)
         this.$store.commit("changeAccount", account)
-        console.log("changed account!")
-        this.$store.commit("changeProvider", provider)
-        console.log("change provider!")
-        console.log("connected!")*/
+        // this.$store.commit("changeProvider", provider)
+
+        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+        document.getElementById("connectButtonMeta").style.display = 'none'
+        document.getElementById("connectButtonWC").style.display = 'none'
+        document.getElementById("addressField").style.display = 'inline'
+        document.getElementById("addressField").innerText = accountStr
         /*console.log(provider)
         const signer = await provider.getSigner()
         console.log(signer)*/
@@ -88,14 +92,36 @@ export default {
 
         console.log("Connected with " + this.$store.getters["getAccount"])*/
       } catch (err) {
-
+        console.log(err)
       }
 
     },
     async ConnectWalletWC() {
       try {
+        /*let user = Moralis.User.current();
+                if (!user) {
+
+                }*/
+
+        let user = Moralis.authenticate({ provider: "walletconnect", signingMessage: "Log in using Moralis" })
+          .then(function (user) {
+            var account = user.get("ethAddress");
+            var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+            document.getElementById("connectButtonMeta").style.display = 'none'
+            document.getElementById("connectButtonWC").style.display = 'none'
+            document.getElementById("addressField").style.display = 'inline'
+            document.getElementById("addressField").innerText = accountStr
+            console.log("logged in user:", user);
+            console.log(user.get("ethAddress"));
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+
+
+
         // wallet connect
-        const provider = new WalletConnectProvider({
+       /* const provider = new WalletConnectProvider({
           infuraId: "7c297bd58a0244b491d076df8d2ac0a7",
         });
         await provider.enable();
@@ -104,7 +130,7 @@ export default {
         console.log(web3Provider)
         provider.on("accountsChanged", (accounts) => {
           console.log(accounts);
-        });
+        });*/
         // var account = await window.ethereum.request({method: 'eth_requestAccounts' })
 
         /*var account = await window.ethereum.request({method: 'eth_requestAccounts' })
@@ -124,7 +150,21 @@ export default {
     }
   },
   mounted: async function() {
-    await this.ConnectWalletMM()
+    document.getElementById("addressField").style.display = "none"
+    const serverUrl = "https://ecqbouijy87n.usemoralis.com:2053/server";
+    const appId = "QdVokHMtEpB62sT3TDZsJ5ZrsIGJrrBqF0ZXQUYG";
+    Moralis.start({ serverUrl, appId });
+
+    if (this.$store.getters["getAccount"]) {
+      var account = this.$store.getters["getAccount"]
+      var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
+      document.getElementById("connectButtonMeta").style.display = 'none'
+      document.getElementById("connectButtonWC").style.display = 'none'
+      document.getElementById("addressField").style.display = 'inline'
+      document.getElementById("addressField").innerText = accountStr
+    }
+    // this.ConnectWalletMM()
+    // await this.ConnectWalletMM()
     // gotta do a big ol try catch or it fails if the user doesn't connect....
     // def better way to do this but i'm no web dev so fuck it
     /*try {
