@@ -90,10 +90,11 @@
             >
               <!--@click="mintClicked"-->
               <button
-
+                @click="mintClicked"
                 class="uppercase relative font-sf text-white text-xs px-28 xl:px-32 py-1.5 xl:py-2 bg-black"
+                id="mintButton"
               >
-                mint (coming soon)
+                mint
               </button>
             </div>
           </div>
@@ -454,15 +455,86 @@
 import aosMixin from "~/mixins/aos";
 import { ethers } from "ethers";
 import lp from "~/abi/CBSaiListeningPass.json";
+import confetti from 'canvas-confetti';
 
 export default {
   layout: "default",
   mixins: [aosMixin],
   methods: {
     async mintClicked() {
-      // const txHash = await web3.eth.sendTransaction(tx);
+      if (document.getElementById("mintButton").innerText.toLowerCase() == "minting...") {
+        return;
+      }
 
-      if (this.$store.getters["getAccount"] == '') {
+      if (window.signer) {
+        try {
+          const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
+          const receipt = await contract.mint();
+
+          document.getElementById("mintButton").innerText = "Minting..."
+          await receipt.wait()
+          console.log(receipt)
+          document.getElementById("mintButton").innerText = "Success!"
+
+          // confetti
+          var duration = 15 * 1000;
+          var animationEnd = Date.now() + duration;
+          var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+          function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+          }
+
+          var interval = setInterval(function() {
+            var timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+              return clearInterval(interval);
+            }
+
+            var particleCount = 50 * (timeLeft / duration);
+            // since particles fall down, start a bit higher than random
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+          }, 250);
+        } catch (err) {
+
+        }
+
+      }
+
+      /*window.contract = await new web3.eth.Contract(lp.abi, "0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC")
+      /!*contract.methods.mint().send().on('receipt', function() {
+
+      }).catch(function (err) {
+
+      });*!/
+      const transactionParameters = {
+        to: "0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", // Required except during contract publications.
+        from: window.ethereum.selectedAddress, // must match user's active address.
+        'data': window.contract.methods.mint().encodeABI()//make call to NFT smart contract
+      };
+
+
+      try {
+        const txHash = await window.ethereum
+          .request({
+            method: 'eth_sendTransaction',
+            params: [transactionParameters],
+          });
+        return {
+          success: true,
+          status: "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" + txHash
+        }
+      } catch (error) {
+        return {
+          success: false,
+          status: "😥 Something went wrong: " + error.message
+        }
+
+      }*/
+
+      /*if (this.$store.getters["getAccount"] == '') {
         try {
           var account = await window.ethereum.request({method: 'eth_requestAccounts' })
           this.$store.commit("changeAccount", account)
@@ -485,34 +557,13 @@ export default {
           const provider = new ethers.providers.Web3Provider(window.ethereum)
           const signer = provider.getSigner()
           const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
-          const transaction = await contract.mint(/*overrides*/)
+          const transaction = await contract.mint(/!*overrides*!/)
           console.log(transaction)
         } catch (err) {
           console.log(err)
         }
-      }
+      }*/
     }
-  },
-  mounted: async function() {
-    // gotta do a big ol try catch or it fails if the user doesn't connect....
-    // def better way to do this but i'm no web dev so fuck it
-    /*try {
-      document.getElementById("addressField").style.display = 'none'
-      var account = await window.ethereum.request({method: 'eth_requestAccounts'})
-      if (account != '') {
-
-        this.$store.commit("changeAccount", account)
-
-        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
-        document.getElementById("addressField").style.display = 'inline'
-        document.getElementById("connectButton").style.display = 'none'
-        document.getElementById("addressField").innerText = accountStr
-
-        console.log("Connected with " + this.$store.getters["getAccount"])
-      }
-    } catch (err) {
-      console.log("gimme dat account plz")
-    }*/
   }
 };
 </script>

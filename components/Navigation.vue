@@ -30,15 +30,10 @@
 
         <div class="right-nav-container md:mt-5 xl:mt-10">
           <nuxt-link to="" class="">
-            <button @click="ConnectWalletMM" id="connectButtonMeta"
+            <button @click="ConnectWallet" id="connectButtonMeta"
               class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
             >
-              metamask
-            </button>
-            <button @click="ConnectWalletWC" id="connectButtonWC"
-                    class="connect-wallet uppercase text-[#2E2B26] font-inter font-medium text-[10px] xl:text-xs 2xl:text-xs p-3 sm:py-2 lg:py-3 sm:px-4 lg:px-5 border border-[#2E2B26]"
-            >
-              walletconnect
+              connect
             </button>
           </nuxt-link>
           <button
@@ -53,143 +48,60 @@
 </template>
 
 <script>
-import { ethers, providers } from "ethers";
+import { ethers } from "ethers";
 import WalletConnectProvider from "@walletconnect/web3-provider";
-const Moralis = require('moralis');
-// const Moralis = require('moralis');
+import Web3Modal from "web3modal";
 import lp from "~/abi/CBSaiListeningPass.json";
 
 export default {
   methods: {
-    async ConnectWalletMM() {
+    async ConnectWallet() {
       try {
-        console.log("start try connect!")
-        const provider = new ethers.providers.Web3Provider(window.ethereum)
+        const providerOptions = {
+          walletconnect: {
+            package: WalletConnectProvider, // required
+            options: {
+              infuraId: "" // required
+            }
+          }
+        };
+        const web3Modal = new Web3Modal({
+          network: "rinkeby", // optional
+          cacheProvider: false, // optional
+          providerOptions // required
+        });
 
-        var account = await provider.send('eth_requestAccounts', [])
+        const instance = await web3Modal.connect();
 
-        console.log("got account! " + account)
-        this.$store.commit("changeAccount", account)
-        // this.$store.commit("changeProvider", provider)
+        const provider = new ethers.providers.Web3Provider(instance);
+        window.signer = provider.getSigner();
 
+        var accounts = await provider.listAccounts();
+        console.log(accounts)
+        var account = accounts[0]
         var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
         document.getElementById("connectButtonMeta").style.display = 'none'
-        document.getElementById("connectButtonWC").style.display = 'none'
         document.getElementById("addressField").style.display = 'inline'
         document.getElementById("addressField").innerText = accountStr
-        /*console.log(provider)
-        const signer = await provider.getSigner()
-        console.log(signer)*/
-
-/*        var account = await window.ethereum.request({method: 'eth_requestAccounts' })
-        this.$store.commit("changeAccount", account)
-
-        // const provider = new ethers.providers.Web3Provider(window.ethereum)
-        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
-        document.getElementById("connectButton").style.display = 'none'
-        document.getElementById("addressField").style.display = 'inline'
-        document.getElementById("addressField").innerText = accountStr
-
-        console.log("Connected with " + this.$store.getters["getAccount"])*/
       } catch (err) {
         console.log(err)
       }
-
-    },
-    async ConnectWalletWC() {
-      try {
-        /*let user = Moralis.User.current();
-                if (!user) {
-
-                }*/
-
-        let user = Moralis.authenticate({ provider: "walletconnect", signingMessage: "Log in using Moralis" })
-          .then(function (user) {
-            var account = user.get("ethAddress");
-            var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
-            document.getElementById("connectButtonMeta").style.display = 'none'
-            document.getElementById("connectButtonWC").style.display = 'none'
-            document.getElementById("addressField").style.display = 'inline'
-            document.getElementById("addressField").innerText = accountStr
-            console.log("logged in user:", user);
-            console.log(user.get("ethAddress"));
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-
-
-
-        // wallet connect
-       /* const provider = new WalletConnectProvider({
-          infuraId: "7c297bd58a0244b491d076df8d2ac0a7",
-        });
-        await provider.enable();
-
-        const web3Provider = new providers.Web3Provider(provider)
-        console.log(web3Provider)
-        provider.on("accountsChanged", (accounts) => {
-          console.log(accounts);
-        });*/
-        // var account = await window.ethereum.request({method: 'eth_requestAccounts' })
-
-        /*var account = await window.ethereum.request({method: 'eth_requestAccounts' })
-        this.$store.commit("changeAccount", account)
-
-        // const provider = new ethers.providers.Web3Provider(window.ethereum)
-        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
-        document.getElementById("connectButton").style.display = 'none'
-        document.getElementById("addressField").style.display = 'inline'
-        document.getElementById("addressField").innerText = accountStr
-
-        console.log("Connected with " + this.$store.getters["getAccount"])*/
-      } catch (err) {
-
-      }
-
     }
   },
   mounted: async function() {
     document.getElementById("addressField").style.display = "none"
-    const serverUrl = "https://ecqbouijy87n.usemoralis.com:2053/server";
-    const appId = "QdVokHMtEpB62sT3TDZsJ5ZrsIGJrrBqF0ZXQUYG";
-    Moralis.start({ serverUrl, appId });
+    var provider = new ethers.providers.Web3Provider(window.ethereum);
+    // try {
+    const accounts = await provider.listAccounts()
+    if (accounts.length > 0) {
+      window.signer = provider.getSigner()
 
-    if (this.$store.getters["getAccount"]) {
-      var account = this.$store.getters["getAccount"]
+      var account = accounts[0];
       var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
       document.getElementById("connectButtonMeta").style.display = 'none'
-      document.getElementById("connectButtonWC").style.display = 'none'
       document.getElementById("addressField").style.display = 'inline'
       document.getElementById("addressField").innerText = accountStr
     }
-    // this.ConnectWalletMM()
-    // await this.ConnectWalletMM()
-    // gotta do a big ol try catch or it fails if the user doesn't connect....
-    // def better way to do this but i'm no web dev so fuck it
-    /*try {
-      const provider = new ethers.providers.Web3Provider(window.ethereum)
-      const signer = provider.getSigner()
-      /!*document.getElementById("addressField").style.display = 'none'
-      const provider = await ethers.getDefaultProvider();
-      console.log(provider)
-      var account = await window.ethereum.request({method: 'eth_requestAccounts' })
-      if (account != '') {
-
-        this.$store.commit("changeAccount", account)
-
-        var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
-        document.getElementById("addressField").style.display = 'inline'
-        document.getElementById("connectButton").style.display = 'none'
-        document.getElementById("addressField").innerText = accountStr
-
-        console.log("Connected with " + this.$store.getters["getAccount"])
-      }*!/
-    } catch (err) {
-      console.log(err)
-        console.log("gimme dat account plz")
-    }*/
-
   }
 };
 </script>

@@ -11,6 +11,8 @@
   "dependencies": {
     "@walletconnect/web3-provider": "^1.7.1",
     "aos": "^2.3.4",
+    "authereum": "^0.1.14",
+    "canvas-confetti": "^1.5.1",
     "core-js": "^3.19.3",
     "ethers": "^5.5.4",
     "gsap": "^3.9.1",
@@ -22,6 +24,7 @@
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "web3": "^1.7.0",
+    "web3modal": "^1.9.5",
     "web3modal-vue": "^1.0.5",
     "webpack": "^4.46.0",
     "yarn": "^1.22.17"
