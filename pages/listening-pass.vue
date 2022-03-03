@@ -475,8 +475,8 @@ export default {
     getAccountForMint() {
       return window.eth.request({method: 'eth_requestAccounts'})
         .then(account => {
-          self.$store.commit("changeAccount", account);
-          self.__updateAccountLabel(account);
+          this.$store.commit("changeAccount", account);
+          this.__updateAccountLabel(account);
           return account;
         })
         .catch(err => {
