@@ -457,55 +457,70 @@ import lp from "~/abi/CBSaiListeningPass.json";
 export default {
   layout: "default",
   mixins: [aosMixin],
+  data: () => {
+    isProcessing: false
+  },
   methods: {
-    async mintClicked() {
-      if (this.$store.getters["getAccount"] == '') {
-        try {
-          var account = await window.ethereum.request({method: 'eth_requestAccounts' })
-          this.$store.commit("changeAccount", account)
+    __updateAccountLabel(account) {
+      if (account && account.length) {
+        account = account + ""; // cast account to string
+        // Update DOM
+        document.getElementById('connectButton').style.display = 'none';
+        document.getElementById('addressField').style.display = 'inline';
+        document.getElementById('addressField').innerText =  "Connected\n" + account.slice(0, 5) + "..." + account.slice(-4);
+      } else {
+        console.log('[listening-pass:__updateAccountLabel]: required @param:account not present');
+      }
+    },
+    getAccountForMint() {
+      return window.eth.request({method: 'eth_requestAccounts'})
+        .then(account => {
+          self.$store.commit("changeAccount", account);
+          self.__updateAccountLabel(account);
+          return account;
+        })
+        .catch(err => {
+          console.log('[listening-pass:mintClicked]: ERR', err);
+          return err;
+        });
+    },
+    mint() {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const contract = new ethers.Contract(
+        "0x5e9dC633830Af18AA43dDB7B042646AADEDCCe81",
+        lb.api,
+        provider.getSigner()
+      );
 
-          // const provider = new ethers.providers.Web3Provider(window.ethereum)
-          var accountStr = "Connected\n" + String(account).substring(0, 5) + "..." + String(account).substring(String(account).length - 4, String(account).length)
-          document.getElementById("connectButton").style.display = 'none'
-          document.getElementById("addressField").style.display = 'inline'
-          document.getElementById("addressField").innerText = accountStr
+      return contract.mint()
+        .then(transaction => {
+          console.log('[listening-pass:mintClicked]: OK transaction: ', transaction);
+          return transaction;
+        })
+        .catch(err => {
+          console.log('[listening-pass:mintClicked]: ERR ', err);
+          return err;
+        });
+    },
+    mintClicked() {
+      if (!this.isProcessing) {
+        this.isProcessing = true; // thread block for async
+        const hasAccount = this.$store.getters["getAccount"];
 
-          console.log("Connected with " + this.$store.getters["getAccount"])
-        } catch (err) {
-
+        if (!hasAccount) {
+          return this.getAccountForMint()
+            .finally(() => { 
+              this.isProcessing = false; 
+            });
+        } else {
+          return this.mint(contract)
+            .finally(() => { 
+              this.isProcessing = false; 
+            });
         }
       } else {
-        try {
-          // todo get price from contract, set price here
-          const provider = new ethers.providers.Web3Provider(window.ethereum)
-          const signer = provider.getSigner()
-          const contract = new ethers.Contract("0x5e9dC633830Af18AA43dDB7B042646AADEDCCe81", lp.abi, signer)
-          /*var gas = await contract.estimateGas.mint()
-          console.log('gas ' + gas)
-          var overrides = {
-            value: 1,
-            gasLimit:gas + 1
-          }*/
-          const transaction = await contract.mint(/*overrides*/)
-          console.log(transaction)
-        } catch (err) {
-          console.log(err)
-        }
-
-        /*try {
-          const provider = new ethers.providers.Web3Provider(window.ethereum)
-          const signer = provider.getSigner()
-          const contract = new ethers.Contract("0xDDefcB4c570F2C4aE6F2eC762ECA0d6944bE12EC", lp.abi, signer)
-          var overrides = {
-            value: ethers.utils.parseEther("1.0")
-          }
-          const transaction = await contract.mint(overrides)
-          console.log(transaction)
-        } catch (err) {
-          console.log(err)
-          console.log("if you see this, please refresh.  i'm doing by best")
-        }*/
-
+        console.log('[listening-pass:mintClicked]: currently processing...');
+        // do nothing else?
       }
     }
   },
