@@ -124,7 +124,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 0,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413751/Days_Amazing_c72dox.wav",
           locked: true
         },
 
@@ -146,7 +146,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 2,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413789/Feelings_Can_t_Fade_Away_wq1o68.wav",
           locked: true
         },
 
@@ -157,7 +157,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 3,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413769/HOPELESS_ROMANTIC_wo6dhu.wav",
           locked: true
         },
 
@@ -168,7 +168,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 4,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413807/Meetings_Makeups_tw8obt.wav",
           locked: true
         },
 
@@ -179,7 +179,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 5,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413785/Shotgun_Ring_gnltbl.wav",
           locked: true
         },
 
@@ -190,7 +190,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 6,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413803/Kelly_Logans_House_Trolley_d6cykt.wav",
           locked: true
         },
 
@@ -201,7 +201,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 7,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413795/Rough_Patches_ozhahc.wav",
           locked: true
         },
 
@@ -212,7 +212,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 8,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413813/Caress_Me_nelmln.wav",
           locked: true
         },
 
@@ -245,7 +245,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 11,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413798/Kid_Chocolate_d2gb2q.wav",
           locked: true
         },
 
@@ -256,7 +256,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644840558/Codeboy/Mixtape_small_xbt54t.webp",
           id: 12,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413704/Made_For_This_cfbzrz.wav",
           locked: true
         },
 
@@ -498,7 +498,7 @@ export default {
           cover: "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 0,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413751/Days_Amazing_c72dox.wav",
           locked: true
         },
 
@@ -509,7 +509,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 1,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413792/Never_Change_Up_n1r542.wav",
           locked: true
         },
 
@@ -519,7 +519,7 @@ export default {
           cover: "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 2,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413789/Feelings_Can_t_Fade_Away_wq1o68.wav",
           locked: true
         },
 
@@ -530,7 +530,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 3,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413769/HOPELESS_ROMANTIC_wo6dhu.wav",
           locked: true
         },
 
@@ -541,7 +541,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 4,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413807/Meetings_Makeups_tw8obt.wav",
           locked: true
         },
 
@@ -552,7 +552,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 5,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413785/Shotgun_Ring_gnltbl.wav",
           locked: true
         },
 
@@ -563,7 +563,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 6,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413803/Kelly_Logans_House_Trolley_d6cykt.wav",
           locked: true
         },
 
@@ -574,7 +574,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 7,
           status: "/svg/lock.svg",
-          src: "https://res.cloudinary.com/eazzie/video/upload/v1644335984/Codeboy/Rough_Patches_qq6pnh.wav",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413795/Rough_Patches_ozhahc.wav",
           locked: true
         },
 
@@ -585,7 +585,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 8,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413813/Caress_Me_nelmln.wav",
           locked: true
         },
 
@@ -596,7 +596,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 9,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413802/Capable_zzjdqv.wav",
           locked: true
         },
 
@@ -607,7 +607,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 10,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413712/Nuntoprove_oud8cn.mp3",
           locked: true
         },
 
@@ -618,7 +618,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 11,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413798/Kid_Chocolate_d2gb2q.wav",
           locked: true
         },
 
@@ -629,7 +629,7 @@ export default {
             "https://res.cloudinary.com/eazzie/image/upload/q_100/v1644355083/Codeboy/Mixtape_small_kl5p0z.webp",
           id: 12,
           status: "/svg/lock.svg",
-          src: "",
+          src: "https://res.cloudinary.com/dhww4ghgg/video/upload/v1646413704/Made_For_This_cfbzrz.wav",
           locked: true
         },
       ],
